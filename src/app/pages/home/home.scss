@@ -1,33 +1,53 @@
 .home {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: var(--space-xl);
+  background-image: 
+    linear-gradient(rgba(0,0,0,.90), rgba(0, 0, 0, 0.95)), 
+    url('/assets/images/heroes.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .home__content {
   display: flex;
   flex-direction: column;
-  gap: var(--space-lg);
-}
-
-.home__subtitle {
-  color: var(--viral-primary);
-  font-size: var(--text-lg);
-  font-weight: 700;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-sm);
 }
 
 .home__title {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
+  color: var(--hero-secondary);
+  margin-top: var(--space-md);
+  gap: var(--space-2xl);
   line-height: .9;
 }
 
 .home__title span {
   color: var(--white);
-  font-size: var(--text-2xl);
+  font-size: var(--text-xl);
+  font-weight: 800;
+}
+
+.henchmen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--hench-secondary);
+  font-size: var(--text-5xl);
+  font-family: var(--font-heading);
+}
+
+.home__subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--viral-primary);
+  font-size: var(--text-xl);
+  font-weight: 700;
 }
 
 .home__button {
