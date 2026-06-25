@@ -1,0 +1,26 @@
+.header {
+  height: var(--header-height);
+  background: var(--viral-primary);
+  overflow: hidden;
+  border-bottom: 4px solid var(--black);
+}
+
+.header__track {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xl);
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+.header__item {
+  color: var(--black);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}

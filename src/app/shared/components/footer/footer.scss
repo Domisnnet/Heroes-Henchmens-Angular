@@ -1,0 +1,26 @@
+.footer {
+  height: var(--footer-height);
+  background: var(--viral-primary);
+  overflow: hidden;
+  border-top: 4px solid var(--black);
+}
+
+.footer__track {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: var(--space-2xl);
+  width: max-content;
+  animation: marquee-reverse 25s linear infinite;
+}
+
+.footer__item {
+  color: var(--black);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+@keyframes marquee-reverse {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}

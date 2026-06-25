@@ -1,0 +1,11 @@
+import { Component, input } from '@angular/core';
+
+@Component({
+  selector: 'app-footer',
+  standalone: true,
+  templateUrl: './footer.html',
+  styleUrls: ['./footer.scss'],
+})
+export class Footer {
+  readonly message = input( '🔥 Viral • 😈 Caótico • 🦸 Heroico • 😂 Compartilhável' );
+}
