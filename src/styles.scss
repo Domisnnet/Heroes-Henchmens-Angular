@@ -10,3 +10,8 @@
 @use './app/styles/base/reset';
 @use './app/styles/base/typography';
 @use './app/styles/base/global';
+
+/* ==========================================================================
+   UTILITIES
+========================================================================== */
+@use './app/styles/utilities/utilities';
