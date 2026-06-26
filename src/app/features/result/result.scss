@@ -1,9 +1,32 @@
+@use '../../styles/abstracts' as *;
+
 .result {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  @include page-background(var(--quiz-background));
+  @include page-layout;
+  min-height: calc(var(--viewport-height) - var(--header-height) - var(--footer-height));
+}
+
+.result__content {
+  @include flex-center;
+  flex: 1;
+  padding: var(--space-xl);
+}
+
+.result__card {
+  @include brutal-card;
+  @include flex-column;
+  width: min(var(--quiz-max-width), 100%);
+  gap: var(--space-lg);
+  padding: var(--space-2xl);
+  background: var(--bg-overlay);
+  border-radius: var(--radius-md);
   text-align: center;
+}
+
+.result__title {
+  color: var(--viral-primary);
+}
+
+.result__description {
+  color: var(--white);
 }

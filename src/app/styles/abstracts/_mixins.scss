@@ -43,6 +43,16 @@
   background-image: var(--background-overlay), $image;
 }
 
+@mixin page-card {
+  @include brutal-card;
+  @include flex-column;
+  width: min(var(--quiz-max-width), 100% );
+  gap: var(--space-lg);
+  padding: var(--space-xl);
+  background: var(--bg-overlay);
+  border-radius: var(--radius-md);
+}
+
 @mixin page-layout {
   @include flex-center;
   overflow: hidden;
