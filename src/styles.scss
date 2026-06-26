@@ -1,5 +1,12 @@
-@use "./app/styles/abstracts/variables";
-@use "./app/styles/base/reset";
-@use "./app/styles/base/typography";
-@use "./app/styles/base/global";
-@use "./app/styles/abstracts/animations";
+/* ==========================================================================
+   ABSTRACTS
+========================================================================== */
+@use './app/styles/abstracts/variables';
+@use './app/styles/abstracts/animations';
+
+/* ==========================================================================
+   BASE
+========================================================================== */
+@use './app/styles/base/reset';
+@use './app/styles/base/typography';
+@use './app/styles/base/global';
