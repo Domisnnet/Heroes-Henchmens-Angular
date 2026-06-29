@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "question": "Uma criança derruba o sorvete. Você:",
+    "answers": [
+      { "text": "Compra outro", "heroPoints": 2, "henchPoints": 0 },
+      { "text": "Divide o seu", "heroPoints": 2, "henchPoints": 0 },
+      { "text": "Finge que não viu", "heroPoints": 0, "henchPoints": 1 },
+      { "text": "Dá risada e segue andando", "heroPoints": 0, "henchPoints": 3 }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Você encontra uma mala com R$ 1 milhão. Você:",
+    "answers": [
+      { "text": "Procura o dono", "heroPoints": 2, "henchPoints": 0 },
+      { "text": "Entrega às autoridades", "heroPoints": 2, "henchPoints": 0 },
+      { "text": "Guarda 'só um pouco'", "heroPoints": 0, "henchPoints": 1 },
+      { "text": "Some do mapa", "heroPoints": 0, "henchPoints": 3 }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Seu amigo esqueceu o celular desbloqueado. Você:",
+    "answers": [
+      { "text": "Deixa quieto", "heroPoints": 1, "henchPoints": 0 },
+      { "text": "Bloqueia para ele", "heroPoints": 2, "henchPoints": 0 },
+      { "text": "Troca a foto por um meme", "heroPoints": 0, "henchPoints": 1 },
+      { "text": "Publica 'estou pagando pastel pra todo mundo'", "heroPoints": 0, "henchPoints": 2 }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Você ganha um poder. Você escolhe:",
+    "answers": [
+      { "text": "Curar pessoas", "heroPoints": 3, "henchPoints": 0 },
+      { "text": "Voar", "heroPoints": 1, "henchPoints": 0 },
+      { "text": "Ficar invisível", "heroPoints": 0, "henchPoints": 1 },
+      { "text": "Fazer qualquer pessoa tropeçar", "heroPoints": 0, "henchPoints": 3 }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Você vê uma fila enorme. Você:",
+    "answers": [
+      { "text": "Espera sua vez", "heroPoints": 1, "henchPoints": 0 },
+      { "text": "Organiza a fila", "heroPoints": 2, "henchPoints": 0 },
+      { "text": "Procura um atalho", "heroPoints": 0, "henchPoints": 1 },
+      { "text": "Pergunta 'quem é o último?' e entra no meio", "heroPoints": 0, "henchPoints": 2 }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "Você é transportado para um filme. Você:",
+    "answers": [
+      { "text": "Salva o mundo", "heroPoints": 3, "henchPoints": 0 },
+      { "text": "Ajuda os protagonistas", "heroPoints": 2, "henchPoints": 0 },
+      { "text": "Vira mercenário", "heroPoints": 0, "henchPoints": 2 },
+      { "text": "Trabalha para o vilão", "heroPoints": 0, "henchPoints": 3 }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "O grupo do WhatsApp está em silêncio. Você:",
+    "answers": [
+      { "text": "Mantém a paz", "heroPoints": 1, "henchPoints": 0 },
+      { "text": "Compartilha algo útil", "heroPoints": 2, "henchPoints": 0 },
+      { "text": "Envia figurinha aleatória", "heroPoints": 0, "henchPoints": 1 },
+      { "text": "Começa uma guerra de memes", "heroPoints": 0, "henchPoints": 2 }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "Você encontra um botão misterioso. Você:",
+    "answers": [
+      { "text": "Não aperta", "heroPoints": 1, "henchPoints": 0 },
+      { "text": "Pesquisa primeiro", "heroPoints": 2, "henchPoints": 0 },
+      { "text": "Aperta uma vez", "heroPoints": 0, "henchPoints": 1 },
+      { "text": "Aperta várias vezes", "heroPoints": 0, "henchPoints": 3 }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "Seu amigo caiu dormindo. Você:",
+    "answers": [
+      { "text": "Coloca um cobertor", "heroPoints": 2, "henchPoints": 0 },
+      { "text": "Leva água para quando acordar", "heroPoints": 2, "henchPoints": 0 },
+      { "text": "Tira uma foto", "heroPoints": 0, "henchPoints": 1 },
+      { "text": "Desenha um bigode", "heroPoints": 0, "henchPoints": 2 }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "Você vira prefeito por um dia. Você:",
+    "answers": [
+      { "text": "Melhora escolas", "heroPoints": 3, "henchPoints": 0 },
+      { "text": "Arruma hospitais", "heroPoints": 3, "henchPoints": 0 },
+      { "text": "Declara feriado", "heroPoints": 1, "henchPoints": 1 },
+      { "text": "Proíbe segunda-feira", "heroPoints": 0, "henchPoints": 2 }
+    ]
+  }
+]
