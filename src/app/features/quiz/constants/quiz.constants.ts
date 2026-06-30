@@ -1,0 +1,5 @@
+export const QUIZ_CONSTANTS = {
+  TOTAL_QUESTIONS: 15,
+  HERO_LIMIT: 18,
+  HENCH_LIMIT: 10
+} as const;

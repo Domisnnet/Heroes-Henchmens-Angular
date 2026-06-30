@@ -4,9 +4,3 @@ export interface Answer {
   heroPoints: number;
   henchPoints: number;
 }
-
-export interface Question {
-  id: number;
-  question: string;
-  answers: Answer[];
-}

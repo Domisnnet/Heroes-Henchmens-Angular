@@ -1,4 +1,4 @@
-@use '../../styles/abstracts' as *;
+@use '../../  styles/abstracts' as *;
 
 .quiz {
   @include page-background(var(--quiz-background));
@@ -11,8 +11,6 @@
   align-items: center;
   width: 100%;
   max-width: 50rem;
-  margin-bottom: 0;
-  padding: 0;
 }
 
 .quiz__card {

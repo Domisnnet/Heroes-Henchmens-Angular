@@ -4,8 +4,6 @@
   @include page-background(var(--home-background));
   @include page-layout;
   min-height: calc(var(--viewport-height) - var(--header-height) - var(--footer-height));
-  background-position: center;
-  background-size: cover;
 }
 
 .home__content {
@@ -13,6 +11,8 @@
   align-items: center;
   width: 100%;
   max-width: 50rem;
+  background-position: center;
+  background-size: cover;
 }
 
 .home__title {
@@ -20,16 +20,16 @@
   align-items: center;
   justify-content: center;
   color: var(--hero-secondary);
-  padding-top: var(--space-2xl);
+  padding-top: var(--space-lg);
   line-height: .9;
-  margin: 0;
+  padding-bottom: var(--space-sm);
 }
 
-.home__highlight {
-  color: var(--success);
-  font-size: var(--text-3xl);
-  font-weight: 700;
-  box-shadow: var(--shadow-hero);
+.home__title span {
+  color: var(--hench-secondary);
+  font-size: var(--text-6xl);
+  font-weight: bold;
+  padding-top: var(--space-sm);
 }
 
 .henchmen {
@@ -37,7 +37,7 @@
   color: var(--hench-primary);
   font-family: var(--font-heading);
   font-size: var(--text-5xl);
-  margin: 0;
+  padding-bottom: var(--space-sm);
 }
 
 .home__subtitle {
@@ -45,6 +45,7 @@
   color: var(--viral-primary);
   font-size: var(--text-2xl);
   font-weight: 800;
+  padding-bottom: var(--space-sm);
 }
 
 .home__button {

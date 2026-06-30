@@ -63,8 +63,8 @@
   --container-padding: 5%;
   --container-width: 75rem;
   --content-max-width: 75rem;
-  --footer-height: 3.1rem;
-  --header-height: 3.1rem;
+  --footer-height: 2.5rem;
+  --header-height: 2.5rem;
   --viewport-height: 100vh;
 
   /* ==========================================================================
@@ -79,8 +79,7 @@
   /* ==========================================================================
     OVERLAYS
   ========================================================================== */
-  --background-overlay:
-    linear-gradient(rgba(0,0,0,var(--overlay-dark)), rgba(0,0,0,var(--overlay-dark)));
+  --background-overlay: linear-gradient(rgba(0,0,0,var(--overlay-ultra)), rgba(0,0,0,var(--overlay-ultra)));
 
   /* ==========================================================================
     SHADOWS
@@ -97,6 +96,7 @@
   --space-3xl: 4rem;
   --space-4xl: 5rem;
   --space-5xl: 6rem;
+  --space-6xl: 7rem;
   --space-lg: 1.5rem;
   --space-md: 1rem;
   --space-sm: .5rem;
