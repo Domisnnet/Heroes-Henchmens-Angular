@@ -1,11 +1,12 @@
-import { Component, inject } from '@angular/core';
+import { Component, DestroyRef, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Header } from '@shared/components/header/header';
 import { Footer } from '@shared/components/footer/footer';
-import { Question } from '@features/quiz/models/question.model';
-import { Answer } from '@features/quiz/models/answer.model';
-import { QuizEngineService } from '@features/quiz/services/quiz-engine.service';
+import { Answer } from '@quiz/models/answer.model';
+import { Question } from '@quiz/models/question.model';
+import { QuizEngineService } from '@quiz/services/quiz-engine.service';
 
 @Component({
   selector: 'app-quiz',
@@ -19,13 +20,19 @@ import { QuizEngineService } from '@features/quiz/services/quiz-engine.service';
   styleUrl: './quiz.scss'
 })
 export class Quiz {
-  private readonly quizEngine = inject(QuizEngineService);
+  private readonly engine = inject(QuizEngineService);
   private readonly router = inject(Router);
+  private readonly destroyRef = inject(DestroyRef);
   currentQuestion!: Question;
   constructor() {
-    this.quizEngine.currentQuestion$.subscribe(question => { this.currentQuestion = question; });
-    this.quizEngine.finished$.subscribe(finished => { 
-      if (finished) { this.router.navigate(['/result']); } });
+    this.engine.currentQuestion$
+      .pipe(takeUntilDestroyed(this.destroyRef))
+      .subscribe(question => { this.currentQuestion = question; });
+    this.engine.finished$
+      .pipe(takeUntilDestroyed(this.destroyRef))
+      .subscribe(finished => {
+        if (finished) { this.router.navigate(['/result']); }
+      });
   }
-  answer(answer: Answer): void { this.quizEngine.answer(answer); }
+  answers(answer: Answer): void { this.engine.answer(answer); }
 }

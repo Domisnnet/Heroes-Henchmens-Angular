@@ -6,7 +6,7 @@ export const QUESTIONS: Question[] = [
     question: 'Você encontra uma carteira na rua...',
     answers: [
       {
-        id: 1,
+        questionId: 1,
         text: 'Procura o dono',
         score: 3
       },

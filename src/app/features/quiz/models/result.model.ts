@@ -5,5 +5,5 @@ export interface ResultQuiz {
   title: string;
   description: string;
   message: string;
-  image: string;
+  image?: string;
 }

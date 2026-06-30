@@ -1,7 +1,7 @@
-import { Result } from '@quiz/models/result.model';
+import { ResultQuiz } from '@quiz/models/result.model';
 import { ResultType } from '@quiz/enums/result-type.enum';
 
-export const RESULTS: Result[] = [
+export const RESULTS: ResultQuiz[] = [
   {
     type: ResultType.HERO,
     title: 'HERÓI',
