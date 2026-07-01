@@ -15,5 +15,5 @@ import { FooterComponent } from '@shared/components/footer-component/footer.comp
 })
 export class HomeComponent {
     constructor(private readonly router: Router) { }
-    startQuiz(): void { this.router.navigate(['/quiz-component']); }
+    startQuiz(): void { this.router.navigate(['/quiz']); }
 }
