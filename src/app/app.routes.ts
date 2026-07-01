@@ -2,7 +2,9 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
-    path: '', redirectTo: 'home', pathMatch: 'full'
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
   },
   {
     path: 'home',
@@ -23,6 +25,7 @@ export const routes: Routes = [
       .then(c => c.ResultComponent)
   },
   {
-    path: '**', redirectTo: 'home'
-  },
+    path: '**',
+    redirectTo: 'home'
+  }
 ];
