@@ -1,0 +1,18 @@
+<app-header-component [message]="'🦸 Escolha com cuidado... estamos observando 👀'" />
+<section class="quiz">
+  <main class="quiz__content">
+    @if (currentQuestion) {
+      <div class="quiz__card">
+        <h2 class="quiz__question">{{ currentQuestion.question }}</h2>
+        <div class="quiz__answers">
+          @for (answer of currentQuestion.answers; track answer.id) {
+            <button type="button" class="quiz__card-button" (click)="answers(answer)">
+              {{ answer.text }}
+            </button>
+          }
+        </div>
+      </div>
+    }
+  </main>
+</section>
+<app-footer-component [message]="'⚡ Sua personalidade está sendo analisada'" />
