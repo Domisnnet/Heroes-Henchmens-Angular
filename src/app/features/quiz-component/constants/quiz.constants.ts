@@ -1,7 +1,7 @@
+import { QuizScore } from '@quiz/models/quiz-score.model';
+
 export const QUIZ_CONSTANTS = {
-  TOTAL_QUESTIONS: 10,
-  HERO_SCORE: 20,
-  HENCHMAN_SCORE: -20,
-  INITIAL_SCORE: 0,
-  INITIAL_QUESTION: 0
+  INITIAL_QUESTION: 0,
+  INITIAL_SCORE: <QuizScore>{ hero: 0, hench: 0 },
+  RESULT_MARGIN: 5
 } as const;
