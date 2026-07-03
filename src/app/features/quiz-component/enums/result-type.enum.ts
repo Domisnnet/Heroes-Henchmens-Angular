@@ -1,7 +1,7 @@
 export enum ResultType {
-  HERO = 'herói',
-  HENCHMAN = 'vilão',
-  MERCENARY = 'mercenário',
-  PROTECTOR = 'protetor',
-  VIGILANTE = 'vigilante'
+  HERO = 'hero',
+  PROTECTOR = 'protector',
+  VIGILANTE = 'vigilante',
+  MERCENARY = 'mercenary',
+  HENCHMAN = 'henchman'
 }

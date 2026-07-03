@@ -27,7 +27,7 @@ export const RESULTS: ResultQuiz[] = [
     description: 'Você segue seu próprio código moral.',
     text:
       'Nem sempre acredita que as regras sejam suficientes para fazer justiça. Prefere agir por conta própria, assumindo as consequências das suas escolhas.',
-    image: 'assets/results/vigilante.png'
+    image: 'assets/results/vigilant.png'
   },
   {
     type: ResultType.MERCENARY,
