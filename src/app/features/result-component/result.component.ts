@@ -1,4 +1,5 @@
 import { Component, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { HeaderComponent } from '@shared/components/header-component/header.component';
 import { FooterComponent } from '@shared/components/footer-component/footer.component';
@@ -11,6 +12,7 @@ import { AnalysisItem } from '@quiz/models/analysis-item.model';
   selector: 'app-result-component',
   standalone: true,
   imports: [
+    CommonModule,
     HeaderComponent,
     FooterComponent
   ],
@@ -24,12 +26,12 @@ export class ResultComponent {
   private readonly router = inject(Router);
   private readonly analysisService = inject(QuizAnalysisService);
   readonly result: ResultQuiz = this.facade.getResult();
+  readonly pageClass = `result__page result__page--${this.result.type}`
   readonly analysis: AnalysisItem[] = this.analysisService.build(this.facade.history());
   readonly heroScore = this.facade.heroScore();
   readonly henchScore = this.facade.henchScore();
   readonly heroPercentage = this.calculateHeroPercentage();
   readonly henchPercentage = 100 - this.heroPercentage;
-  get pageClass(): string { return `result__page result__page--${this.result.type.toLowerCase()}`; }
   restart(): void { this.facade.reset(); this.router.navigate(['/quiz']); }
   share(): void { /* Implementação futura */ }
   private calculateHeroPercentage(): number {
