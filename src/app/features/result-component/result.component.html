@@ -1,14 +1,54 @@
 <app-header [message]="headerMessage" />
-<section class="result">
-  <main class="result__content">
-    <div class="result__card">
-      <h2 class="result__title">{{ result.title }}</h2>
-      <p class="result__description">{{ result.description }}</p>
-      <p class="result__message">{{ result.text }}</p>
-      <div class="result__actions">
-        <button type="button" class="result__card-button" (click)="restart()">🔄 Jogar novamente</button>
+<main class="result">
+  <section class="result__page">
+    <section class="result__hero">
+      <figure class="result__image">
+        <img [src]="result.image" [alt]="result.title">
+      </figure>
+      <article class="result__content">
+        <h1 class="result__title">{{ result.title }}</h1>
+        <h2 class="result__subtitle">{{ result.subtitle }}</h2>
+        <p class="result__description">{{ result.description }}</p>
+        <p class="result__text">{{ result.text }}</p>
+      </article>
+    </section>
+    <section class="result__score">
+      <h3 class="result__section-title">Tendência Moral</h3>
+      <div class="result__score-item">
+        <span class="result__score-label">Heroísmo</span>
+        <div class="result__progress">
+          <div class="result__progress-bar result__progress-bar--hero" [style.width.%]="heroPercentage"></div>
+        </div>
+        <strong class="result__score-value">{{ heroPercentage }}%</strong>
       </div>
-    </div>
-  </main>
-</section>
+      <div class="result__score-item">
+        <span class="result__score-label">Vilania</span>
+        <div class="result__progress">
+          <div class="result__progress-bar result__progress-bar--villain" [style.width.%]="henchPercentage"></div>
+        </div>
+        <strong class="result__score-value">{{ henchPercentage }}%</strong>
+      </div>
+    </section>
+    <section class="result__analysis">
+      <h3 class="result__section-title">Perfil Psicológico</h3>
+      @for (item of analysis; track item.category) {
+        <div class="result__analysis-item">
+          <span class="result__analysis-label">{{ item.category }}</span>
+          <div class="result__analysis-progress">
+            <div class="result__analysis-fill" [style.width.%]="item.percentage"></div>
+          </div>
+          <strong class="result__analysis-value">{{ item.percentage }}%</strong>
+        </div>
+      }
+    </section>
+    <nav class="result__actions">
+      <button class="result__button result__button--primary" (click)="restart()">
+        🔄 Jogar Novamente
+      </button>
+      <button class="result__button result__button--secondary" (click)="share()">
+        📤 Compartilhar Resultado
+      </button>
+    </nav>
+  </section>
+</main>
 <app-footer [message]="footerMessage" />

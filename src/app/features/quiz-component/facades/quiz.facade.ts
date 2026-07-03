@@ -2,6 +2,7 @@ import { Injectable, inject } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { Answer } from '@quiz/models/answer.model';
 import { QuizEngineService } from '@quiz/services/quiz-engine.service';
+import { SelectedAnswer } from '@quiz/models/selected-answer.model';
 @Injectable({
   providedIn: 'root'
 })
@@ -14,4 +15,5 @@ export class QuizFacade {
   answer(answer: Answer): void { this.engine.answer(answer); }
   reset(): void { this.engine.reset(); }
   getResult() { return this.engine.getResult(); }
+  history(): SelectedAnswer[] { return this.engine.answersHistory; }
 }
