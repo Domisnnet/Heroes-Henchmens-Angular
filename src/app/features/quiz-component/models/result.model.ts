@@ -1,9 +1,9 @@
-import { ResultType } from '@features/quiz-component/enums/result-type.enum';
-
+import { ResultType } from "@quiz/enums/result-type.enum";
 export interface ResultQuiz {
-  type: ResultType;
-  title: string;
   description: string;
-  message: string;
-  image?: string;
+  image: string;
+  subtitle: string;
+  text: string;
+  title: string;
+  type: ResultType;
 }

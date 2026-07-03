@@ -3,27 +3,48 @@ import { ResultType } from '@features/quiz-component/enums/result-type.enum';
 
 export const RESULTS: ResultQuiz[] = [
   {
-    type: ResultType.ANTI_HERO,
-    title: '🎭 ANTI-HERÓI',
-    description: 'Você vive entre a luz e a escuridão.',
-    message:
-      'Suas decisões dependem da situação. Você pode salvar o dia... ou causar um pequeno caos no caminho.',
-    image: 'assets/images/results/anti-heroes.png'
-  },
-  {      
     type: ResultType.HERO,
-    title: '🦸 HERÓI',
-    description: 'Você sempre procura fazer a coisa certa.',
-    message:
-      'Coragem, empatia e senso de justiça definem suas escolhas. Mesmo quando ninguém está olhando, você prefere agir pelo bem.',
-    image: 'assets/images/results/heroes.png'
+    title: 'HERÓI',
+    subtitle: 'O Símbolo da Esperança',
+    description: 'Você representa o mais alto ideal de heroísmo.',
+    text:
+      'Você coloca o bem coletivo acima dos próprios interesses. Coragem, honestidade e empatia guiam suas decisões, inspirando outras pessoas a fazer o que é certo.',
+    image: 'assets/results/hero.png'
+  },
+  {
+    type: ResultType.PROTECTOR,
+    title: 'PROTETOR',
+    subtitle: 'O Guardião dos Inocentes',
+    description: 'Sua prioridade sempre será proteger quem precisa.',
+    text:
+      'Você acredita que força só faz sentido quando usada para defender os mais vulneráveis. Age com equilíbrio, responsabilidade e espírito de equipe.',
+    image: 'assets/results/protector.png'
+  },
+  {
+    type: ResultType.VIGILANTE,
+    title: 'VIGILANTE',
+    subtitle: 'O Justiceiro Solitário',
+    description: 'Você segue seu próprio código moral.',
+    text:
+      'Nem sempre acredita que as regras sejam suficientes para fazer justiça. Prefere agir por conta própria, assumindo as consequências das suas escolhas.',
+    image: 'assets/results/vigilante.png'
+  },
+  {
+    type: ResultType.MERCENARY,
+    title: 'MERCENÁRIO',
+    subtitle: 'O Profissional',
+    description: 'Resultados importam mais do que ideais.',
+    text:
+      'Você toma decisões de forma prática e estratégica. Lealdade existe, mas precisa ser conquistada. Seu foco está em atingir os objetivos da maneira mais eficiente possível.',
+    image: 'assets/results/mercenary.png'
   },
   {
     type: ResultType.HENCHMAN,
-    title: '🦹 VILÃO',
-    description: 'O caos parece ser sua linguagem favorita.',
-    message:
-      'Você adora quebrar regras, provocar confusão e transformar qualquer situação em uma boa história para contar.',
-    image: 'assets/images/results/henchman.png'
+    title: 'HENCHMAN',
+    subtitle: 'O Capanga do Caos',
+    description: 'O caos é sua maior diversão.',
+    text:
+      'Você desafia regras, provoca conflitos e não se intimida diante das consequências. Para você, poder e liberdade caminham lado a lado.',
+    image: 'assets/results/henchman.png'
   }
 ];

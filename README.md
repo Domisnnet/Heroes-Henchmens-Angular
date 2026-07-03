@@ -8,7 +8,7 @@
 ![Angular](https://img.shields.io/badge/Angular-20-DD0031?style=flat-square&logo=angular&logoColor=white)
 ![Hosting](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
 [![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/Domisnnet/Heroes-Henchmens-Angular/blob/main/LICENSE)
-![Heroes or Henchmen](src/assets/images/heroes-henchmens.png)
+![Heroes or Henchmen](src/assets/backgrounds/heroes-henchmens.png)
 
 Bem-vindo ao repositório oficial do **Heroes or Henchmens**! Esta aplicação é um quiz interativo e imersivo desenvolvido em **Angular**, projetado para descobrir se a personalidade do usuário se alinha com o lado dos heroicos defensores ou dos caóticos capangas. O projeto combina estilização avançada e agressiva em **SCSS** com uma infraestrutura otimizada de entrega estática no **Firebase Hosting**.
 
