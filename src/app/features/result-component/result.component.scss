@@ -76,8 +76,14 @@
 
 .result__image {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
+  width: 180px;
+  height: auto;
+  margin-left: 70px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--result-shadow);
 }
 
 .result__portrait {
