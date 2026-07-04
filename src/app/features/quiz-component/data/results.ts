@@ -27,7 +27,7 @@ export const RESULTS: ResultQuiz[] = [
     description: 'Você segue seu próprio código moral.',
     text:
       'Nem sempre acredita que as regras sejam suficientes para fazer justiça. Prefere agir por conta própria, assumindo as consequências das suas escolhas.',
-    image: 'assets/results/vigilant.png'
+    image: 'assets/results/vigilante.png'
   },
   {
     type: ResultType.MERCENARY,
@@ -45,6 +45,6 @@ export const RESULTS: ResultQuiz[] = [
     description: 'O caos é sua maior diversão.',
     text:
       'Você desafia regras, provoca conflitos e não se intimida diante das consequências. Para você, poder e liberdade caminham lado a lado.',
-    image: 'assets/results/henchman.png'
+    image: 'assets/results/henchmen.png'
   }
 ];

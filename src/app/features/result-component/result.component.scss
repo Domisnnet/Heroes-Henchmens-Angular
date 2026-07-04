@@ -15,9 +15,53 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-2xl);
-  width: min(100%, 50rem);
+  width: min(100%,50rem);
+  --result-primary: var(--hero-primary);
+  --result-secondary: var(--hero-secondary);
+  --result-glow: var(--hero-glow);
+  --result-shadow: var(--shadow-hero);
   margin-inline: auto;
   padding: var(--space-2xl);
+  border-color: var(--result-primary);
+  box-shadow: var(--result-shadow);
+}
+
+/* ==========================================================================
+  PERSONALITIES
+========================================================================== */
+.result__analysis-fill {
+  --result-primary: var(--hero-primary);
+  --result-secondary: var(--hero-secondary);
+  --result-glow: var(--hero-glow);
+  --result-shadow: var(--shadow-hero);
+}
+
+.result__analysis-fill {
+  --result-primary: var(--protector-primary);
+  --result-secondary: var(--protector-secondary);
+  --result-glow: var(--protector-glow);
+  --result-shadow: var(--shadow-protector);
+}
+
+.result__analysis-fill {
+  --result-primary: var(--vigilante-primary);
+  --result-secondary: var(--vigilante-secondary);
+  --result-glow: var(--vigilante-glow);
+  --result-shadow: var(--shadow-vigilante);
+}
+
+.result__analysis-fill {
+  --result-primary: var(--mercenary-primary);
+  --result-secondary: var(--mercenary-secondary);
+  --result-glow: var(--mercenary-glow);
+  --result-shadow: var(--shadow-mercenary);
+}
+
+.result__analysis-fill {
+  --result-primary: var(--henchmen-primary);
+  --result-secondary: var(--henchmen-secondary);
+  --result-glow: var(--henchmen-glow);
+  --result-shadow: var(--shadow-henchmen);
 }
 
 /* ==========================================================================
@@ -26,8 +70,8 @@
 .result__hero {
   display: grid;
   grid-template-columns: 22rem 1fr;
-  gap: var(--space-2xl);
   align-items: center;
+  gap: var(--space-2xl);
 }
 
 .result__image {
@@ -42,7 +86,8 @@
   height: auto;
   object-fit: contain;
   user-select: none;
-  transition: transform var(--transition-normal);
+  transition: transform var(--transition-normal), filter var(--transition-normal);
+  filter: drop-shadow(0 0 1.5rem var(--result-glow));
 }
 
 .result__portrait:hover {
@@ -57,10 +102,10 @@
 
 .result__title {
   margin: 0;
+  color: var(--result-primary);
   font-family: var(--font-heading);
   font-size: var(--text-4xl);
   line-height: 1;
-  color: var(--white);
   text-transform: uppercase;
 }
 
@@ -93,8 +138,8 @@
   color: var(--white);
   font-family: var(--font-heading);
   font-size: var(--text-2xl);
-  letter-spacing: .08em;
   text-transform: uppercase;
+  letter-spacing: .08em;
 }
 
 /* ==========================================================================
@@ -114,13 +159,13 @@
 }
 
 .result__score-label {
-  color: var(--white);
-  font-weight: 600;
+  color: var(--result-primary);
+  font-weight: 700;
 }
 
 .result__score-value {
-  text-align: right;
   color: var(--white);
+  text-align: right;
 }
 
 .result__progress {
@@ -135,16 +180,36 @@
   width: 0;
   height: 100%;
   border-radius: inherit;
-  transition: width .9s ease;
+  background: linear-gradient(90deg, var(--result-primary), var(--result-secondary));
+  transition: width .8s ease;
+  position: relative;
 }
 
-.result__progress-bar--hero {
+.result__progress-bar::after {
+  content:"";
+  position: absolute;
+  inset: 0;
+  background: var(--effect-bar-shine);
+}
+
+.result__score-label-hero {
+  color: var(--hero-primary);
+  font-weight: 700;
+}
+
+.result__score-label-henchmen {
+  color: var(--henchmen-primary);
+  font-weight: 700;
+}
+
+.result__progress-bar-hero {
   background: linear-gradient(90deg, var(--hero-primary), var(--hero-secondary));
 }
 
-.result__progress-bar--villain {
-  background: linear-gradient(90deg, var(--hench-primary), var(--hench-secondary));
+.result__progress-bar-henchmen {
+  background: linear-gradient(90deg, var(--henchmen-primary), var(--henchmen-secondary));
 }
+
 
 /* ==========================================================================
   ANALYSIS
@@ -176,11 +241,19 @@
 }
 
 .result__analysis-fill {
+  position: relative;
   width: 0;
   height: 100%;
-  background: linear-gradient(90deg, var(--hero-primary), var(--hero-secondary));
   border-radius: inherit;
+  background: linear-gradient(90deg, var(--result-primary), var(--result-secondary));
   transition: width .8s ease;
+}
+
+.result__analysis-fill::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--effect-bar-shine);
 }
 
 .result__analysis-value {
@@ -191,11 +264,10 @@
 /* ==========================================================================
   ACTIONS
 ========================================================================== */
-.result__actions {
+.result__button {
   display: flex;
   justify-content: center;
   gap: var(--space-lg);
-  margin-top: var(--space-xl);
   flex-wrap: wrap;
 }
 
@@ -206,132 +278,33 @@
   border-radius: var(--radius-md);
   font-size: var(--text-md);
   font-weight: 700;
-  transition: transform var(--transition-fast), var(--transition-normal), color var(--transition-normal), box-shadow var(--transition-normal);
+  color: var(--result-primary);
+  transition: transform var(--transition-fast), background var(--transition-normal), color var(--transition-normal), box-shadow var(--transition-normal);
 }
 
 .result__button:hover {
   transform: translateY(-3px);
+  color: var(--result-secondary);
 }
 
-.result__button--primary {
-  background: var(--hero-primary);
-  border-color: var(--hero-primary);
-  color: var(--black);
-}
-
-.result__button--primary:hover {
-  background: var(--hero-secondary);
-  box-shadow: var(--shadow-hero);
-}
-
-.result__button--secondary {
+.result__button-primary {
   background: transparent;
-  border-color: var(--gray-500);
+  border-color: var(--result-primary);
   color: var(--white);
 }
 
-.result__button--secondary:hover {
-  border-color: var(--white);
-  background: var(--bg-result);
+.result__button-primary:hover {
+  border-color: var(--result-secondary);
+  color: var(--result-secondary);
 }
 
-/* ==========================================================================
-  PERSONALITY THEMES
-========================================================================== */
-.result__page--hero {
-  border-color: var(--hero-primary);
-  box-shadow: var(--shadow-hero);
+.result__button-secondary {
+  background: transparent;
+  border-color: var(--result-primary);
+  color: var(--white);
 }
 
-.result__page--hero .result__portrait {
-  filter: drop-shadow(0 0 1.5rem var(--hero-glow));
-}
-
-.result__page--hero .result__title {
-  color: var(--hero-primary);
-}
-
-.result__page--protector {
-  border-color: var(--success);
-  box-shadow: var(--shadow-protect);
-}
-
-.result__page--protector .result__portrait {
-  filter: drop-shadow(0 0 1.5rem var(--protect-glow));
-}
-
-.result__page--protector .result__title {
-  color: var(--success);
-}
-
-.result__page--vigilante {
-  border-color: var(--warning);
-  box-shadow: var(--shadow-vigilante);
-}
-
-.result__page--vigilante .result__portrait {
-  filter: drop-shadow(0 0 1.5rem var(--vigilante-glow));
-}
-
-.result__page--vigilante .result__title {
-  color: var(--warning);
-}
-
-.result__page--mercenary {
-  border-color: var(--viral-primary);
-  box-shadow: var(--shadow-mercenary);
-}
-
-.result__page--mercenary .result__portrait {
-  filter: drop-shadow(0 0 1.5rem var(--mercenary-glow));
-}
-
-.result__page--mercenary .result__title {
-  color: var(--viral-primary);
-}
-
-.result__page--henchman {
-  border-color: var(--hench-primary);
-  box-shadow: var(--shadow-henchman);
-}
-
-.result__page--henchman .result__portrait {
-  filter: drop-shadow(0 0 1.5rem var(--hench-glow));
-}
-
-.result__page--henchman .result__title {
-  color: var(--hench-primary);
-}
-
-.result__page { animation: resultFade .7s ease; }
-.result__portrait { animation: portraitFloat 5s ease-in-out infinite; }
-
-/* ==========================================================================
-  RESPONSIVE
-========================================================================== */
-@media (max-width: 992px) {
-  .result__hero { grid-template-columns: 1fr; text-align: center; }
-  .result__content { align-items: center; }
-  .result__analysis-item { grid-template-columns: 8rem 1fr 3rem; }
-}
-
-@media (max-width: 768px) {
-  .result__page { padding: var(--space-lg); }
-  .result__title { font-size: var(--text-3xl); }
-  .result__subtitle { font-size: var(--text-lg); }
-  .result__portrait { width: 16rem; }
-  .result__score-item,
-  .result__analysis-item { grid-template-columns: 1fr; gap: var(--space-sm); }
-  .result__score-value,
-  .result__analysis-value { text-align: left; }
-  .result__actions { flex-direction: column; }
-  .result__button { width: 100%; }
-}
-
-@media (max-width: 480px) {
-  .result { padding-block: var(--space-lg); }
-  .result__portrait { width: 13rem; }
-  .result__title { font-size: var(--text-2xl); }
-  .result__description,
-  .result__text { text-align: justify; }
+.result__button-secondary:hover {
+  border-color: var(--result-secondary);
+  color: var(--result-secondary);
 }

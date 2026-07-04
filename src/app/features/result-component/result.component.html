@@ -15,16 +15,16 @@
     <section class="result__score">
       <h3 class="result__section-title">Tendência Moral</h3>
       <div class="result__score-item">
-        <span class="result__score-label">Heroísmo</span>
+        <span class="result__score-label-hero">Heroísmo</span>
         <div class="result__progress">
-          <div class="result__progress-bar result__progress-bar--hero" [style.width.%]="heroPercentage"></div>
+          <div class="result__progress-bar result__progress-bar-hero" [style.width.%]="heroPercentage"></div>
         </div>
         <strong class="result__score-value">{{ heroPercentage }}%</strong>
       </div>
       <div class="result__score-item">
-        <span class="result__score-label">Vilania</span>
+        <span class="result__score-label-henchmen">Vilania</span>
         <div class="result__progress">
-          <div class="result__progress-bar result__progress-bar--villain" [style.width.%]="henchPercentage"></div>
+          <div class="result__progress-bar result__progress-bar-henchmen" [style.width.%]="henchPercentage"></div>
         </div>
         <strong class="result__score-value">{{ henchPercentage }}%</strong>
       </div>
@@ -41,11 +41,11 @@
         </div>
       }
     </section>
-    <nav class="result__actions">
-      <button class="result__button result__button--primary" (click)="restart()">
+    <nav class="result__button">
+      <button class="result__button result__button-primary" (click)="restart()">
         🔄 Jogar Novamente
       </button>
-      <button class="result__button result__button--secondary" (click)="share()">
+      <button class="result__button result__button-secondary" (click)="share()">
         📤 Compartilhar Resultado
       </button>
     </nav>

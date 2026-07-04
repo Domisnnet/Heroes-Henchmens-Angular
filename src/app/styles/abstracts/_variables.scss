@@ -20,12 +20,13 @@
   --radius-sm: .5rem;
 
   /* ==========================================================================
-   COLORS
+    COLORS
   ========================================================================== */
   /* Background */
   --bg-card: #242B33;
   --bg-primary: #12161A;
   --bg-secondary: #1A2026;
+  --bg-result: rgba(255,255,255,.08);
 
   /* Base */
   --black: #000;
@@ -38,49 +39,56 @@
   --gray-500: #7A7A7A;
   --gray-700: #4B4B4B;
   --gray-900: #111;
-  --chapter: rgba(255,255,255,.1);
+  --chapter: rgba(255,255,255,.10);
 
   /* Feedback */
   --success: #00E676;
   --warning: #FFD600;
   --danger: #FF1744;
 
-  /* Legacy / Accent */
+  /* Legacy */
   --viral-primary: #EEFF41;
   --viral-secondary: #D4FF00;
 
   /* ==========================================================================
-  CHARACTER COLORS
+    PERSONALITIES
   ========================================================================== */
   /* Hero */
-  --hero: #00E5FF;
+  --hero-primary: #00E5FF;
   --hero-secondary: #009DFF;
   --hero-glow: #80F4FF;
 
   /* Protector */
-  --protector: #00E676;
+  --protector-primary: #00E676;
   --protector-secondary: #00C853;
   --protector-glow: #69F0AE;
 
   /* Vigilante */
-  --vigilante: #7C4DFF;
+  --vigilante-primary: #7C4DFF;
   --vigilante-secondary: #651FFF;
   --vigilante-glow: #B388FF;
 
   /* Mercenary */
-  --mercenary: #FFD600;
+  --mercenary-primary: #FFD600;
   --mercenary-secondary: #FFB300;
   --mercenary-glow: #FFE082;
 
-  /* Villain */
-  --hench-primary: #E040FB;
-  --hench-secondary: #B517FF;
-  --hench-glow: #F29DFF;
+  /* Henchmen */
+  --henchmen-primary: #FB4040;
+  --henchmen-secondary: #E040FB;
+  --henchmen-glow: #F29DFF;
 
   /* ==========================================================================
     COMPONENTS
   ========================================================================== */
   --quiz-max-width: 43.75rem;
+
+  /* ==========================================================================
+    EFFECTS
+  ========================================================================== */
+  --effect-glow-opacity: .25;
+  --effect-bar-highlight: rgba(255,255,255,var(--effect-glow-opacity));
+  --effect-bar-shine: linear-gradient(90deg,transparent,var(--effect-bar-highlight),transparent);
 
   /* ==========================================================================
     IMAGES
@@ -92,88 +100,87 @@
   /* ==========================================================================
     LAYOUT
   ========================================================================== */
-  --container-padding: 5%;
-  --container-width: 75rem;
-  --content-max-width: 75rem;
-  --footer-height: 2.5rem;
-  --header-height: 2.5rem;
-  --viewport-height: 100vh;
+  --container-padding:5%;
+  --container-width:75rem;
+  --content-max-width:75rem;
+  --header-height:2.5rem;
+  --footer-height:2.5rem;
+  --viewport-height:100vh;
 
   /* ==========================================================================
     OPACITY
   ========================================================================== */
-  --overlay-dark: .55;
-  --overlay-heavy: .75;
-  --overlay-light: .15;
-  --overlay-medium: .35;
-  --overlay-ultra: .90;
+  --overlay-light:.15;
+  --overlay-medium:.35;
+  --overlay-dark:.55;
+  --overlay-heavy:.75;
+  --overlay-ultra:.90;
 
   /* ==========================================================================
     OVERLAYS
   ========================================================================== */
-  --background-overlay: linear-gradient(rgba(0,0,0,var(--overlay-ultra)), rgba(0,0,0,var(--overlay-ultra)));
+  --background-overlay: linear-gradient(rgba(0,0,0,var(--overlay-ultra)),rgba(0,0,0,var(--overlay-ultra)));
 
   /* ==========================================================================
     SHADOWS
   ========================================================================== */
-  --shadow-blur: .9375rem;
+  --shadow-blur:.9375rem;
   --shadow-card: var(--border-width) var(--border-width) var(--border-width) var(--success);
-  --shadow-hench: 0 0 var(--shadow-blur) rgba(224,64,251,.5);
-  --shadow-hero: 0 0 var(--shadow-blur) rgba(0,229,255,.5);
-  --shadow-protector: 0 0 var(--shadow-blur) rgba(0,230,118,.5);
-  --shadow-vigilante: 0 0 var(--shadow-blur) rgba(124,77,255,.5);
-  --shadow-mercenary: 0 0 var(--shadow-blur) rgba(255,214,0,.5);
-  --shadow-henchman: 0 0 var(--shadow-blur) rgba(224,64,251,.5);
+  --shadow-hero: 0 0 var(--shadow-blur) rgba(0,229,255,.50);
+  --shadow-protector: 0 0 var(--shadow-blur) rgba(0,230,118,.50);
+  --shadow-vigilante: 0 0 var(--shadow-blur) rgba(124,77,255,.50);
+  --shadow-mercenary: 0 0 var(--shadow-blur) rgba(255,214,0,.50);
+  --shadow-henchmen: 0 0 var(--shadow-blur) rgba(224,64,251,.50);
 
   /* ==========================================================================
     SPACING
   ========================================================================== */
-  --space-2xl: 3rem;
-  --space-3xl: 4rem;
-  --space-4xl: 5rem;
-  --space-5xl: 6rem;
-  --space-6xl: 7rem;
-  --space-lg: 1.5rem;
-  --space-md: 1rem;
-  --space-sm: .5rem;
-  --space-xl: 2rem;
-  --space-xs: .25rem;
-  --space-default: -60px;
-  --space-home: -80px;
+  --space-xs:.25rem;
+  --space-sm:.5rem;
+  --space-md:1rem;
+  --space-lg:1.5rem;
+  --space-xl:2rem;
+  --space-2xl:3rem;
+  --space-3xl:4rem;
+  --space-4xl:5rem;
+  --space-5xl:6rem;
+  --space-6xl:7rem;
+  --space-default:-60px;
+  --space-home:-80px;
 
   /* ==========================================================================
     SURFACES
   ========================================================================== */
-  --bg-overlay: rgba(0, 0, 0, 0.75);
+  --bg-overlay: rgba(0,0,0,.75);
 
   /* ==========================================================================
     TRANSITIONS
   ========================================================================== */
-  --transition-fast: .2s ease;
-  --transition-normal: .3s ease;
-  --transition-slow: .5s ease;
+  --transition-fast:.2s ease;
+  --transition-normal:.3s ease;
+  --transition-slow:.5s ease;
 
   /* ==========================================================================
     TYPOGRAPHY
   ========================================================================== */
-  --font-body: "Montserrat", sans-serif;
-  --font-heading: "Bebas Neue", sans-serif;
-  --text-2xl: 2rem;
-  --text-3xl: 3rem;
-  --text-4xl: 4rem;
-  --text-5xl: 6rem;
-  --text-lg: 1.25rem;
-  --text-md: 1rem;
-  --text-sm: .875rem;
-  --text-xl: 1.5rem;
-  --text-xs: .75rem;
+  --font-body:"Montserrat",sans-serif;
+  --font-heading:"Bebas Neue",sans-serif;
+  --text-xs:.75rem;
+  --text-sm:.875rem;
+  --text-md:1rem;
+  --text-lg:1.25rem;
+  --text-xl:1.5rem;
+  --text-2xl:2rem;
+  --text-3xl:3rem;
+  --text-4xl:4rem;
+  --text-5xl:6rem;
 
   /* ==========================================================================
     Z INDEX
   ========================================================================== */
-  --z-background: 1;
-  --z-content: 10;
-  --z-header: 100;
-  --z-footer: 200;
-  --z-modal: 1000;
+  --z-background:1;
+  --z-content:10;
+  --z-header:100;
+  --z-footer:200;
+  --z-modal:1000;
 }
