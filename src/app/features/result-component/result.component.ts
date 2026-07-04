@@ -26,7 +26,7 @@ export class ResultComponent {
   private readonly router = inject(Router);
   private readonly analysisService = inject(QuizAnalysisService);
   readonly result: ResultQuiz = this.facade.getResult();
-  readonly pageClass = `result__page result__page--${this.result.type}`
+  get pageClass(): string { return `result__page result__page-${this.result.type}`; }
   readonly analysis: AnalysisItem[] = this.analysisService.build(this.facade.history());
   readonly heroScore = this.facade.heroScore();
   readonly henchScore = this.facade.henchScore();

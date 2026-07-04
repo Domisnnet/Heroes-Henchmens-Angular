@@ -29,35 +29,35 @@
 /* ==========================================================================
   PERSONALITIES
 ========================================================================== */
-.result__analysis-fill {
+.result__page-hero {
   --result-primary: var(--hero-primary);
   --result-secondary: var(--hero-secondary);
   --result-glow: var(--hero-glow);
   --result-shadow: var(--shadow-hero);
 }
 
-.result__analysis-fill {
+.result__page-protector {
   --result-primary: var(--protector-primary);
   --result-secondary: var(--protector-secondary);
   --result-glow: var(--protector-glow);
   --result-shadow: var(--shadow-protector);
 }
 
-.result__analysis-fill {
+.result__page-vigilante {
   --result-primary: var(--vigilante-primary);
   --result-secondary: var(--vigilante-secondary);
   --result-glow: var(--vigilante-glow);
   --result-shadow: var(--shadow-vigilante);
 }
 
-.result__analysis-fill {
+.result__page-mercenary {
   --result-primary: var(--mercenary-primary);
   --result-secondary: var(--mercenary-secondary);
   --result-glow: var(--mercenary-glow);
   --result-shadow: var(--shadow-mercenary);
 }
 
-.result__analysis-fill {
+.result__page-henchmen {
   --result-primary: var(--henchmen-primary);
   --result-secondary: var(--henchmen-secondary);
   --result-glow: var(--henchmen-glow);
@@ -228,7 +228,8 @@
 }
 
 .result__analysis-label {
-  color: var(--gray-200);
+  color: var(--result-primary);
+  font-weight: 800;
   text-transform: capitalize;
 }
 
@@ -257,7 +258,7 @@
 }
 
 .result__analysis-value {
-  color: var(--white);
+  color: var(--result-primary);
   text-align: right;
 }
 
@@ -272,19 +273,17 @@
 }
 
 .result__button {
-  @include brutal-button;
   min-width: 15rem;
   padding: var(--space-md) var(--space-xl);
   border-radius: var(--radius-md);
   font-size: var(--text-md);
-  font-weight: 700;
+  font-weight: 800;
   color: var(--result-primary);
   transition: transform var(--transition-fast), background var(--transition-normal), color var(--transition-normal), box-shadow var(--transition-normal);
 }
 
 .result__button:hover {
   transform: translateY(-3px);
-  color: var(--result-secondary);
 }
 
 .result__button-primary {
