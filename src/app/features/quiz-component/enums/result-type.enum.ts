@@ -3,5 +3,5 @@ export enum ResultType {
   PROTECTOR = 'protector',
   VIGILANTE = 'vigilante',
   MERCENARY = 'mercenary',
-  HENCHMAN = 'henchman'
+  HENCHMEN = 'henchmen'
 }

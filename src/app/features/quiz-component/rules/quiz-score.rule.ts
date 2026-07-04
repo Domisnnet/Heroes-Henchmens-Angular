@@ -7,6 +7,6 @@ export class QuizScoreRule {
     if (difference >= QUIZ_CONSTANTS.RESULT_THRESHOLDS.PROTECTOR) return ResultType.PROTECTOR;
     if (difference > QUIZ_CONSTANTS.RESULT_THRESHOLDS.MERCENARY && difference < QUIZ_CONSTANTS.RESULT_THRESHOLDS.PROTECTOR) return ResultType.VIGILANTE;
     if (difference > QUIZ_CONSTANTS.RESULT_THRESHOLDS.MERCENARY) return ResultType.MERCENARY;
-    return ResultType.HENCHMAN;
+    return ResultType.HENCHMEN;
   }
 }

@@ -39,8 +39,8 @@ export const RESULTS: ResultQuiz[] = [
     image: 'assets/results/mercenary.png'
   },
   {
-    type: ResultType.HENCHMAN,
-    title: 'HENCHMAN',
+    type: ResultType.HENCHMEN,
+    title: 'HENCHMEN',
     subtitle: 'O Capanga do Caos',
     description: 'O caos é sua maior diversão.',
     text:
