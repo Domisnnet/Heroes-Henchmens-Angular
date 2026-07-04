@@ -107,7 +107,8 @@
 }
 
 .result__title {
-  margin: 0;
+  display: flex;
+  margin: -100px 0 0;
   color: var(--result-primary);
   font-family: var(--font-heading);
   font-size: var(--text-4xl);
@@ -276,9 +277,6 @@
   justify-content: center;
   gap: var(--space-lg);
   flex-wrap: wrap;
-}
-
-.result__button {
   min-width: 15rem;
   padding: var(--space-md) var(--space-xl);
   border-radius: var(--radius-md);
@@ -289,12 +287,13 @@
 }
 
 .result__button:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
 }
 
 .result__button-primary {
   background: transparent;
   border-color: var(--result-primary);
+  border: 4px solid var(--result-primary);
   color: var(--white);
 }
 
@@ -306,6 +305,7 @@
 .result__button-secondary {
   background: transparent;
   border-color: var(--result-primary);
+  border: 4px solid var(--result-primary);
   color: var(--white);
 }
 

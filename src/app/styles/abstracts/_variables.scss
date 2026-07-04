@@ -57,26 +57,31 @@
   --hero-primary: #00E5FF;
   --hero-secondary: #009DFF;
   --hero-glow: #80F4FF;
+  --shadow-hero: 10px 10px var(--shadow-blur) rgba(0, 81, 255, .50);
 
   /* Protector */
   --protector-primary: #00E676;
   --protector-secondary: #00C853;
   --protector-glow: #69F0AE;
+  --shadow-protector: 10px 10px var(--shadow-blur) rgba(2, 255, 133, .50);
 
   /* Vigilante */
   --vigilante-primary: #7C4DFF;
   --vigilante-secondary: #651FFF;
   --vigilante-glow: #B388FF;
+  --shadow-vigilante: 10px 10px var(--shadow-blur) rgba(68, 0, 255, .50);
 
   /* Mercenary */
   --mercenary-primary: #FFD600;
   --mercenary-secondary: #FFB300;
   --mercenary-glow: #FFE082;
+  --shadow-mercenary: 10px 10px var(--shadow-blur) rgba(255, 214, 0, .50);
 
   /* Henchmen */
   --henchmen-primary: #FB4040;
   --henchmen-secondary: #E040FB;
   --henchmen-glow: #F29DFF;
+  --shadow-henchmen: 10px 10px var(--shadow-blur) rgba(253, 0, 0, .50);
 
   /* ==========================================================================
     COMPONENTS
@@ -126,11 +131,6 @@
   ========================================================================== */
   --shadow-blur:.9375rem;
   --shadow-card: var(--border-width) var(--border-width) var(--border-width) var(--success);
-  --shadow-hero: 0 0 var(--shadow-blur) rgba(0,229,255,.50);
-  --shadow-protector: 0 0 var(--shadow-blur) rgba(0,230,118,.50);
-  --shadow-vigilante: 0 0 var(--shadow-blur) rgba(124,77,255,.50);
-  --shadow-mercenary: 0 0 var(--shadow-blur) rgba(255,214,0,.50);
-  --shadow-henchmen: 0 0 var(--shadow-blur) rgba(224,64,251,.50);
 
   /* ==========================================================================
     SPACING
