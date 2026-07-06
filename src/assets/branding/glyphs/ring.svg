@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="none">
+  <title>Anel da Ordem</title>
+  <desc>Structural Ring of The Order. Stabilizes and protects the Primordial Prism.</desc>
+  <defs>
+    <style>
+      .glyph {
+        fill: none;
+      }
+
+      .frame {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 28;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .frame-secondary {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 12;
+        opacity: .45;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .anchor {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 12;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g class="glyph">
+    <circle class="frame" cx="500" cy="500" r="370"/>
+    <circle class="frame-secondary" cx="500" cy="500" r="330"/>
+    <polygon class="anchor" points="500,81 514,95 500,109 486,95"/>
+    <polygon class="anchor" points="919,500 905,514 891,500 905,486"/>
+    <polygon class="anchor" points="738,814 752,828 738,842 724,828"/>
+    <polygon class="anchor" points="262,814 276,828 262,842 248,828"/>
+    <polygon class="anchor" points="81,500 95,514 109,500 95,486"/>
+  </g>
+</svg>

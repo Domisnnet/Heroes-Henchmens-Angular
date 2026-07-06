@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="none">
+  <title>Hexágono Estrutural</title>
+  <desc>Structural Hexagon. Foundational geometric unit of The Order architecture.</desc>
+  <defs>
+    <style>
+      .glyph {
+        fill: none;
+      }
+
+      .frame {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 28;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .frame-secondary {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 12;
+        opacity: .45;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .facet {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 12;
+        opacity: .65;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g class="glyph">
+    <polygon class="frame" points="500,140 810,320 810,680 500,860 190,680 190,320"/>
+    <polygon class="frame-secondary" points="500,215 745,355 745,645 500,785 255,645 255,355"/>
+    <line class="facet" x1="500" y1="140" x2="500" y2="860"/>
+    <line class="facet" x1="190" y1="320" x2="810" y2="680"/>
+    <line class="facet" x1="190" y1="680" x2="810" y2="320"/>
+  </g>
+</svg>

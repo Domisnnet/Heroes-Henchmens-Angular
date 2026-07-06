@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="none">
+  <title>Nó de Convergência</title>
+  <desc>Convergence Node. Represents a connection point between the Primordial Prism and the Structural Ring.</desc>
+  <defs>
+    <style>
+      .glyph {
+        fill: none;
+      }
+
+      .frame {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 28;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .frame-secondary {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 12;
+        opacity: .45;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .core {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 18;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .facet {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 12;
+        opacity: .65;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g class="glyph">
+    <polygon class="frame" points="500,220 780,500 500,780 220,500"/>
+    <polygon class="frame-secondary" points="500,285 715,500 500,715 285,500"/>
+    <polygon class="core" points="500,455 545,500 500,545 455,500"/>
+    <line class="facet" x1="500" y1="220" x2="500" y2="455"/>
+    <line class="facet" x1="780" y1="500" x2="545" y2="500"/>
+    <line class="facet" x1="500" y1="780" x2="500" y2="545"/>
+    <line class="facet" x1="220" y1="500" x2="455" y2="500"/>
+  </g>
+</svg>

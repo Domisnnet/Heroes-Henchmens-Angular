@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="none">
+  <title>Faísca Primordial</title>
+  <desc>Primordial Spark. Represents the first manifestation of energy from the Primordial Prism.</desc>
+  <defs>
+    <style>
+      .glyph {
+        fill: none;
+      }
+
+      .frame {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 18;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .core {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 24;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .facet {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 10;
+        opacity: .55;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g class="glyph">
+    <polygon class="core" points="500,455 545,500 500,545 455,500"/>
+    <polygon class="frame" points="500,255 520,275 500,295 480,275"/>
+    <polygon class="frame" points="705,500 725,520 705,540 685,520"/>
+    <polygon class="frame" points="500,705 520,725 500,745 480,725"/>
+    <polygon class="frame" points="255,500 275,520 255,540 235,520"/>
+    <line class="facet" x1="500" y1="295" x2="500" y2="455"/>
+    <line class="facet" x1="545" y1="500" x2="685" y2="520"/>
+    <line class="facet" x1="500" y1="545" x2="500" y2="705"/>
+    <line class="facet" x1="315" y1="520" x2="455" y2="500"/>
+  </g>
+</svg>

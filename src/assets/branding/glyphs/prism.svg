@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="none">
+  <title>Prisma Primordial</title>
+  <desc>Primary Glyph of The Order. Represents origin, balance and the source of every choice.</desc>
+  <defs>
+    <style>
+      .glyph {
+        fill: none;
+      }
+
+      .frame {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 28;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .frame-secondary {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 12;
+        opacity: .45;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .core {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 18;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .facet {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 12;
+        opacity: .65;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g class="glyph">
+    <polygon class="frame" points="500,120 760,500 500,880 240,500"/>
+    <polygon class="frame-secondary" points="500,190 700,500 500,810 300,500"/>
+    <polygon class="core" points="500,445 555,500 500,555 445,500"/>
+    <line class="facet" x1="500" y1="120" x2="500" y2="445"/>
+    <line class="facet" x1="760" y1="500" x2="555" y2="500"/>
+    <line class="facet" x1="500" y1="880" x2="500" y2="555"/>
+    <line class="facet" x1="240" y1="500" x2="445" y2="500"/>
+    <line class="facet" x1="500" y1="120" x2="445" y2="500"/>
+    <line class="facet" x1="500" y1="120" x2="555" y2="500"/>
+    <line class="facet" x1="760" y1="500" x2="500" y2="445"/>
+    <line class="facet" x1="760" y1="500" x2="500" y2="555"/>
+    <line class="facet" x1="500" y1="880" x2="445" y2="500"/>
+    <line class="facet" x1="500" y1="880" x2="555" y2="500"/>
+    <line class="facet" x1="240" y1="500" x2="500" y2="445"/>
+    <line class="facet" x1="240" y1="500" x2="500" y2="555"/>
+  </g>
+</svg>

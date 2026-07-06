@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240" fill="none">
+  <title>Aresta da Ordem</title>
+  <desc>Structural Edge. Connects major glyphs while maintaining energy continuity.</desc>
+  <defs>
+    <style>
+      .glyph {
+        fill: none;
+      }
+
+      .frame {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 18;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .frame-secondary {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 6;
+        opacity: .45;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .core {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 12;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g class="glyph">
+    <line class="frame" x1="120" y1="120" x2="880" y2="120"/>
+    <line class="frame-secondary" x1="120" y1="120" x2="880" y2="120"/>
+    <polygon class="core" points="120,120 150,90 180,120 150,150"/>
+    <polygon class="core" points="820,120 850,90 880,120 850,150"/>
+  </g>
+</svg>
