@@ -1,0 +1,96 @@
+/* ==========================================================================
+  BASE
+========================================================================== */
+.glyph {
+  fill: none;
+  color: currentColor;
+}
+
+/* ==========================================================================
+  PRIMARY FRAME
+========================================================================== */
+.glyph-frame {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 28;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ==========================================================================
+  SECONDARY FRAME
+========================================================================== */
+.glyph-frame--secondary {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 12;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: .45;
+}
+
+/* ==========================================================================
+  CORE
+========================================================================== */
+.glyph-core {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 18;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ==========================================================================
+  FACETS
+========================================================================== */
+.glyph-facet {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 12;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: .65;
+}
+
+/* ==========================================================================
+  ANCHORS
+========================================================================== */
+.glyph-anchor {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 12;
+  stroke-linejoin: round;
+}
+
+/* ==========================================================================
+  BEAMS
+========================================================================== */
+.glyph-beam--primary {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 18;
+  stroke-linecap: round;
+}
+
+.glyph-beam--core {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 6;
+  stroke-linecap: round;
+  opacity: .45;
+}
+
+/* ==========================================================================
+  ENERGY
+========================================================================== */
+.glyph-energy {
+  fill: currentColor;
+  opacity: .18;
+}
+
+/* ==========================================================================
+  HOVER
+========================================================================== */
+.glyph:hover .glyph-energy {
+  opacity: .30;
+}
