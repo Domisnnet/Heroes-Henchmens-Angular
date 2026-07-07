@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ===================================================== -->
+<!-- Artifact Library                                      -->
+<!-- Asset   : artifact-slot.svg                           -->
+<!-- Version : 1.0.0                                       -->
+<!-- Status  : Construction                                -->
+<!-- Order Design System                                   -->
+<!-- ===================================================== -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="none">
+  <title>Artifact Slot</title>
+  <desc>Precision mechanical slot responsible for positioning the Primordial Prism.</desc>
+  <defs>
+    <style>
+      .artifact {
+        fill: none;
+      }
+
+      .cradle {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .clamp {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 6;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .guide {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 4;
+        opacity: .55;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .stop {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g class="artifact">
+    <path class="cradle" d="M500 410 L560 470 L500 530 L440 470 Z"/>
+    <path class="clamp" d="M500 365 L500 405"/>
+    <path class="clamp" d="M635 500 L595 500"/>
+    <path class="clamp" d="M500 635 L500 595"/>
+    <path class="clamp" d="M365 500 L405 500"/>
+    <path class="guide" d="M470 440 L490 460"/>
+    <path class="guide" d="M530 440 L510 460"/>
+    <path class="guide" d="M560 470 L540 490"/>
+    <path class="guide" d="M560 530 L540 510"/>
+    <path class="guide" d="M530 560 L510 540"/>
+    <path class="guide" d="M470 560 L490 540"/>
+    <path class="guide" d="M440 530 L460 510"/>
+    <path class="guide" d="M440 470 L460 490"/>
+    <path class="stop" d="M500 392 L490 402 L500 412 L510 402 Z"/>
+    <path class="stop" d="M608 500 L598 490 L588 500 L598 510 Z"/>
+    <path class="stop" d="M500 608 L490 598 L500 588 L510 598 Z"/>
+    <path class="stop" d="M392 500 L402 490 L412 500 L402 510 Z"/>
+  </g>
+</svg>
