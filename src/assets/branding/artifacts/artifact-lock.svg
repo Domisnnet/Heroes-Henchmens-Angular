@@ -8,7 +8,8 @@
 <!-- ===================================================== -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="none">
   <title>Artifact Lock</title>
-  <desc>Mechanical locking mechanism that secures the Primordial Prism inside the containment system.</desc>
+  <desc>Mechanical locking mechanism responsible for securing
+    the Primordial Prism inside the containment system.</desc>
   <defs>
     <style>
       .artifact {
