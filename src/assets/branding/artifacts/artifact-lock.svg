@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ===================================================== -->
+<!-- Artifact Library                                      -->
+<!-- Asset   : artifact-lock.svg                           -->
+<!-- Version : 1.0.0                                       -->
+<!-- Status  : Construction                                -->
+<!-- Order Design System                                   -->
+<!-- ===================================================== -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="none">
+  <title>Artifact Lock</title>
+  <desc>Mechanical locking mechanism that secures the Primordial Prism inside the containment system.</desc>
+  <defs>
+    <style>
+      .artifact {
+        fill: none;
+      }
+
+      .lock-ring {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 6;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .latch {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 6;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .retainer {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 4;
+        opacity: .55;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .keyway {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g class="artifact">
+    <circle class="lock-ring" cx="500" cy="500" r="110"/>
+    <path class="latch" d="M500 390 L500 430"/>
+    <path class="latch" d="M610 500 L570 500"/>
+    <path class="latch" d="M500 610 L500 570"/>
+    <path class="latch" d="M390 500 L430 500"/>
+    <path class="retainer" d="M470 430 L490 450"/>
+    <path class="retainer" d="M530 430 L510 450"/>
+    <path class="retainer" d="M570 470 L550 490"/>
+    <path class="retainer" d="M570 530 L550 510"/>
+    <path class="retainer" d="M530 570 L510 550"/>
+    <path class="retainer" d="M470 570 L490 550"/>
+    <path class="retainer" d="M430 530 L450 510"/>
+    <path class="retainer" d="M430 470 L450 490"/>
+    <path class="keyway" d="M500 448 L500 468"/>
+    <path class="keyway" d="M552 500 L532 500"/>
+    <path class="keyway" d="M500 552 L500 532"/>
+    <path class="keyway" d="M448 500 L468 500"/>
+  </g>
+</svg>
