@@ -8,15 +8,14 @@
 <!-- ===================================================== -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="none">
   <title>Artifact Lock</title>
-  <desc>Mechanical locking mechanism that secures the
-    Primordial Prism inside the containment system.</desc>
+  <desc>Mechanical locking assembly responsible for locking the Primordial Prism.</desc>
   <defs>
     <style>
       .artifact {
         fill: none;
       }
 
-      .lock {
+      .lock-body {
         fill: none;
         stroke: currentColor;
         stroke-width: 6;
@@ -24,15 +23,15 @@
         stroke-linejoin: round;
       }
 
-      .latch {
+      .arm {
         fill: none;
         stroke: currentColor;
-        stroke-width: 6;
+        stroke-width: 8;
         stroke-linecap: round;
         stroke-linejoin: round;
       }
 
-      .retainer {
+      .brace {
         fill: none;
         stroke: currentColor;
         stroke-width: 4;
@@ -41,35 +40,31 @@
         stroke-linejoin: round;
       }
 
-      .keyway {
+      .stop {
         fill: none;
         stroke: currentColor;
-        stroke-width: 4;
+        stroke-width: 5;
         stroke-linecap: round;
         stroke-linejoin: round;
       }
     </style>
   </defs>
   <g class="artifact">
-    <path class="lock" d="M455 390 A110 110 0 0 1 545 390"/>
-    <path class="lock" d="M610 455 A110 110 0 0 1 610 545"/>
-    <path class="lock" d="M545 610 A110 110 0 0 1 455 610"/>
-    <path class="lock" d="M390 545 A110 110 0 0 1 390 455"/>
-    <path class="latch" d="M500 392 L500 430"/>
-    <path class="latch" d="M608 500 L570 500"/>
-    <path class="latch" d="M500 608 L500 570"/>
-    <path class="latch" d="M392 500 L430 500"/>
-    <path class="retainer" d="M470 430 L488 448"/>
-    <path class="retainer" d="M530 430 L512 448"/>
-    <path class="retainer" d="M570 470 L552 488"/>
-    <path class="retainer" d="M570 530 L552 512"/>
-    <path class="retainer" d="M530 570 L512 552"/>
-    <path class="retainer" d="M470 570 L488 552"/>
-    <path class="retainer" d="M430 530 L448 512"/>
-    <path class="retainer" d="M430 470 L448 488"/>
-    <path class="keyway" d="M500 445 L500 465"/>
-    <path class="keyway" d="M555 500 L535 500"/>
-    <path class="keyway" d="M500 555 L500 535"/>
-    <path class="keyway" d="M445 500 L465 500"/>
+    <path class="lock-body" d="M500 365 L530 395 L530 435 L500 465 L470 435 L470 395 Z"/>
+    <path class="lock-body" d="M635 500 L605 530 L565 530 L535 500 L565 470 L605 470 Z"/>
+    <path class="lock-body" d="M500 635 L470 605 L470 565 L500 535 L530 565 L530 605 Z"/>
+    <path class="lock-body" d="M365 500 L395 470 L435 470 L465 500 L435 530 L395 530 Z"/>
+    <path class="arm" d="M500 405 L500 455"/>
+    <path class="arm" d="M595 500 L545 500"/>
+    <path class="arm" d="M500 595 L500 545"/>
+    <path class="arm" d="M405 500 L455 500"/>
+    <path class="brace" d="M470 470 L490 490"/>
+    <path class="brace" d="M530 470 L510 490"/>
+    <path class="brace" d="M530 530 L510 510"/>
+    <path class="brace" d="M470 530 L490 510"/>
+    <path class="stop" d="M490 455 L500 445 L510 455"/>
+    <path class="stop" d="M545 490 L555 500 L545 510"/>
+    <path class="stop" d="M490 545 L500 555 L510 545"/>
+    <path class="stop" d="M455 490 L445 500 L455 510"/>
   </g>
 </svg>
