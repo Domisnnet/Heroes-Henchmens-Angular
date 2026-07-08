@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ===================================================== -->
+<!-- Artifact Library                                      -->
+<!-- Asset   : artifact-shield.svg                         -->
+<!-- Version : 1.0.0                                       -->
+<!-- Status  : Construction                                -->
+<!-- Order Design System                                   -->
+<!-- ===================================================== -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="none">
+  <title>Artifact Shield</title>
+  <desc>Secondary structural shield surrounding the artifact containment system.</desc>
+  <defs>
+    <style>
+      .artifact{
+        fill:none;
+      }
+
+      .shield{
+        fill:none;
+        stroke:currentColor;
+        stroke-width:8;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+      }
+
+      .shield-inner{
+        fill:none;
+        stroke:currentColor;
+        stroke-width:5;
+        opacity:.55;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+      }
+
+      .shield-node{
+        fill:none;
+        stroke:currentColor;
+        stroke-width:6;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+      }
+    </style>
+  </defs>
+  <g class="artifact">
+    <path class="shield" d="M220 140 L780 140 L860 220 L860 780 L780 860 L220 860 L140 780 L140 220 Z"/>
+    <path class="shield-inner" d="M270 190 L730 190 L810 270 L810 730 L730 810 L270 810 L190 730 L190 270 Z"/>
+    <path class="shield-node" d="M500 140 L500 190"/>
+    <path class="shield-node" d="M860 500 L810 500"/>
+    <path class="shield-node" d="M500 860 L500 810"/>
+    <path class="shield-node" d="M140 500 L190 500"/>
+    <path class="shield-node" d="M248 248 L278 278"/>
+    <path class="shield-node" d="M752 248 L722 278"/>
+    <path class="shield-node" d="M752 752 L722 722"/>
+    <path class="shield-node" d="M248 752 L278 722"/>
+  </g>
+</svg>
