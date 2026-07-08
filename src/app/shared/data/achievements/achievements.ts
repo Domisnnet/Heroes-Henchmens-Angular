@@ -8,5 +8,5 @@ export const ACHIEVEMENTS: Achievement[] = [
     icon: 'assets/branding/glyphs/prism.svg',
     rarity: 'common',
     unlocked: true,
-  }
+  },
 ];

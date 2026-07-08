@@ -1,14 +1,6 @@
-export type CodexClassification =
-  | 'artifact'
-  | 'entity'
-  | 'technology'
-  | 'location'
-  | 'protocol';
+export type CodexClassification = 'artifact' | 'entity' | 'technology' | 'location' | 'protocol';
 
-export type CodexSecurity =
-  | 'public'
-  | 'restricted'
-  | 'classified';
+export type CodexSecurity = 'public' | 'restricted' | 'classified';
 
 export interface TimelineEntry {
   id: string;

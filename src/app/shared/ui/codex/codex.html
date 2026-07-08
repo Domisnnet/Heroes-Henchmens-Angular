@@ -6,7 +6,7 @@
     </div>
   </header>
   <section class="codex__glyph">
-    <img class="codex__glyph-image" [src]="codex().glyph" [alt]="codex().title">
+    <img class="codex__glyph-image" [src]="codex().glyph" [alt]="codex().title" />
   </section>
   <section class="codex__identity">
     <h2 class="codex__title">{{ codex().title }}</h2>
@@ -29,14 +29,14 @@
   <section class="codex__tags">
     <h4>Tags</h4>
     <div class="codex__tag-list">
-      @for(tag of codex().tags; track tag){
+      @for (tag of codex().tags; track tag) {
         <span class="tag">{{ tag }}</span>
       }
     </div>
   </section>
   <section class="codex__timeline">
     <h4>Timeline</h4>
-    @for(event of codex().timeline; track event.id){
+    @for (event of codex().timeline; track event.id) {
       <article class="timeline-item">
         <span class="timeline-item__year">{{ event.year }}</span>
         <h5>{{ event.title }}</h5>
@@ -47,7 +47,7 @@
   <section class="codex__related">
     <h4>Related Artifacts</h4>
     <div class="codex__related-list">
-      @for(item of codex().relatedArtifacts; track item){
+      @for (item of codex().relatedArtifacts; track item) {
         <span class="related">{{ item }}</span>
       }
     </div>

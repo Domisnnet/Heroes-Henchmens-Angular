@@ -21,18 +21,18 @@
 .codex__title-group {
   display: flex;
   flex-direction: column;
-  gap: .35rem;
+  gap: 0.35rem;
 }
 
 .codex__system {
-  font-size: .85rem;
-  letter-spacing: .35rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.35rem;
   color: var(--brand-primary);
   text-transform: uppercase;
 }
 
 .codex__archive {
-  font-size: .75rem;
+  font-size: 0.75rem;
   color: var(--text-secondary);
 }
 
@@ -59,15 +59,15 @@
 }
 
 .codex__subtitle {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   color: var(--text-secondary);
-  font-size: .95rem;
+  font-size: 0.95rem;
   font-weight: 400;
 }
 
 .codex__metadata {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-lg);
   padding: var(--space-xl);
 }
@@ -75,12 +75,12 @@
 .metadata {
   display: flex;
   flex-direction: column;
-  gap: .4rem;
+  gap: 0.4rem;
 }
 
 .metadata__label {
   color: var(--text-secondary);
-  font-size: .72rem;
+  font-size: 0.72rem;
   text-transform: uppercase;
 }
 
@@ -114,16 +114,16 @@
 .codex__related-list {
   display: flex;
   flex-wrap: wrap;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .tag,
 .related {
-  padding: .35rem .75rem;
+  padding: 0.35rem 0.75rem;
   border-radius: var(--border-pill);
   border: 1px solid var(--border-primary);
   color: var(--brand-primary);
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 .timeline-item {
@@ -137,12 +137,12 @@
 
 .timeline-item__year {
   color: var(--brand-primary);
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 
 .timeline-item h5 {
-  margin: .4rem 0;
+  margin: 0.4rem 0;
 }
 
 .timeline-item p {
@@ -159,7 +159,7 @@
   padding: var(--space-lg);
   border-top: 1px solid var(--border-primary);
   color: var(--brand-primary);
-  letter-spacing: .25rem;
-  font-size: .75rem;
+  letter-spacing: 0.25rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
 }
