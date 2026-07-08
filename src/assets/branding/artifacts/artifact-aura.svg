@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ===================================================== -->
+<!-- Artifact Library                                      -->
+<!-- Asset   : artifact-aura.svg                           -->
+<!-- Version : 1.0.0                                       -->
+<!-- Status  : Construction                                -->
+<!-- Order Design System                                   -->
+<!-- ===================================================== -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="none">
+  <title>Artifact Aura</title>
+  <desc>External resonance field surrounding the artifact. 
+    Represents the final containment layer of The Order.</desc>
+  <defs>
+    <style>
+      .artifact{
+        fill:none;
+      }
+      .aura{
+        fill:none;
+        stroke:currentColor;
+        stroke-width:5;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+        opacity:.35;
+      }
+
+      .aura-secondary{
+        fill:none;
+        stroke:currentColor;
+        stroke-width:3;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+        opacity:.22;
+      }
+
+      .aura-node{
+        fill:none;
+        stroke:currentColor;
+        stroke-width:5;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+        opacity:.55;
+      }
+    </style>
+  </defs>
+  <g class="artifact">
+    <circle class="aura" cx="500" cy="500" r="430"/>
+    <circle class="aura-secondary" cx="500" cy="500" r="395"/>
+    <circle class="aura-secondary" cx="500" cy="500" r="360"/>
+    <path class="aura-node" d="M500 70 L500 105"/>
+    <path class="aura-node" d="M930 500 L895 500"/>
+    <path class="aura-node" d="M500 930 L500 895"/>
+    <path class="aura-node" d="M70 500 L105 500"/>
+    <path class="aura-node" d="M196 196 L221 221"/>
+    <path class="aura-node" d="M804 196 L779 221"/>
+    <path class="aura-node" d="M804 804 L779 779"/>
+    <path class="aura-node" d="M196 804 L221 779"/>
+  </g>
+</svg>
