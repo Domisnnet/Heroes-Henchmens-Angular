@@ -7,4 +7,12 @@
     <button class="home__button" (click)="startQuiz()">INICIAR JORNADA</button>
   </main>
 </section>
+<section class="artifact-test">
+  <app-artifact-viewer [size]="520">
+    <img
+      src="assets/branding/glyphs/prism.svg"
+      class="artifact-test__prism"
+      alt="Primordial Prism">
+  </app-artifact-viewer>
+</section>
 <app-footer [message]="footerMessage" />

@@ -65,3 +65,15 @@
 
   &:hover { transform: translate(-3px, -3px); }
 }
+
+.artifact-test{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+}
+
+.artifact-test__prism{
+  width:140px;
+  height:auto;
+}

@@ -1,0 +1,47 @@
+:host {
+  display: block;
+}
+
+.artifact-viewer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--artifact-size);
+  height: var(--artifact-size);
+}
+
+.artifact-stage {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+}
+
+.artifact-layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
+
+.artifact__aura { z-index: 10; }
+.artifact__shield { z-index: 20; }
+.artifact__frame { z-index: 30; }
+.artifact__core { z-index: 40; }
+.artifact__slot { z-index: 50; }
+.artifact__lock { z-index: 60; }
+.artifact__sigil { z-index: 70; }
+
+.artifact-content {
+  display: grid;
+  position: absolute;
+  inset: 0;
+  place-items: center;
+  z-index: 100;
+  pointer-events: none;
+}
