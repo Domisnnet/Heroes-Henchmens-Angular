@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ===================================================== -->
+<!-- Artifact Library                                      -->
+<!-- Asset   : artifact-sigil.svg                          -->
+<!-- Version : 1.0.0                                       -->
+<!-- Status  : Construction                                -->
+<!-- Order Design System                                   -->
+<!-- ===================================================== -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="none">
+  <title>Artifact Sigil</title>
+  <desc>Internal symbolic circuit representing the Order's synchronization protocol.</desc>
+  <defs>
+    <style>
+      .artifact{
+        fill:none;
+      }
+
+      .sigil{
+        fill:none;
+        stroke:currentColor;
+        stroke-width:6;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+      }
+
+      .sigil-secondary{
+        fill:none;
+        stroke:currentColor;
+        stroke-width:4;
+        opacity:.45;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+      }
+
+      .sigil-node{
+        fill:none;
+        stroke:currentColor;
+        stroke-width:6;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+      }
+    </style>
+  </defs>
+  <g class="artifact">
+    <path class="sigil" d="M500 310 L690 500 L500 690 L310 500 Z"/>
+    <path class="sigil-secondary" d="M500 390 L610 500 L500 610 L390 500 Z"/>
+    <path class="sigil-secondary" d="M500 310 L500 390"/>
+    <path class="sigil-secondary" d="M690 500 L610 500"/>
+    <path class="sigil-secondary" d="M500 690 L500 610"/>
+    <path class="sigil-secondary" d="M310 500 L390 500"/>
+    <path class="sigil-secondary" d="M365 365 L422 422"/>
+    <path class="sigil-secondary" d="M635 365 L578 422"/>
+    <path class="sigil-secondary" d="M635 635 L578 578"/>
+    <path class="sigil-secondary" d="M365 635 L422 578"/>
+    <circle class="sigil-node" cx="500" cy="310" r="12"/>
+    <circle class="sigil-node" cx="690" cy="500" r="12"/>
+    <circle class="sigil-node" cx="500" cy="690" r="12"/>
+    <circle class="sigil-node" cx="310" cy="500" r="12"/>
+    <circle class="sigil-node" cx="500" cy="500" r="16"/>
+  </g>
+</svg>
