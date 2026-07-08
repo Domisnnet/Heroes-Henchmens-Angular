@@ -14,10 +14,7 @@ import { CODEX_RECORDS } from '@shared/data/codex/codex.data';
   standalone: true,
   imports: [
     HeaderComponent,
-    FooterComponent,
-    ArtifactViewerComponent,
-    AchievementComponent,
-    CodexComponent,
+    FooterComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
