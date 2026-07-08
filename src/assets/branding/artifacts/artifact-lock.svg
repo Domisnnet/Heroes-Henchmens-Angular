@@ -8,63 +8,41 @@
 <!-- ===================================================== -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="none">
   <title>Artifact Lock</title>
-  <desc>Mechanical locking assembly responsible for locking the Primordial Prism.</desc>
+  <desc>Mechanical iris locking mechanism that secures the Primordial Prism.</desc>
   <defs>
     <style>
-      .artifact {
-        fill: none;
+      .artifact{
+        fill:none;
       }
 
-      .lock-body {
-        fill: none;
-        stroke: currentColor;
-        stroke-width: 6;
-        stroke-linecap: round;
-        stroke-linejoin: round;
+      .blade{
+        fill:none;
+        stroke:currentColor;
+        stroke-width:8;
+        stroke-linecap:round;
+        stroke-linejoin:round;
       }
 
-      .arm {
-        fill: none;
-        stroke: currentColor;
-        stroke-width: 8;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
-
-      .brace {
-        fill: none;
-        stroke: currentColor;
-        stroke-width: 4;
-        opacity: .55;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
-
-      .stop {
-        fill: none;
-        stroke: currentColor;
-        stroke-width: 5;
-        stroke-linecap: round;
-        stroke-linejoin: round;
+      .guide{
+        fill:none;
+        stroke:currentColor;
+        stroke-width:4;
+        opacity:.45;
+        stroke-linecap:round;
+        stroke-linejoin:round;
       }
     </style>
+    <path id="blade" class="blade" d="M500 380 L530 410 L515 455 L500 480 L485 455 L470 410 Z"/>
+    <path id="guide" class="guide" d="M500 455 L500 520"/>
   </defs>
   <g class="artifact">
-    <path class="lock-body" d="M500 365 L530 395 L530 435 L500 465 L470 435 L470 395 Z"/>
-    <path class="lock-body" d="M635 500 L605 530 L565 530 L535 500 L565 470 L605 470 Z"/>
-    <path class="lock-body" d="M500 635 L470 605 L470 565 L500 535 L530 565 L530 605 Z"/>
-    <path class="lock-body" d="M365 500 L395 470 L435 470 L465 500 L435 530 L395 530 Z"/>
-    <path class="arm" d="M500 405 L500 455"/>
-    <path class="arm" d="M595 500 L545 500"/>
-    <path class="arm" d="M500 595 L500 545"/>
-    <path class="arm" d="M405 500 L455 500"/>
-    <path class="brace" d="M470 470 L490 490"/>
-    <path class="brace" d="M530 470 L510 490"/>
-    <path class="brace" d="M530 530 L510 510"/>
-    <path class="brace" d="M470 530 L490 510"/>
-    <path class="stop" d="M490 455 L500 445 L510 455"/>
-    <path class="stop" d="M545 490 L555 500 L545 510"/>
-    <path class="stop" d="M490 545 L500 555 L510 545"/>
-    <path class="stop" d="M455 490 L445 500 L455 510"/>
+    <use href="#blade"/>
+    <use href="#guide"/>
+    <use href="#blade" transform="rotate(90 500 500)"/>
+    <use href="#guide" transform="rotate(90 500 500)"/>
+    <use href="#blade" transform="rotate(180 500 500)"/>
+    <use href="#guide" transform="rotate(180 500 500)"/>
+    <use href="#blade" transform="rotate(270 500 500)"/>
+    <use href="#guide" transform="rotate(270 500 500)"/>
   </g>
 </svg>
