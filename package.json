@@ -9,10 +9,13 @@
     "test": "ng test",
     "serve:ssr:y": "node dist/y/server/server.mjs",
     "format": "prettier --write .",
-    "prepare": "husky"
+    "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{ts,js,json,css,scss,md,html}": "prettier --write"
+    "*.{ts,js,json,css,scss,md,html}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   },
   "prettier": {
     "printWidth": 100,
@@ -49,6 +52,9 @@
     "@types/express": "^5.0.1",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^20.17.19",
+    "eslint": "^10.6.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
     "husky": "^9.1.7",
     "jasmine-core": "~5.9.0",
     "karma": "~6.4.0",
