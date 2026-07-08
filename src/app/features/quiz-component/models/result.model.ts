@@ -1,4 +1,4 @@
-import { ResultType } from "@quiz/enums/result-type.enum";
+import { ResultType } from '@quiz/enums/result-type.enum';
 export interface ResultQuiz {
   description: string;
   image: string;

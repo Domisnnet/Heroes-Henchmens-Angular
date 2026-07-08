@@ -3,7 +3,7 @@
   <section [class]="pageClass">
     <section class="result__hero">
       <figure class="result__image">
-        <img [src]="result.image" [alt]="result.title">
+        <img [src]="result.image" [alt]="result.title" />
       </figure>
       <article class="result__content">
         <h1 class="result__title">{{ result.title }}</h1>
@@ -17,14 +17,20 @@
       <div class="result__score-item">
         <span class="result__score-label-hero">Heroísmo</span>
         <div class="result__progress">
-          <div class="result__progress-bar result__progress-bar-hero" [style.width.%]="heroPercentage"></div>
+          <div
+            class="result__progress-bar result__progress-bar-hero"
+            [style.width.%]="heroPercentage"
+          ></div>
         </div>
         <strong class="result__score-value">{{ heroPercentage }}%</strong>
       </div>
       <div class="result__score-item">
         <span class="result__score-label-henchmen">Vilania</span>
         <div class="result__progress">
-          <div class="result__progress-bar result__progress-bar-henchmen" [style.width.%]="henchPercentage"></div>
+          <div
+            class="result__progress-bar result__progress-bar-henchmen"
+            [style.width.%]="henchPercentage"
+          ></div>
         </div>
         <strong class="result__score-value">{{ henchPercentage }}%</strong>
       </div>

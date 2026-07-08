@@ -37,7 +37,7 @@
   min-height: var(--viewport-height);
 }
 
-@mixin page-background( $image, $overlay: var(--background-overlay)) {
+@mixin page-background($image, $overlay: var(--background-overlay)) {
   background-image: $overlay, $image;
   background-position: center;
   background-repeat: no-repeat;
@@ -47,7 +47,7 @@
 @mixin page-card {
   @include brutal-card;
   @include flex-column;
-  width: min(var(--quiz-max-width), 100% );
+  width: min(var(--quiz-max-width), 100%);
   gap: var(--space-lg);
   padding: var(--space-xl);
   background: var(--bg-overlay);

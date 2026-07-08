@@ -22,7 +22,7 @@
   justify-content: center;
   color: var(--hero-secondary);
   padding-top: var(--space-lg);
-  line-height: .9;
+  line-height: 0.9;
   padding-bottom: var(--space-sm);
 }
 
@@ -63,17 +63,19 @@
   font-weight: 700;
   animation: pulse var(--animation-pulse);
 
-  &:hover { transform: translate(-3px, -3px); }
+  &:hover {
+    transform: translate(-3px, -3px);
+  }
 }
 
-.artifact-test{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  min-height:100vh;
+.artifact-test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.artifact-test__prism{
-  width:140px;
-  height:auto;
+.artifact-test__prism {
+  width: 140px;
+  height: auto;
 }

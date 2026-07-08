@@ -16,74 +16,74 @@
   ========================================================================== */
   --radius-full: 999rem;
   --radius-lg: 1rem;
-  --radius-md: .75rem;
-  --radius-sm: .5rem;
+  --radius-md: 0.75rem;
+  --radius-sm: 0.5rem;
 
   /* ==========================================================================
     COLORS
   ========================================================================== */
   /* Background */
-  --bg-card: #242B33;
-  --bg-primary: #12161A;
-  --bg-secondary: #1A2026;
-  --bg-result: rgba(255,255,255,.08);
+  --bg-card: #242b33;
+  --bg-primary: #12161a;
+  --bg-secondary: #1a2026;
+  --bg-result: rgba(255, 255, 255, 0.08);
 
   /* Base */
   --black: #000;
-  --white: #FFF;
+  --white: #fff;
 
   /* Neutral */
-  --gray-100: #F5F5F5;
-  --gray-200: #E5E5E5;
-  --gray-300: #C7C7C7;
-  --gray-500: #7A7A7A;
-  --gray-600: #5A5A5A;
-  --gray-700: #4B4B4B;
-  --gray-800: #3B3B3B;
+  --gray-100: #f5f5f5;
+  --gray-200: #e5e5e5;
+  --gray-300: #c7c7c7;
+  --gray-500: #7a7a7a;
+  --gray-600: #5a5a5a;
+  --gray-700: #4b4b4b;
+  --gray-800: #3b3b3b;
   --gray-900: #111;
-  --chapter: rgba(255,255,255,.10);
+  --chapter: rgba(255, 255, 255, 0.1);
 
   /* Feedback */
-  --success: #00E676;
-  --warning: #FFD600;
-  --danger: #FF1744;
+  --success: #00e676;
+  --warning: #ffd600;
+  --danger: #ff1744;
 
   /* Legacy */
-  --viral-primary: #EEFF41;
-  --viral-secondary: #D4FF00;
+  --viral-primary: #eeff41;
+  --viral-secondary: #d4ff00;
 
   /* ==========================================================================
     PERSONALITIES
   ========================================================================== */
   /* Hero */
-  --hero-primary: #00E5FF;
-  --hero-secondary: #009DFF;
-  --hero-glow: #80F4FF;
-  --shadow-hero: 10px 10px var(--shadow-blur) rgba(0, 81, 255, .50);
+  --hero-primary: #00e5ff;
+  --hero-secondary: #009dff;
+  --hero-glow: #80f4ff;
+  --shadow-hero: 10px 10px var(--shadow-blur) rgba(0, 81, 255, 0.5);
 
   /* Protector */
-  --protector-primary: #00E676;
-  --protector-secondary: #00C853;
-  --protector-glow: #69F0AE;
-  --shadow-protector: 10px 10px var(--shadow-blur) rgba(2, 255, 133, .50);
+  --protector-primary: #00e676;
+  --protector-secondary: #00c853;
+  --protector-glow: #69f0ae;
+  --shadow-protector: 10px 10px var(--shadow-blur) rgba(2, 255, 133, 0.5);
 
   /* Vigilante */
-  --vigilante-primary: #7C4DFF;
-  --vigilante-secondary: #651FFF;
-  --vigilante-glow: #B388FF;
-  --shadow-vigilante: 10px 10px var(--shadow-blur) rgba(68, 0, 255, .50);
+  --vigilante-primary: #7c4dff;
+  --vigilante-secondary: #651fff;
+  --vigilante-glow: #b388ff;
+  --shadow-vigilante: 10px 10px var(--shadow-blur) rgba(68, 0, 255, 0.5);
 
   /* Mercenary */
-  --mercenary-primary: #FFD600;
-  --mercenary-secondary: #FFB300;
-  --mercenary-glow: #FFE082;
-  --shadow-mercenary: 10px 10px var(--shadow-blur) rgba(255, 214, 0, .50);
+  --mercenary-primary: #ffd600;
+  --mercenary-secondary: #ffb300;
+  --mercenary-glow: #ffe082;
+  --shadow-mercenary: 10px 10px var(--shadow-blur) rgba(255, 214, 0, 0.5);
 
   /* Henchmen */
-  --henchmen-primary: #FB4040;
-  --henchmen-secondary: #E040FB;
-  --henchmen-glow: #F29DFF;
-  --shadow-henchmen: 10px 10px var(--shadow-blur) rgba(253, 0, 0, .50);
+  --henchmen-primary: #fb4040;
+  --henchmen-secondary: #e040fb;
+  --henchmen-glow: #f29dff;
+  --shadow-henchmen: 10px 10px var(--shadow-blur) rgba(253, 0, 0, 0.5);
 
   /* ==========================================================================
     COMPONENTS
@@ -93,9 +93,9 @@
   /* ==========================================================================
     EFFECTS
   ========================================================================== */
-  --effect-glow-opacity: .25;
-  --effect-bar-highlight: rgba(255,255,255,var(--effect-glow-opacity));
-  --effect-bar-shine: linear-gradient(90deg,transparent,var(--effect-bar-highlight),transparent);
+  --effect-glow-opacity: 0.25;
+  --effect-bar-highlight: rgba(255, 255, 255, var(--effect-glow-opacity));
+  --effect-bar-shine: linear-gradient(90deg, transparent, var(--effect-bar-highlight), transparent);
 
   /* ==========================================================================
     IMAGES
@@ -107,48 +107,51 @@
   /* ==========================================================================
     LAYOUT
   ========================================================================== */
-  --container-padding:5%;
-  --container-width:75rem;
-  --content-max-width:75rem;
-  --header-height:2.5rem;
-  --footer-height:2.5rem;
-  --viewport-height:100vh;
+  --container-padding: 5%;
+  --container-width: 75rem;
+  --content-max-width: 75rem;
+  --header-height: 2.5rem;
+  --footer-height: 2.5rem;
+  --viewport-height: 100vh;
 
   /* ==========================================================================
     OPACITY
   ========================================================================== */
-  --overlay-light:.15;
-  --overlay-medium:.35;
-  --overlay-dark:.55;
-  --overlay-heavy:.75;
-  --overlay-ultra:.90;
+  --overlay-light: 0.15;
+  --overlay-medium: 0.35;
+  --overlay-dark: 0.55;
+  --overlay-heavy: 0.75;
+  --overlay-ultra: 0.9;
 
   /* ==========================================================================
     OVERLAYS
   ========================================================================== */
-  --background-overlay: linear-gradient(rgba(0,0,0,var(--overlay-ultra)),rgba(0,0,0,var(--overlay-ultra)));
+  --background-overlay: linear-gradient(
+    rgba(0, 0, 0, var(--overlay-ultra)),
+    rgba(0, 0, 0, var(--overlay-ultra))
+  );
 
   /* ==========================================================================
     SHADOWS
   ========================================================================== */
-  --shadow-blur:.9375rem;
+  --shadow-blur: 0.9375rem;
   --shadow-card: var(--border-width) var(--border-width) var(--border-width) var(--success);
 
   /* ==========================================================================
     SPACING
   ========================================================================== */
-  --space-xs:.25rem;
-  --space-sm:.5rem;
-  --space-md:1rem;
-  --space-lg:1.5rem;
-  --space-xl:2rem;
-  --space-2xl:3rem;
-  --space-3xl:4rem;
-  --space-4xl:5rem;
-  --space-5xl:6rem;
-  --space-6xl:7rem;
-  --space-default:-60px;
-  --space-home:-80px;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 5rem;
+  --space-5xl: 6rem;
+  --space-6xl: 7rem;
+  --space-default: -60px;
+  --space-home: -80px;
   --space-image: 180px;
   --space-image-margin: 70px;
   --artifact-size: 320px;
@@ -156,36 +159,36 @@
   /* ==========================================================================
     SURFACES
   ========================================================================== */
-  --bg-overlay: rgba(0,0,0,.75);
+  --bg-overlay: rgba(0, 0, 0, 0.75);
 
   /* ==========================================================================
     TRANSITIONS
   ========================================================================== */
-  --transition-fast:.2s ease;
-  --transition-normal:.3s ease;
-  --transition-slow:.5s ease;
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
 
   /* ==========================================================================
     TYPOGRAPHY
   ========================================================================== */
-  --font-body:"Montserrat",sans-serif;
-  --font-heading:"Bebas Neue",sans-serif;
-  --text-xs:.75rem;
-  --text-sm:.875rem;
-  --text-md:1rem;
-  --text-lg:1.25rem;
-  --text-xl:1.5rem;
-  --text-2xl:2rem;
-  --text-3xl:3rem;
-  --text-4xl:4rem;
-  --text-5xl:6rem;
+  --font-body: 'Montserrat', sans-serif;
+  --font-heading: 'Bebas Neue', sans-serif;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 3rem;
+  --text-4xl: 4rem;
+  --text-5xl: 6rem;
 
   /* ==========================================================================
     Z INDEX
   ========================================================================== */
-  --z-background:1;
-  --z-content:10;
-  --z-header:100;
-  --z-footer:200;
-  --z-modal:1000;
+  --z-background: 1;
+  --z-content: 10;
+  --z-header: 100;
+  --z-footer: 200;
+  --z-modal: 1000;
 }

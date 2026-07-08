@@ -12,13 +12,9 @@ import { CHAPTERS } from '@quiz/constants/chapter.constants';
 @Component({
   selector: 'app-quiz-component',
   standalone: true,
-  imports: [
-    CommonModule,
-    HeaderComponent,
-    FooterComponent
-  ],
+  imports: [CommonModule, HeaderComponent, FooterComponent],
   templateUrl: './quiz.component.html',
-  styleUrls: ['./quiz.component.scss']
+  styleUrls: ['./quiz.component.scss'],
 })
 export class QuizComponent {
   private readonly facade = inject(QuizFacade);
@@ -35,7 +31,7 @@ export class QuizComponent {
     return {
       title: chap.title,
       subtitle: chap.subtitle,
-      categoryTitle: catInfo.title
+      categoryTitle: catInfo.title,
     };
   });
 
@@ -43,7 +39,13 @@ export class QuizComponent {
     this.watchQuizCompletion();
   }
   private watchQuizCompletion(): void {
-    effect(() => { if (this.facade.finished()) { this.router.navigate(['/result']); } });
+    effect(() => {
+      if (this.facade.finished()) {
+        this.router.navigate(['/result']);
+      }
+    });
   }
-  answers(answer: Answer): void { this.facade.answer(answer); }
+  answers(answer: Answer): void {
+    this.facade.answer(answer);
+  }
 }

@@ -4,16 +4,26 @@ import { Answer } from '@quiz/models/answer.model';
 import { QuizEngineService } from '@quiz/services/quiz-engine.service';
 import { SelectedAnswer } from '@quiz/models/selected-answer.model';
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class QuizFacade {
   private readonly engine = inject(QuizEngineService);
-  readonly currentQuestion = toSignal( this.engine.currentQuestion$, { initialValue: this.engine.currentQuestion } );
-  readonly heroScore = toSignal( this.engine.heroScore$, { initialValue: this.engine.heroScore } );
-  readonly henchScore = toSignal( this.engine.henchScore$, { initialValue: this.engine.henchScore } );
-  readonly finished = toSignal( this.engine.finished$, { initialValue: this.engine.finished } );
-  answer(answer: Answer): void { this.engine.answer(answer); }
-  reset(): void { this.engine.reset(); }
-  getResult() { return this.engine.getResult(); }
-  history(): SelectedAnswer[] { return this.engine.answersHistory; }
+  readonly currentQuestion = toSignal(this.engine.currentQuestion$, {
+    initialValue: this.engine.currentQuestion,
+  });
+  readonly heroScore = toSignal(this.engine.heroScore$, { initialValue: this.engine.heroScore });
+  readonly henchScore = toSignal(this.engine.henchScore$, { initialValue: this.engine.henchScore });
+  readonly finished = toSignal(this.engine.finished$, { initialValue: this.engine.finished });
+  answer(answer: Answer): void {
+    this.engine.answer(answer);
+  }
+  reset(): void {
+    this.engine.reset();
+  }
+  getResult() {
+    return this.engine.getResult();
+  }
+  history(): SelectedAnswer[] {
+    return this.engine.answersHistory;
+  }
 }

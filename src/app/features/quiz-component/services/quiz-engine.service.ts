@@ -11,7 +11,7 @@ import { ResultRepository } from '@quiz/repository/result.repository';
 import { QuizScoreRule } from '@quiz/rules/quiz-score.rule';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class QuizEngineService {
   private currentIndex = QUIZ_CONSTANTS.INITIAL_QUESTION;
@@ -20,25 +20,30 @@ export class QuizEngineService {
   private readonly selectedAnswers: SelectedAnswer[] = [];
   private readonly currentQuestionSubject: BehaviorSubject<Question>;
   readonly currentQuestion$: Observable<Question>;
-  private readonly heroScoreSubject = new BehaviorSubject<number>(QUIZ_CONSTANTS.INITIAL_SCORE.hero);
-  private readonly henchScoreSubject = new BehaviorSubject<number>(QUIZ_CONSTANTS.INITIAL_SCORE.hench);
+  private readonly heroScoreSubject = new BehaviorSubject<number>(
+    QUIZ_CONSTANTS.INITIAL_SCORE.hero,
+  );
+  private readonly henchScoreSubject = new BehaviorSubject<number>(
+    QUIZ_CONSTANTS.INITIAL_SCORE.hench,
+  );
   private readonly finishedSubject = new BehaviorSubject<boolean>(false);
   readonly heroScore$ = this.heroScoreSubject.asObservable();
   readonly henchScore$ = this.henchScoreSubject.asObservable();
   readonly finished$ = this.finishedSubject.asObservable();
   constructor(
-  private readonly questionRepository: QuestionRepository,
-  private readonly resultRepository: ResultRepository
-) {
-  this.currentQuestionSubject = new BehaviorSubject<Question>(
-    this.questionRepository.getFirst()
-  );
-  this.currentQuestion$ = this.currentQuestionSubject.asObservable();
+    private readonly questionRepository: QuestionRepository,
+    private readonly resultRepository: ResultRepository,
+  ) {
+    this.currentQuestionSubject = new BehaviorSubject<Question>(this.questionRepository.getFirst());
+    this.currentQuestion$ = this.currentQuestionSubject.asObservable();
   }
   answer(answer: Answer): void {
-    if (this.finished) { return; }
+    if (this.finished) {
+      return;
+    }
     this.selectedAnswers.push({ question: this.currentQuestion, answer });
-    this.addScore(answer); this.nextQuestion();
+    this.addScore(answer);
+    this.nextQuestion();
   }
   reset(): void {
     this.currentIndex = QUIZ_CONSTANTS.INITIAL_QUESTION;
@@ -51,14 +56,24 @@ export class QuizEngineService {
     this.loadCurrentQuestion();
   }
   getResult(): ResultQuiz {
-    const resultType = QuizScoreRule.resolve( this.heroPoints, this.henchPoints );
+    const resultType = QuizScoreRule.resolve(this.heroPoints, this.henchPoints);
     return this.resultRepository.getByType(resultType)!;
   }
-  get currentQuestion(): Question { return this.currentQuestionSubject.value; }
-  get heroScore(): number { return this.heroPoints; }
-  get henchScore(): number { return this.henchPoints; }
-  get finished(): boolean { return this.finishedSubject.value; }
-  get answersHistory(): SelectedAnswer[] { return [...this.selectedAnswers]; }
+  get currentQuestion(): Question {
+    return this.currentQuestionSubject.value;
+  }
+  get heroScore(): number {
+    return this.heroPoints;
+  }
+  get henchScore(): number {
+    return this.henchPoints;
+  }
+  get finished(): boolean {
+    return this.finishedSubject.value;
+  }
+  get answersHistory(): SelectedAnswer[] {
+    return [...this.selectedAnswers];
+  }
   get score(): QuizScore {
     return { hero: this.heroPoints, hench: this.henchPoints };
   }
@@ -70,13 +85,16 @@ export class QuizEngineService {
   }
   private nextQuestion(): void {
     this.currentIndex++;
-    if (this.currentIndex >= this.questionRepository.getTotal()) { 
-      this.finishedSubject.next(true); 
-      return; 
+    if (this.currentIndex >= this.questionRepository.getTotal()) {
+      this.finishedSubject.next(true);
+      return;
     }
     this.loadCurrentQuestion();
   }
-  private loadCurrentQuestion(): void { const question = this.questionRepository.getByIndex(this.currentIndex);
-    if (question) { this.currentQuestionSubject.next(question); }
+  private loadCurrentQuestion(): void {
+    const question = this.questionRepository.getByIndex(this.currentIndex);
+    if (question) {
+      this.currentQuestionSubject.next(question);
+    }
   }
 }

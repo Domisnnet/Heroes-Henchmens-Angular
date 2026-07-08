@@ -8,5 +8,5 @@ export enum QuestionCategory {
   MORAL = 'Moral',
   POWER = 'Poder',
   RESPONSIBILITY = 'Responsabilidade',
-  SACRIFICE = 'Sacrifício'
+  SACRIFICE = 'Sacrifício',
 }

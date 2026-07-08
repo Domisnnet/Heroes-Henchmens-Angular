@@ -57,5 +57,8 @@
   font-weight: 700;
   margin-bottom: var(--space-md);
 
-  &:hover { background: var(--success); color: var(--black); }
+  &:hover {
+    background: var(--success);
+    color: var(--black);
+  }
 }

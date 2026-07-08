@@ -14,7 +14,7 @@ export const QUESTIONS: Question[] = [
         text: 'Procuro imediatamente o dono.',
         heroPoints: 3,
         henchPoints: 0,
-        feedback: 'Você acredita que honestidade vale mais do que qualquer recompensa.'
+        feedback: 'Você acredita que honestidade vale mais do que qualquer recompensa.',
       },
       {
         id: 2,
@@ -22,7 +22,7 @@ export const QUESTIONS: Question[] = [
         text: 'Entrego a carteira às autoridades.',
         heroPoints: 2,
         henchPoints: 1,
-        feedback: 'Você prefere seguir os caminhos corretos e confiar nas instituições.'
+        feedback: 'Você prefere seguir os caminhos corretos e confiar nas instituições.',
       },
       {
         id: 3,
@@ -30,7 +30,7 @@ export const QUESTIONS: Question[] = [
         text: 'Espero que o dono ofereça alguma recompensa.',
         heroPoints: 1,
         henchPoints: 2,
-        feedback: 'Você ajuda, mas espera receber algo em troca.'
+        feedback: 'Você ajuda, mas espera receber algo em troca.',
       },
       {
         id: 4,
@@ -38,9 +38,9 @@ export const QUESTIONS: Question[] = [
         text: 'Fico com o dinheiro e descarto a carteira.',
         heroPoints: 0,
         henchPoints: 3,
-        feedback: 'O benefício pessoal falou mais alto que o dever.'
-      }
-    ]
+        feedback: 'O benefício pessoal falou mais alto que o dever.',
+      },
+    ],
   },
   {
     id: 2,
@@ -54,7 +54,7 @@ export const QUESTIONS: Question[] = [
         text: 'Defendo meu colega imediatamente.',
         heroPoints: 3,
         henchPoints: 0,
-        feedback: 'Você não permanece em silêncio diante de uma injustiça.'
+        feedback: 'Você não permanece em silêncio diante de uma injustiça.',
       },
       {
         id: 2,
@@ -62,7 +62,7 @@ export const QUESTIONS: Question[] = [
         text: 'Apresento os fatos com calma antes de acusar alguém.',
         heroPoints: 2,
         henchPoints: 1,
-        feedback: 'Você acredita que justiça exige responsabilidade e equilíbrio.'
+        feedback: 'Você acredita que justiça exige responsabilidade e equilíbrio.',
       },
       {
         id: 3,
@@ -70,7 +70,7 @@ export const QUESTIONS: Question[] = [
         text: 'Prefiro não me envolver no problem.',
         heroPoints: 1,
         henchPoints: 2,
-        feedback: 'Evitar conflitos parece mais seguro do que enfrentá-los.'
+        feedback: 'Evitar conflitos parece mais seguro do que enfrentá-los.',
       },
       {
         id: 4,
@@ -78,9 +78,9 @@ export const QUESTIONS: Question[] = [
         text: 'Aproveito a situação para ganhar vantagem.',
         heroPoints: 0,
         henchPoints: 3,
-        feedback: 'Você transforma a dificuldade dos outros em oportunidade.'
-      }
-    ]
+        feedback: 'Você transforma a dificuldade dos outros em oportunidade.',
+      },
+    ],
   },
   {
     id: 3,
@@ -94,7 +94,7 @@ export const QUESTIONS: Question[] = [
         text: 'Aprender a controlar meus poderes antes de agir.',
         heroPoints: 3,
         henchPoints: 0,
-        feedback: 'Você entende que grandes poderes exigem autocontrole.'
+        feedback: 'Você entende que grandes poderes exigem autocontrole.',
       },
       {
         id: 2,
@@ -102,7 +102,7 @@ export const QUESTIONS: Question[] = [
         text: 'Usá-los apenas quando realmente forem necessários.',
         heroPoints: 2,
         henchPoints: 1,
-        feedback: 'Você prefere agir com responsabilidade e cautela.'
+        feedback: 'Você prefere agir com responsabilidade e cautela.',
       },
       {
         id: 3,
@@ -110,7 +110,7 @@ export const QUESTIONS: Question[] = [
         text: 'Testar meus limites para descobrir até onde consigo chegar.',
         heroPoints: 1,
         henchPoints: 2,
-        feedback: 'A curiosidade fala mais alto do que a prudência.'
+        feedback: 'A curiosidade fala mais alto do que a prudência.',
       },
       {
         id: 4,
@@ -118,9 +118,9 @@ export const QUESTIONS: Question[] = [
         text: 'Agora ninguém poderá me impedir.',
         heroPoints: 0,
         henchPoints: 3,
-        feedback: 'O poder rapidamente se tornou um instrumento de domínio.'
-      }
-    ]
+        feedback: 'O poder rapidamente se tornou um instrumento de domínio.',
+      },
+    ],
   },
   {
     id: 4,
@@ -134,7 +134,7 @@ export const QUESTIONS: Question[] = [
         text: 'Resgato as crianças presas no último andar.',
         heroPoints: 3,
         henchPoints: 0,
-        feedback: 'Você protege primeiro aqueles que não conseguem se defender.'
+        feedback: 'Você protege primeiro aqueles que não conseguem se defender.',
       },
       {
         id: 2,
@@ -142,7 +142,7 @@ export const QUESTIONS: Question[] = [
         text: 'Salvo a equipe de bombeiros para que possam continuar o resgate.',
         heroPoints: 2,
         henchPoints: 1,
-        feedback: 'Você pensa no impacto coletivo das suas decisões.'
+        feedback: 'Você pensa no impacto coletivo das suas decisões.',
       },
       {
         id: 3,
@@ -150,7 +150,7 @@ export const QUESTIONS: Question[] = [
         text: 'Procuro quem possa ser mais útil no futuro.',
         heroPoints: 1,
         henchPoints: 2,
-        feedback: 'Você mede o valor das pessoas pelos resultados que podem oferecer.'
+        feedback: 'Você mede o valor das pessoas pelos resultados que podem oferecer.',
       },
       {
         id: 4,
@@ -158,9 +158,9 @@ export const QUESTIONS: Question[] = [
         text: 'Vou atrás do responsável pelo desastre.',
         heroPoints: 0,
         henchPoints: 3,
-        feedback: 'Punir o culpado parece mais importante do que salvar as vítimas.'
-      }
-    ]
+        feedback: 'Punir o culpado parece mais importante do que salvar as vítimas.',
+      },
+    ],
   },
   {
     id: 5,
@@ -174,7 +174,7 @@ export const QUESTIONS: Question[] = [
         text: 'Continuo ajudando, custe o que custar.',
         heroPoints: 3,
         henchPoints: 0,
-        feedback: 'Você coloca o bem coletivo acima da própria vida.'
+        feedback: 'Você coloca o bem coletivo acima da própria vida.',
       },
       {
         id: 2,
@@ -182,7 +182,7 @@ export const QUESTIONS: Question[] = [
         text: 'Usarei meus poderes apenas quando realmente forem necessários.',
         heroPoints: 2,
         henchPoints: 1,
-        feedback: 'Você busca equilibrar responsabilidade e sobrevivência.'
+        feedback: 'Você busca equilibrar responsabilidade e sobrevivência.',
       },
       {
         id: 3,
@@ -190,7 +190,7 @@ export const QUESTIONS: Question[] = [
         text: 'Reservo meus poderes para situações que me beneficiem.',
         heroPoints: 1,
         henchPoints: 2,
-        feedback: 'Seu instinto de autopreservação começa a dominar suas escolhas.'
+        feedback: 'Seu instinto de autopreservação começa a dominar suas escolhas.',
       },
       {
         id: 4,
@@ -198,9 +198,9 @@ export const QUESTIONS: Question[] = [
         text: 'Nunca mais ajudarei ninguém.',
         heroPoints: 0,
         henchPoints: 3,
-        feedback: 'Seu próprio bem-estar tornou-se mais importante que qualquer outra vida.'
-      }
-    ]
+        feedback: 'Seu próprio bem-estar tornou-se mais importante que qualquer outra vida.',
+      },
+    ],
   },
   {
     id: 6,
@@ -214,7 +214,7 @@ export const QUESTIONS: Question[] = [
         text: 'Socorro o inimigo e o entrego às autoridades.',
         heroPoints: 3,
         henchPoints: 0,
-        feedback: 'Sua compaixão é maior que seu desejo de vingança.'
+        feedback: 'Sua compaixão é maior que seu desejo de vingança.',
       },
       {
         id: 2,
@@ -222,7 +222,7 @@ export const QUESTIONS: Question[] = [
         text: 'Prendo o inimigo e deixo a justiça decidir.',
         heroPoints: 2,
         henchPoints: 1,
-        feedback: 'Você acredita que todos devem responder pelos próprios atos.'
+        feedback: 'Você acredita que todos devem responder pelos próprios atos.',
       },
       {
         id: 3,
@@ -230,7 +230,7 @@ export const QUESTIONS: Question[] = [
         text: 'Vou embora e deixo que ele decida seu próprio destino.',
         heroPoints: 1,
         henchPoints: 2,
-        feedback: 'Você prefere não assumir a responsabilidade por seu inimigo.'
+        feedback: 'Você prefere não assumir a responsabilidade por seu inimigo.',
       },
       {
         id: 4,
@@ -238,9 +238,9 @@ export const QUESTIONS: Question[] = [
         text: 'Acabo definitivamente com a ameaça.',
         heroPoints: 0,
         henchPoints: 3,
-        feedback: 'Você acredita que algumas ameaças nunca merecem uma segunda chance.'
-      }
-    ]
+        feedback: 'Você acredita que algumas ameaças nunca merecem uma segunda chance.',
+      },
+    ],
   },
   {
     id: 7,
@@ -254,7 +254,7 @@ export const QUESTIONS: Question[] = [
         text: 'Continuo protegendo o mundo sem esperar nada em troca.',
         heroPoints: 3,
         henchPoints: 0,
-        feedback: 'Você entende que poder existe para servir, não para governar.'
+        feedback: 'Você entende que poder existe para servir, não para governar.',
       },
       {
         id: 2,
@@ -262,7 +262,7 @@ export const QUESTIONS: Question[] = [
         text: 'Aceito aconselhar os líderes, mas sem controlá-los.',
         heroPoints: 2,
         henchPoints: 1,
-        feedback: 'Você prefere influenciar pelo exemplo, não pela força.'
+        feedback: 'Você prefere influenciar pelo exemplo, não pela força.',
       },
       {
         id: 3,
@@ -270,7 +270,7 @@ export const QUESTIONS: Question[] = [
         text: 'Uso minha influência para garantir que tudo aconteça do meu jeito.',
         heroPoints: 1,
         henchPoints: 2,
-        feedback: 'Você acredita que seus objetivos justificam controlar os acontecimentos.'
+        feedback: 'Você acredita que seus objetivos justificam controlar os acontecimentos.',
       },
       {
         id: 4,
@@ -278,9 +278,9 @@ export const QUESTIONS: Question[] = [
         text: 'Assumo o controle do mundo. Ninguém pode me impedir.',
         heroPoints: 0,
         henchPoints: 3,
-        feedback: 'O poder deixou de ser um meio e tornou-se seu objetivo.'
-      }
-    ]
+        feedback: 'O poder deixou de ser um meio e tornou-se seu objetivo.',
+      },
+    ],
   },
   {
     id: 8,
@@ -294,7 +294,7 @@ export const QUESTIONS: Question[] = [
         text: 'Não. A liberdade é mais importante.',
         heroPoints: 3,
         henchPoints: 0,
-        feedback: 'Você acredita que proteger as pessoas nunca deve custar sua liberdade.'
+        feedback: 'Você acredita que proteger as pessoas nunca deve custar sua liberdade.',
       },
       {
         id: 2,
@@ -302,7 +302,7 @@ export const QUESTIONS: Question[] = [
         text: 'Apenas sob rígido controle e fiscalização.',
         heroPoints: 2,
         henchPoints: 1,
-        feedback: 'Você procura equilibrar segurança e direitos individuais.'
+        feedback: 'Você procura equilibrar segurança e direitos individuais.',
       },
       {
         id: 3,
@@ -310,7 +310,7 @@ export const QUESTIONS: Question[] = [
         text: 'Se reduzir o crime, vale o sacrifício.',
         heroPoints: 1,
         henchPoints: 2,
-        feedback: 'Os resultados parecem justificar algumas limitações.'
+        feedback: 'Os resultados parecem justificar algumas limitações.',
       },
       {
         id: 4,
@@ -318,9 +318,9 @@ export const QUESTIONS: Question[] = [
         text: 'Sim. Quanto mais controle, melhor.',
         heroPoints: 0,
         henchPoints: 3,
-        feedback: 'Você acredita que ordem é mais importante do que liberdade.'
-      }
-    ]
+        feedback: 'Você acredita que ordem é mais importante do que liberdade.',
+      },
+    ],
   },
   {
     id: 9,
@@ -334,7 +334,7 @@ export const QUESTIONS: Question[] = [
         text: 'Ele deve responder perante a justiça.',
         heroPoints: 3,
         henchPoints: 0,
-        feedback: 'Você acredita que ninguém está acima da lei.'
+        feedback: 'Você acredita que ninguém está acima da lei.',
       },
       {
         id: 2,
@@ -342,7 +342,7 @@ export const QUESTIONS: Question[] = [
         text: 'Mantê-lo preso permanentemente é a melhor solução.',
         heroPoints: 2,
         henchPoints: 1,
-        feedback: 'Você prefere impedir novos riscos sem ultrapassar certos limites.'
+        feedback: 'Você prefere impedir novos riscos sem ultrapassar certos limites.',
       },
       {
         id: 3,
@@ -350,7 +350,7 @@ export const QUESTIONS: Question[] = [
         text: 'Exilo o criminoso para que nunca mais retorne.',
         heroPoints: 1,
         henchPoints: 2,
-        feedback: 'Você procura uma solução prática, mesmo que controversa.'
+        feedback: 'Você procura uma solução prática, mesmo que controversa.',
       },
       {
         id: 4,
@@ -358,9 +358,9 @@ export const QUESTIONS: Question[] = [
         text: 'Elimino a ameaça definitivamente.',
         heroPoints: 0,
         henchPoints: 3,
-        feedback: 'Para você, algumas decisões dispensam julgamento.'
-      }
-    ]
+        feedback: 'Para você, algumas decisões dispensam julgamento.',
+      },
+    ],
   },
   {
     id: 10,
@@ -374,7 +374,7 @@ export const QUESTIONS: Question[] = [
         text: 'Como alguém que inspirou esperança.',
         heroPoints: 3,
         henchPoints: 0,
-        feedback: 'Seu maior legado é mostrar que sempre existe uma escolha melhor.'
+        feedback: 'Seu maior legado é mostrar que sempre existe uma escolha melhor.',
       },
       {
         id: 2,
@@ -382,7 +382,7 @@ export const QUESTIONS: Question[] = [
         text: 'Como alguém que fez o necessário para proteger todos.',
         heroPoints: 2,
         henchPoints: 1,
-        feedback: 'Você aceita carregar o peso das decisões difíceis.'
+        feedback: 'Você aceita carregar o peso das decisões difíceis.',
       },
       {
         id: 3,
@@ -390,7 +390,7 @@ export const QUESTIONS: Question[] = [
         text: 'Como alguém que nunca permitiu ser desafiado.',
         heroPoints: 1,
         henchPoints: 2,
-        feedback: 'Respeito e poder caminham lado a lado na sua visão.'
+        feedback: 'Respeito e poder caminham lado a lado na sua visão.',
       },
       {
         id: 4,
@@ -398,8 +398,8 @@ export const QUESTIONS: Question[] = [
         text: 'Como alguém que conquistou tudo o que desejou.',
         heroPoints: 0,
         henchPoints: 3,
-        feedback: 'Seu legado é medido pelas conquistas, não pelos sacrifícios.'
-      }
-    ]
-  }
+        feedback: 'Seu legado é medido pelas conquistas, não pelos sacrifícios.',
+      },
+    ],
+  },
 ];

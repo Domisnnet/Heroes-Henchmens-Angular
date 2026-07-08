@@ -8,5 +8,5 @@ import { Component, input } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  readonly message = input( '🦸 Descubra de que lado você realmente está!' );
+  readonly message = input('🦸 Descubra de que lado você realmente está!');
 }

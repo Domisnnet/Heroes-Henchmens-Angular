@@ -7,5 +7,5 @@ import { Component, input } from '@angular/core';
   styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent {
-  readonly message = input( '🔥 Viral • 😈 Caótico • 🦸 Heroico • 😂 Compartilhável' );
+  readonly message = input('🔥 Viral • 😈 Caótico • 🦸 Heroico • 😂 Compartilhável');
 }

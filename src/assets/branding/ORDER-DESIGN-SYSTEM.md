@@ -16,11 +16,11 @@ The Order Design System defines every visual, structural and architectural rule 
 
 Its purpose is to guarantee:
 
-* visual consistency;
-* reusable assets;
-* predictable component composition;
-* scalability;
-* long-term maintainability.
+- visual consistency;
+- reusable assets;
+- predictable component composition;
+- scalability;
+- long-term maintainability.
 
 Every new asset, component or visual element must follow this document.
 
@@ -106,14 +106,14 @@ The Glyph Library represents the alphabet of the visual language.
 
 Current version:
 
-* prism.svg
-* ring.svg
-* node.svg
-* beam.svg
-* edge.svg
-* hexagon.svg
-* pentagon.svg
-* spark.svg
+- prism.svg
+- ring.svg
+- node.svg
+- beam.svg
+- edge.svg
+- hexagon.svg
+- pentagon.svg
+- spark.svg
 
 Status:
 
