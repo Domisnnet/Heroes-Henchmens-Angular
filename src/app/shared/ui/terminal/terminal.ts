@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-
 @Component({
   selector: 'app-terminal',
   standalone: true,
@@ -8,4 +7,4 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./terminal.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Terminal {}
+export class TerminalComponent {}

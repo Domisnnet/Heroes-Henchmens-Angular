@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-
 @Component({
   selector: 'app-relic',
   standalone: true,
@@ -8,4 +7,4 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./relic.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Relic {}
+export class RelicComponent {}

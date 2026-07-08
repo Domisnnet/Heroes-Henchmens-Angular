@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-
 @Component({
   selector: 'app-dialog',
   standalone: true,
@@ -8,4 +7,4 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./dialog.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Dialog {}
+export class DialogComponent {}

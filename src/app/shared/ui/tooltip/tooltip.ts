@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-
 @Component({
   selector: 'app-tooltip',
   standalone: true,
@@ -8,4 +7,4 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./tooltip.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Tooltip {}
+export class TooltipComponent {}

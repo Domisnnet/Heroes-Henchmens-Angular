@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-
 @Component({
   selector: 'app-card',
   standalone: true,
@@ -8,4 +7,4 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./card.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Card {}
+export class CardComponent {}

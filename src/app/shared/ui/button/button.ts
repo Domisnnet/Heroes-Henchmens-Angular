@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-
 @Component({
   selector: 'app-button',
   standalone: true,
@@ -8,4 +7,4 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./button.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Button {}
+export class ButtonComponent {}

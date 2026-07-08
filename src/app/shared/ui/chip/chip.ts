@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-
 @Component({
   selector: 'app-chip',
   standalone: true,
@@ -8,4 +7,4 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./chip.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Chip {}
+export class ChipComponent {}

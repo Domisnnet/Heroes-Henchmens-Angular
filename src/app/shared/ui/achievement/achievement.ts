@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-
 @Component({
   selector: 'app-achievement',
   standalone: true,
@@ -8,4 +7,4 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./achievement.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Achievement {}
+export class AchievementComponent {}

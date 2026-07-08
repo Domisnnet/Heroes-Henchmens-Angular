@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-
 @Component({
   selector: 'app-inventory',
   standalone: true,
@@ -8,4 +7,4 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./inventory.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Inventory {}
+export class InventoryComponent {}

@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-
 @Component({
   selector: 'app-badge',
   standalone: true,
@@ -8,4 +7,4 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./badge.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Badge {}
+export class BadgeComponent {}

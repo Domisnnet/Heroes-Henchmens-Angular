@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-
 @Component({
   selector: 'app-toast',
   standalone: true,
@@ -8,4 +7,4 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./toast.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Toast {}
+export class ToastComponent {}
