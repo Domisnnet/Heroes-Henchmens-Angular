@@ -1,0 +1,18 @@
+<div class="achievement" [class.achievement--locked]="!achievement().unlocked">
+  <header class="achievement__header">
+    <span class="achievement__system">THE ORDER</span>
+  </header>
+  <section class="achievement__icon-section">
+    <div class="achievement__icon-wrapper">
+      <img class="achievement__icon" [src]="achievement().icon" [alt]="achievement().title">
+    </div>
+  </section>
+  <section class="achievement__body">
+    <h3 class="achievement__title">{{ achievement().title }}</h3>
+    <p class="achievement__description">{{ achievement().description }}</p>
+  </section>
+  <footer class="achievement__footer">
+    <span class="achievement__rarity">{{ achievement().rarity }}</span>
+    <span class="achievement__status">{{ achievement().unlocked ? 'UNLOCKED' : 'LOCKED' }}</span>
+  </footer>
+</div>

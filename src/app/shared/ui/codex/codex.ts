@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { CodexRecord } from '@shared/models/codex.model';
 @Component({
   selector: 'app-codex',
   standalone: true,
@@ -7,4 +8,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./codex.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CodexComponent {}
+export class CodexComponent {
+  readonly codex = input.required<CodexRecord>();
+}
