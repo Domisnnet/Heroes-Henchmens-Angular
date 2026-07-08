@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ===================================================== -->
+<!-- Artifact Library                                      -->
+<!-- Asset   : artifact-aura.svg                           -->
+<!-- Version : 1.0.0                                       -->
+<!-- Status  : Construction                                -->
+<!-- Order Design System                                   -->
+<!-- ===================================================== -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+  width="400" height="600" role="img" aria-labelledby="title desc">
+  <title id="title">Codex Frame Final</title>
+  <desc id="desc">Final composed frame for Codex Vaticinarum. 
+    Assembles frame, details, ornaments, and seals into a complete artifact card structure.</desc>
+  <style>
+    .codex-frame-final {
+      display: block;
+    }
+  </style>
+  <g class="frame-layer"><use href="codex-frame.svg" /></g>
+  <g class="details-layer"><use href="codex-details.svg" /></g>
+  <g class="ornaments-layer"><use href="codex-ornaments.svg" /></g>
+  <g class="seals-layer"><use href="codex-seals.svg" /></g>
+</svg>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ===================================================== -->
+<!-- Artifact Library                                      -->
+<!-- Asset   : artifact-aura.svg                           -->
+<!-- Version : 1.0.0                                       -->
+<!-- Status  : Construction                                -->
+<!-- Order Design System                                   -->
+<!-- ===================================================== -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600" role="img" aria-labelledby="title desc">
+  <title id="title">Codex Details</title>
+  <desc id="desc">Internal detail lines and section dividers for Codex Vaticinarum cards. Composes with frame, ornaments, and seals.</desc>
+  <defs>
+    <g id="section-divider">
+      <line x1="40" y1="0" x2="360" y2="0" stroke="currentColor" stroke-width="0.5"/>
+      <circle cx="200" cy="0" r="2" fill="currentColor" />
+    </g>
+    <g id="dotted-line">
+      <line x1="40" y1="0" x2="360" y2="0" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2 4"/>
+    </g>
+  </defs>
+  <style>
+    .codex-details {
+      display: block;
+    }
+
+    .detail-line {
+      stroke: currentColor;
+      stroke-width: 0.5;
+      fill: none;
+    }
+
+    .detail-accent {
+      stroke: currentColor;
+      stroke-width: 1;
+      fill: none;
+    }
+
+    .detail-marker {
+      fill: currentColor;
+    }
+  </style>
+  <line class="detail-line" x1="24" y1="80" x2="376" y2="80"/>
+  <circle class="detail-line" cx="200" cy="140" r="40"/>
+  <g class="detail-line">
+    <use href="#section-divider" y="220" />
+    <use href="#section-divider" y="320" />
+    <use href="#section-divider" y="420" />
+    <use href="#section-divider" y="520" />
+  </g>
+  <g class="detail-accent">
+    <line x1="40" y1="240" x2="180" y2="240" />
+    <line x1="220" y1="240" x2="360" y2="240" />
+  </g>
+  <g class="detail-marker">
+    <circle cx="50" cy="350" r="3" />
+    <circle cx="50" cy="390" r="3" />
+    <circle cx="50" cy="430" r="3" />
+  </g>
+  <line class="detail-line" x1="50" y1="350" x2="50" y2="430"/>
+  <line class="detail-line" x1="24" y1="560" x2="376" y2="560"/>
+</svg>

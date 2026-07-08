@@ -26,9 +26,9 @@
                 "input": "public"
               },
               {
-                "glob": "**/*",
-                "input": "src/assets",
-                "output": "assets"
+                "glob": "**/*.svg",
+                "input": "src/assets, src/assets/codex",
+                "output": "assets, assets/codex"
               }
             ],
             "styles": ["src/styles.scss"]
@@ -79,7 +79,7 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               {
-                "glob": "**/*",
+                "glob": "**/*.svg",
                 "input": "src/assets",
                 "output": "assets"
               }

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ===================================================== -->
+<!-- Artifact Library                                      -->
+<!-- Asset   : artifact-aura.svg                           -->
+<!-- Version : 1.0.0                                       -->
+<!-- Status  : Construction                                -->
+<!-- Order Design System                                   -->
+<!-- ===================================================== -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" 
+    width="400" height="600" role="img" aria-labelledby="title desc">
+  <title id="title">Codex Seals</title>
+  <desc id="desc">Security and classification seals for Codex Vaticinarum records. 
+    Supports public, restricted, and classified security levels.</desc>
+  <defs>
+    <g id="seal-public">
+      <circle cx="360" cy="40" r="16" stroke="currentColor" stroke-width="1" fill="none" />
+      <circle cx="360" cy="40" r="12" stroke="currentColor" stroke-width="0.5" fill="none" />
+      <text x="360" y="43" text-anchor="middle" font-size="6" fill="currentColor" font-family="monospace">PUBLIC</text>
+    </g>
+    <g id="seal-restricted">
+      <rect x="340" y="32" width="40" height="16" rx="2" stroke="currentColor" stroke-width="1" fill="none" />
+      <line x1="340" y1="32" x2="380" y2="48" stroke="currentColor" stroke-width="0.5" />
+      <line x1="380" y1="32" x2="340" y2="48" stroke="currentColor" stroke-width="0.5" />
+      <text x="360" y="43" text-anchor="middle" font-size="5" fill="currentColor" font-family="monospace">RESTRICTED</text>
+    </g>
+    <g id="seal-classified">
+      <polygon points="360,24 376,36 370,56 350,56 344,36" stroke="currentColor" stroke-width="1" fill="none" />
+      <circle cx="360" cy="40" r="6" stroke="currentColor" stroke-width="0.5" fill="none" />
+      <text x="360" y="43" text-anchor="middle" font-size="5" fill="currentColor" font-family="monospace">CLASSIFIED</text>
+    </g>
+    <g id="classification-badge">
+      <rect x="24" y="40" width="60" height="16" rx="2" stroke="currentColor" stroke-width="1" fill="none" />
+      <text x="54" y="51" text-anchor="middle" font-size="5" fill="currentColor" font-family="monospace">CLASS</text>
+    </g>
+  </defs>
+  <style>
+    .codex-seals {
+      display: block;
+    }
+
+    .seal-outline {
+      stroke: currentColor;
+      stroke-width: 1;
+      fill: none;
+    }
+
+    .seal-detail {
+      stroke: currentColor;
+      stroke-width: 0.5;
+      fill: none;
+    }
+
+    .seal-text {
+      fill: currentColor;
+      font-family: monospace;
+      font-size: 5px;
+    }
+  </style>
+  <g class="seal-outline"><use href="#seal-public" /></g>
+  <g class="seal-outline"><use href="#classification-badge" /></g>
+  <g class="seal-detail">
+    <circle cx="30" cy="30" r="2" />
+    <circle cx="370" cy="30" r="2" />
+    <circle cx="30" cy="570" r="2" />
+    <circle cx="370" cy="570" r="2" />
+  </g>
+  <line class="seal-detail" x1="30" y1="570" x2="370" y2="570" stroke-dasharray="4 4"/>
+</svg>

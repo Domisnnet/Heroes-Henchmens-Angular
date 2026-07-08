@@ -13,6 +13,7 @@ import { CODEX_RECORDS } from '@shared/data/codex/codex.data';
   selector: 'app-home-component',
   standalone: true,
   imports: [
+    CodexComponent,
     HeaderComponent,
     FooterComponent
   ],
@@ -25,7 +26,5 @@ export class HomeComponent {
   readonly headerMessage = UI_MESSAGES.HEADER.HOME;
   readonly footerMessage = UI_MESSAGES.FOOTER.HOME;
   constructor(private readonly router: Router) {}
-  startQuiz(): void {
-    this.router.navigate(['/quiz']);
-  }
+  startQuiz(): void { this.router.navigate(['/quiz']); }
 }
