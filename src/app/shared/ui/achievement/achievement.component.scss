@@ -2,11 +2,11 @@
   display: block;
 }
 
-.achievement{
+.achievement {
   display: flex;
   flex-direction: column;
-  width: 340px;
-  min-height: 500px;
+  width: var(--achievement-size);
+  min-height: var(--achievement-height);
   overflow: hidden;
   border: 1px solid var(--border-primary);
   border-radius: var(--radius-xl);
@@ -38,15 +38,15 @@
 .achievement__icon-wrapper {
   display: grid;
   place-items: center;
-  width: 120px;
-  height: 120px;
+  width: var(--acchivement-icon-wrapper-size);
+  height: var(--acchivement-icon-wrapper-size);
   border-radius: 50%;
   border: 1px solid var(--border-primary);
 }
 
 .achievement__icon {
-  width: 64px;
-  height: 64px;
+  width: var(--achivement-icon);
+  height: var(--achivement-icon);
 }
 
 .achievement__body {

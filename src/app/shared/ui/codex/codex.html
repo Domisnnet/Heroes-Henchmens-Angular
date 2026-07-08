@@ -1,1 +1,58 @@
-<p>codex works!</p>
+<div class="codex">
+  <header class="codex__header">
+    <div class="codex__title-group">
+      <span class="codex__system">CODEX VATICINARUM</span>
+      <span class="codex__archive">Archive of The Order</span>
+    </div>
+  </header>
+  <section class="codex__glyph">
+    <img class="codex__glyph-image" [src]="codex().glyph" [alt]="codex().title">
+  </section>
+  <section class="codex__identity">
+    <h2 class="codex__title">{{ codex().title }}</h2>
+    <h3 class="codex__subtitle">{{ codex().subtitle }}</h3>
+  </section>
+  <section class="codex__metadata">
+    <div class="metadata">
+      <span class="metadata__label">Classification</span>
+      <span class="metadata__value">{{ codex().classification }}</span>
+    </div>
+    <div class="metadata">
+      <span class="metadata__label">Security</span>
+      <span class="metadata__value metadata__value--security">{{ codex().security }}</span>
+    </div>
+  </section>
+  <section class="codex__narrative">
+    <h4>Narrative</h4>
+    <p>{{ codex().narrative }}</p>
+  </section>
+  <section class="codex__tags">
+    <h4>Tags</h4>
+    <div class="codex__tag-list">
+      @for(tag of codex().tags; track tag){
+        <span class="tag">{{ tag }}</span>
+      }
+    </div>
+  </section>
+  <section class="codex__timeline">
+    <h4>Timeline</h4>
+    @for(event of codex().timeline; track event.id){
+      <article class="timeline-item">
+        <span class="timeline-item__year">{{ event.year }}</span>
+        <h5>{{ event.title }}</h5>
+        <p>{{ event.description }}</p>
+      </article>
+    }
+  </section>
+  <section class="codex__related">
+    <h4>Related Artifacts</h4>
+    <div class="codex__related-list">
+      @for(item of codex().relatedArtifacts; track item){
+        <span class="related">{{ item }}</span>
+      }
+    </div>
+  </section>
+  <footer class="codex__footer">
+    <span>AUTHORIZED RECORD</span>
+  </footer>
+</div>
