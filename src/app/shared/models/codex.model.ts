@@ -1,23 +1,34 @@
-export type CodexClassification = 'artifact' | 'entity' | 'technology' | 'location' | 'protocol';
+import { CodexMetadata } from './codex-metadata.model';
+import { CodexSection } from './codex-section.model';
+import { CodexSecurity } from './codex-security.model';
+import { CodexTimeline } from './codex-timeline.model';
 
-export type CodexSecurity = 'public' | 'restricted' | 'classified';
+export type CodexTheme =
+  | 'cosmic'
+  | 'solar'
+  | 'ancient'
+  | 'corrupted';
 
-export interface TimelineEntry {
-  id: string;
-  year: string;
-  title: string;
-  description: string;
-}
+export type CodexRarity =
+  | 'common'
+  | 'uncommon'
+  | 'rare'
+  | 'epic'
+  | 'legendary'
+  | 'mythic';
 
 export interface CodexRecord {
   id: string;
+  slug: string;
   title: string;
-  subtitle: string;
-  classification: CodexClassification;
+  subtitle?: string;
+  glyph?: string;
+  description?: string;
+  sections: CodexSection[];
+  metadata: CodexMetadata;
+  timeline?: CodexTimeline[];
   security: CodexSecurity;
-  glyph: string;
-  narrative: string;
-  tags: string[];
-  relatedArtifacts: string[];
-  timeline: TimelineEntry[];
+  tags?: string[];
+  rarity?: CodexRarity;
+  theme?: CodexTheme;
 }
