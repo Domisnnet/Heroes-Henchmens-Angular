@@ -1,6 +1,4 @@
-import { CodexMetadata } from './codex-metadata.model';
 import { CodexSection } from './codex-section.model';
-import { CodexSecurity } from './codex-security.model';
 import { CodexTimeline } from './codex-timeline.model';
 
 export interface CodexRecord {
@@ -9,9 +7,9 @@ export interface CodexRecord {
   title: string;
   subtitle?: string;
   glyph?: string;
-  classification: CodexClassification;
-  security?: CodexSecurityLevel;
-  narrative: string;
+  classification?: CodexClassification;
+  level?: CodexSecurityLevel;
+  narrative?: string;
   tags?: string[];
   relatedArtifacts?: string[];
   sections?: CodexSection[];

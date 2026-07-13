@@ -9,17 +9,8 @@ export const CODEX_RECORDS: CodexRecord[] = [
     glyph: 'assets/branding/glyphs/prism.svg',
     narrative:
       'The Primordial Prism is considered the first documented energy core capable of stabilizing the resonance between every known Artifact. Ancient records indicate that all modern relics are fragments or derivatives of its original architecture. Its true origin remains unknown.',
-    metadata: {
-      category: 'Artifact',
-      classification: 'Class A',
-      collection: 'Primordial Archives',
-      origin: 'Unknown',
-      language: 'Ancient'
-    },
-    security: {
-      level: 'classified',
-      watermark: true
-    },
+    classification: 'artifact',
+    level: 'classified',
     tags: [
       'Energy',
       'Artifact',
@@ -43,13 +34,13 @@ export const CODEX_RECORDS: CodexRecord[] = [
       {
         id: 't001',
         title: 'First Detection',
-        narrative: 'Ancient records describe the first resonance event associated with the Primordial Prism.',
+        description: 'Ancient records describe the first resonance event associated with the Primordial Prism.',
         year: 'date?: Date'
       },
       {
         id: 't002',
         title: 'Order Classification',
-        narrative: 'The Order officially classified the Primordial Prism as a Class-A Artifact.',
+        description: 'The Order officially classified the Primordial Prism as a Class-A Artifact.',
         year: 'Archive 001'
       }
     ],
