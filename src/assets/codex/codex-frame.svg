@@ -1,64 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- ===================================================== -->
-<!-- Artifact Library                                      -->
-<!-- Asset   : artifact-aura.svg                           -->
+<!-- Frame Library                                         -->
+<!-- Asset   : codex-frame.svg                             -->
 <!-- Version : 1.0.0                                       -->
 <!-- Status  : Construction                                -->
 <!-- Order Design System                                   -->
 <!-- ===================================================== -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600" role="img" aria-labelledby="title desc">
-  <title id="title">Codex Frame</title>
-  <desc id="desc">Base frame structure for Codex Vaticinarum artifact cards. Designed for composition with details, ornaments, seals, and final frame assets.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="title desc">
+  <title id="codex-frame__title">Codex Frame</title>
+  <desc id="codex-frame__desc">Base frame structure for Codex Vaticinarum. 
+    Designed for composition with ornaments, seals, details and final frame assets.</desc>
   <defs>
-    <g id="corner-accent">
-      <path d="M0 20 L0 0 L20 0" stroke="currentColor" stroke-width="1.5" fill="none"/>
-      <circle cx="6" cy="6" r="1.5" fill="currentColor" />
-    </g>
-    <g id="side-marker">
-      <rect x="0" y="0" width="2" height="24" fill="currentColor"/>
-    </g>
+    <g id="codex-frame__corner-accent"><path d="M0 20 L0 0 L20 0"/><circle cx="6" cy="6" r="1.5"/></g>
+    <g id="codex-frame__side-marker"><rect x="0" y="0" width="1.5" height="18"/></g>
   </defs>
   <style>
-    .codex-frame {
-      display: block;
-    }
-
-    .frame-border {
+    .codex-frame__border {
+      fill: none;
       stroke: currentColor;
-      stroke-width: 1;
-      fill: none;
+      stroke-width: .75;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      vector-effect: non-scaling-stroke;
     }
 
-    .frame-inner {
+    .codex-frame__inner {
+      fill: none;
       stroke: currentColor;
-      stroke-width: 0.5;
-      fill: none;
+      stroke-width: .35;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      vector-effect: non-scaling-stroke;
     }
 
-    .frame-accent {
+    .codex-frame__accent {
+      fill: none;
       stroke: currentColor;
-      stroke-width: 1.5;
-      fill: none;
+      stroke-width: .75;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      vector-effect: non-scaling-stroke;
     }
 
-    .frame-corner {
+    .codex-frame__corner {
       fill: none;
+      stroke: currentColor;
+      stroke-width: .75;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      vector-effect: non-scaling-stroke;
+    }
+    
+    .codex-frame__marker {
+      fill: currentColor;
+      stroke: none;
     }
   </style>
-  <rect class="frame-border" x="10" y="10" width="380" height="580" rx="12" ry="12"/>
-  <rect class="frame-inner" x="24" y="24" width="352" height="552" rx="8" ry="8"/>
-  <line class="frame-accent" x1="40" y1="10" x2="360" y2="10"/>
-  <line class="frame-accent" x1="40" y1="590" x2="360" y2="590"/>
-  <g class="frame-corner">
-    <use href="#corner-accent" x="10" y="10" />
-    <use href="#corner-accent" x="370" y="10" transform="rotate(90 390 10)" />
-    <use href="#corner-accent" x="370" y="590" transform="rotate(180 390 590)" />
-    <use href="#corner-accent" x="10" y="590" transform="rotate(-90 10 590)" />
+  <g id="codex-frame__outer-frame" class="codex-frame__border">
+    <rect x="10" y="10" width="380" height="580" rx="12" ry="12"/>
   </g>
-  <g class="frame-accent">
-    <use href="#side-marker" x="10" y="288" transform="rotate(-90 10 300)" />
-    <use href="#side-marker" x="390" y="288" transform="rotate(90 390 300)" />
-    <use href="#side-marker" x="188" y="10" transform="rotate(0 200 10)" />
-    <use href="#side-marker" x="188" y="590" transform="rotate(180 200 590)" />
+  <g id="codex-frame__inner-frame" class="codex-frame__inner">
+    <rect x="24" y="24" width="352" height="552" rx="8" ry="8"/>
+  </g>
+  <g id="codex-frame__rails" class="codex-frame__accent">
+    <line x1="40" y1="18" x2="360" y2="18"/>
+    <line x1="40" y1="582" x2="360" y2="582"/>
+  </g>
+  <g id="codex-frame__corners" class="codex-frame__corner">
+    <use href="#codex-frame__corner-accent" x="10" y="10"/>
+    <use href="#codex-frame__corner-accent" x="370" y="10" transform="rotate(90 390 10)"/>
+    <use href="#codex-frame__corner-accent" x="370" y="590" transform="rotate(180 390 590)"/>
+    <use href="#codex-frame__corner-accent" x="10" y="590" transform="rotate(-90 10 590)"/>
+  </g>
+  <g id="codex-frame__markers" class="codex-frame__marker">
+    <use href="#codex-frame__side-marker" x="10" y="291" transform="rotate(-90 10 300)"/>
+    <use href="#codex-frame__side-marker" x="390" y="291" transform="rotate(90 390 300)"/>
+    <use href="#codex-frame__side-marker" x="199" y="10"/>
+    <use href="#codex-frame__side-marker" x="199" y="590" transform="rotate(180 200 590)"/>
   </g>
 </svg>

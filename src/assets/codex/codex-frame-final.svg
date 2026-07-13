@@ -1,23 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- ===================================================== -->
-<!-- Artifact Library                                      -->
-<!-- Asset   : artifact-aura.svg                           -->
+<!-- Frame Library                                         -->
+<!-- Asset   : codex-frame-final.svg                       -->
 <!-- Version : 1.0.0                                       -->
 <!-- Status  : Construction                                -->
 <!-- Order Design System                                   -->
 <!-- ===================================================== -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
-  width="400" height="600" role="img" aria-labelledby="title desc">
-  <title id="title">Codex Frame Final</title>
-  <desc id="desc">Final composed frame for Codex Vaticinarum. 
-    Assembles frame, details, ornaments, and seals into a complete artifact card structure.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="codex-frame-final__title codex-frame-final__desc">
+  <title id="codex-frame-final__title">Codex Frame Final</title>
+  <desc id="codex-frame-final__desc">Final overlay layer for Codex Vaticinarum. 
+    Adds finishing accents and framing highlights over the complete artifact composition.</desc>
+  <defs>
+    <g id="codex-frame-final__corner-highlight">
+      <path class="codex-frame-final__accent" d="M0 24 L0 0 L24 0"/>
+      <circle class="codex-frame-final__marker" cx="8" cy="8" r="2"/>
+    </g>
+    <g id="codex-frame-final__center-glyph">
+      <circle class="codex-frame-final__line" cx="0" cy="0" r="10"/>
+      <circle class="codex-frame-final__line" cx="0" cy="0" r="6"/>
+      <circle class="codex-frame-final__marker" cx="0" cy="0" r="2"/>
+    </g>
+  </defs>
   <style>
-    .codex-frame-final {
-      display: block;
+    .codex-frame-final__line {
+      fill: none;
+      stroke: currentColor;
+      stroke-width: .5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      vector-effect: non-scaling-stroke;
+    }
+
+    .codex-frame-final__accent {
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      vector-effect: non-scaling-stroke;
+    }
+    
+    .codex-frame-final__marker {
+      fill: currentColor;
+      stroke: none;
     }
   </style>
-  <g class="frame-layer"><use href="codex-frame.svg" /></g>
-  <g class="details-layer"><use href="codex-details.svg" /></g>
-  <g class="ornaments-layer"><use href="codex-ornaments.svg" /></g>
-  <g class="seals-layer"><use href="codex-seals.svg" /></g>
+  <g id="codex-frame-final__corners">
+    <use href="#codex-frame-final__corner-highlight" x="8" y="8"/>
+    <use href="#codex-frame-final__corner-highlight" x="368" y="8" transform="rotate(90 380 20)"/>
+    <use href="#codex-frame-final__corner-highlight" x="368" y="568" transform="rotate(180 380 580)"/>
+    <use href="#codex-frame-final__corner-highlight" x="8" y="568" transform="rotate(-90 20 580)"/>
+  </g>
+  <g id="codex-frame-final__top-glyph">
+    <use href="#codex-frame-final__center-glyph" x="200" y="38"/>
+  </g>
+  <g id="codex-frame-final__bottom-glyph">
+    <use href="#codex-frame-final__center-glyph" x="200" y="562"/>
+  </g>
+  <g id="codex-frame-final__edge-highlights" class="codex-frame-final__accent">
+    <line x1="70" y1="18" x2="330" y2="18"/>
+    <line x1="70" y1="582" x2="330" y2="582"/>
+  </g>
+  <g id="codex-frame-final__registration" class="codex-frame-final__marker">
+    <circle cx="24" cy="24" r="1.5"/>
+    <circle cx="376" cy="24" r="1.5"/>
+    <circle cx="24" cy="576" r="1.5"/>
+    <circle cx="376" cy="576" r="1.5"/>
+  </g>
 </svg>
