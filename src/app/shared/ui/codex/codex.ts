@@ -3,11 +3,11 @@ import { CodexRecord } from '@shared/models/codex.model';
 import { CodexRendererService } from '@shared/ui/services/codex-renderer.service';
 
 @Component({
-    selector: 'app-codex',
-    standalone: true,
-    templateUrl: './codex.html',
-    styleUrls: ['./codex.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush
+  selector: 'app-codex',
+  standalone: true,
+  templateUrl: './codex.html',
+  styleUrls: ['./codex.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CodexComponent implements AfterViewInit {
   readonly codex = input.required<CodexRecord>();
