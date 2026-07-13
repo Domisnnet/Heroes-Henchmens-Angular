@@ -23,7 +23,7 @@ export interface CodexRecord {
   title: string;
   subtitle?: string;
   glyph?: string;
-  description?: string;
+  narrative?: string;
   sections: CodexSection[];
   metadata: CodexMetadata;
   timeline?: CodexTimeline[];

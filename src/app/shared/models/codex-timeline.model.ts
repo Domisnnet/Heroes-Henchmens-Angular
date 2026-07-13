@@ -6,8 +6,8 @@ export type CodexTimelineStatus =
 
 export interface CodexTimeline {
   id: string;
+  year: string;
   title: string;
-  description?: string;
-  date?: Date;
+  narrative?: string;
   status?: CodexTimelineStatus;
 }
