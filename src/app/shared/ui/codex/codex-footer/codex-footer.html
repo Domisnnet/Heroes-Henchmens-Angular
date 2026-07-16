@@ -1,0 +1,28 @@
+<footer class="codex-footer">
+  <div class="codex-footer__grid">
+    @if (codex().classification) {
+      <div class="codex-footer__item">
+        <span class="codex-footer__label">Classification</span>
+        <span class="codex-footer__value">{{ codex().classification }}</span>
+      </div>
+    }
+    @if (codex().security) {
+      <div class="codex-footer__item">
+        <span class="codex-footer__label">Security</span>
+        <span class="codex-footer__value">{{ codex().security }}</span>
+      </div>
+    }
+    @if (codex().theme) {
+      <div class="codex-footer__item">
+        <span class="codex-footer__label">Theme</span>
+        <span class="codex-footer__value">{{ codex().theme }}</span>
+      </div>
+    }
+    @if (codex().rarity) {
+      <div class="codex-footer__item">
+        <span class="codex-footer__label">Rarity</span>
+        <span class="codex-footer__value">{{ codex().rarity }}</span>
+      </div>
+    }
+  </div>
+</footer>

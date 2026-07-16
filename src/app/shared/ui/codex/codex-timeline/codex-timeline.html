@@ -1,0 +1,17 @@
+@if (timeline().length) {
+  <section class="codex-timeline">
+    <h2 class="codex-timeline__title">Timeline</h2>
+    <div class="codex-timeline__list">
+      @for (event of timeline(); track event.id) {
+        <article class="codex-event">
+          <div class="codex-event__marker"></div>
+          <div class="codex-event__content">
+            <span class="codex-event__year">{{ event.year }}</span>
+            <h3 class="codex-event__title">{{ event.title }}</h3>
+            <p class="codex-event__description">{{ event.description }}</p>
+          </div>
+        </article>
+      }
+    </div>
+  </section>
+}

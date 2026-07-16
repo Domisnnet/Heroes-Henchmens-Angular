@@ -1,0 +1,13 @@
+:host {
+  display: block;
+}
+
+.codex-section {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  padding: 1.5rem;
+  border: 1px solid var(--codex-border);
+  border-radius: var(--radius-lg);
+  background: var(--codex-surface);
+}

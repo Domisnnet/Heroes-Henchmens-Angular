@@ -1,0 +1,10 @@
+@if (tags().length) {
+  <section class="codex-tags">
+    <h2 class="codex-tags__title">Tags</h2>
+    <div class="codex-tags__list">
+      @for (tag of tags(); track tag) {
+        <span class="codex-tag">{{ tag }}</span>
+      }
+    </div>
+  </section>
+}

@@ -1,0 +1,14 @@
+<div class="codex">
+  <div #frameContainer class="codex__frame"></div>
+  <div class="codex__content">
+    <app-codex-header [codex]="codex()" />
+    <app-codex-body [codex]="codex()" />
+    @if (codex().tags?.length) {
+      <app-codex-tags [tags]="codex().tags!" />
+    }
+    @if (codex().timeline?.length) {
+      <app-codex-timeline [timeline]="codex().timeline!" />
+    }
+    <app-codex-footer [codex]="codex()" />
+  </div>
+</div>

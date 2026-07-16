@@ -10,7 +10,6 @@ export const CODEX_RECORDS: CodexRecord[] = [
     narrative:
       'The Primordial Prism is considered the first documented energy core capable of stabilizing the resonance between every known Artifact. Ancient records indicate that all modern relics are fragments or derivatives of its original architecture. Its true origin remains unknown.',
     classification: 'artifact',
-    level: 'classified',
     tags: [
       'Energy',
       'Artifact',

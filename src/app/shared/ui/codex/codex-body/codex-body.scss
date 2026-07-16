@@ -1,0 +1,28 @@
+:host {
+  display: block;
+}
+
+.codex-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.codex-body__narrative {
+  padding: 1.5rem;
+  border: 1px solid var(--codex-border);
+  border-radius: var(--radius-lg);
+  background: var(--codex-surface);
+}
+
+.codex-body__narrative p {
+  margin: 0;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.codex-body__sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}

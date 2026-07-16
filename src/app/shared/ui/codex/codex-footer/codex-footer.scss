@@ -1,0 +1,37 @@
+:host {
+  display: block;
+}
+
+.codex-footer {
+  padding-top: 2rem;
+  border-top: 1px solid var(--codex-border);
+}
+
+.codex-footer__grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.codex-footer__item {
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+  padding: 1rem;
+  border: 1px solid var(--codex-border);
+  border-radius: var(--radius-lg);
+  background: var(--codex-surface);
+}
+
+.codex-footer__label {
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  opacity: .65;
+}
+
+.codex-footer__value {
+  font-size: .95rem;
+  font-weight: 500;
+}

@@ -29,27 +29,13 @@
   user-select: none;
 }
 
-.artifact__aura {
-  z-index: 10;
-}
-.artifact__shield {
-  z-index: 20;
-}
-.artifact__frame {
-  z-index: 30;
-}
-.artifact__core {
-  z-index: 40;
-}
-.artifact__slot {
-  z-index: 50;
-}
-.artifact__lock {
-  z-index: 60;
-}
-.artifact__sigil {
-  z-index: 70;
-}
+.artifact__aura { z-index: 10; }
+.artifact__shield { z-index: 20; }
+.artifact__frame { z-index: 30; }
+.artifact__core { z-index: 40; }
+.artifact__slot { z-index: 50; }
+.artifact__lock { z-index: 60; }
+.artifact__sigil { z-index: 70; }
 
 .artifact-content {
   display: grid;
