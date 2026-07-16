@@ -127,10 +127,7 @@
   /* ==========================================================================
     OVERLAYS
   ========================================================================== */
-  --background-overlay: linear-gradient(
-    rgba(0, 0, 0, var(--overlay-ultra)),
-    rgba(0, 0, 0, var(--overlay-ultra))
-  );
+  --background-overlay: linear-gradient(rgba(0, 0, 0, var(--overlay-ultra)), rgba(0, 0, 0, var(--overlay-ultra)));
 
   /* ==========================================================================
     SHADOWS
