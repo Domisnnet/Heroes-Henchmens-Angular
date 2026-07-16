@@ -22,30 +22,16 @@ export class QuizComponent {
   readonly headerMessage = UI_MESSAGES.HEADER.QUIZ;
   readonly footerMessage = UI_MESSAGES.FOOTER.QUIZ;
   readonly currentQuestion = this.facade.currentQuestion;
-
   readonly chapterInfo = computed(() => {
     const question = this.currentQuestion();
     if (!question) return null;
     const catInfo = QUESTION_CATEGORY_INFO[question.category];
     const chap = CHAPTERS[catInfo.chapter];
-    return {
-      title: chap.title,
-      subtitle: chap.subtitle,
-      categoryTitle: catInfo.title,
-    };
+    return { title: chap.title, subtitle: chap.subtitle, categoryTitle: catInfo.title };
   });
-
-  constructor() {
-    this.watchQuizCompletion();
-  }
+  constructor() { this.watchQuizCompletion(); }
   private watchQuizCompletion(): void {
-    effect(() => {
-      if (this.facade.finished()) {
-        this.router.navigate(['/result']);
-      }
-    });
+    effect(() => { if (this.facade.finished()) { this.router.navigate(['/result']); } });
   }
-  answers(answer: Answer): void {
-    this.facade.answer(answer);
-  }
+  answers(answer: Answer): void { this.facade.answer(answer); }
 }

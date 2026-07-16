@@ -12,9 +12,7 @@
   padding: var(--space-xs);
 }
 
-.quiz__card {
-  @include page-card;
-}
+.quiz__card { @include page-card; }
 
 .quiz__chapter-container {
   display: flex;
@@ -57,8 +55,5 @@
   font-weight: 700;
   margin-bottom: var(--space-md);
 
-  &:hover {
-    background: var(--success);
-    color: var(--black);
-  }
+  &:hover { background: var(--success); color: var(--black); }
 }

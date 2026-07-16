@@ -1,50 +1,28 @@
 /* ==========================================================================
   DISPLAY
 ========================================================================== */
-.u-flex {
-  display: flex;
-}
-.u-flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.u-flex-column {
-  display: flex;
-  flex-direction: column;
-}
+.u-flex { display: flex; }
+.u-flex-center { display: flex; justify-content: center; align-items: center; }
+.u-flex-column { display: flex; flex-direction: column; }
 
 /* ==========================================================================
   TEXT
 ========================================================================== */
-.u-text-center {
-  text-align: center;
-}
-.u-uppercase {
-  text-transform: uppercase;
-}
+.u-text-center { text-align: center; }
+.u-uppercase { text-transform: uppercase; }
 
 /* ==========================================================================
   WIDTH
 ========================================================================== */
-.u-container {
-  width: min(var(--content-max-width), calc(100% - (var(--container-padding) * 2)));
-  margin-inline: auto;
-}
+.u-container { width: min(var(--content-max-width), calc(100% - (var(--container-padding) * 2))); margin-inline: auto; }
 
 /* ==========================================================================
   EFFECTS
 ========================================================================== */
-.u-glow-hero {
-  box-shadow: var(--shadow-hero);
-}
-.u-glow-hench {
-  box-shadow: var(--shadow-hench);
-}
+.u-glow-hero { box-shadow: var(--shadow-hero); }
+.u-glow-hench { box-shadow: var(--shadow-hench); }
 
 /* ==========================================================================
   VISIBILITY
 ========================================================================== */
-.u-hidden {
-  display: none;
-}
+.u-hidden { display: none; }

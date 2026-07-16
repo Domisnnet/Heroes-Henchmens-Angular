@@ -6,14 +6,12 @@ import { FooterComponent } from '@shared/components/footer-component/footer.comp
 import { ArtifactViewerComponent } from '@shared/artifact-viewer/artifact-viewer';
 import { AchievementComponent } from '@shared/ui/achievement/achievement.component';
 import { ACHIEVEMENTS } from '@shared/data/achievements/achievements';
-import { CodexComponent } from '@shared/ui/codex/codex';
 import { CODEX_RECORDS } from '@shared/data/codex/codex.data';
 
 @Component({
   selector: 'app-home-component',
   standalone: true,
   imports: [
-    CodexComponent,
     HeaderComponent,
     FooterComponent
   ],
