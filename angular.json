@@ -26,12 +26,14 @@
                 "input": "public"
               },
               {
-                "glob": "**/*.svg",
-                "input": "src/assets, src/assets/codex",
-                "output": "assets, assets/codex"
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "assets"
               }
             ],
-            "styles": ["src/styles.scss"]
+            "styles": [
+              "src/styles.scss"
+            ]
           },
           "configurations": {
             "production": {
@@ -79,12 +81,14 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               {
-                "glob": "**/*.svg",
+                "glob": "**/*",
                 "input": "src/assets",
                 "output": "assets"
               }
             ],
-            "styles": ["src/styles.scss"]
+            "styles": [
+              "src/styles.scss"
+            ]
           }
         }
       }
