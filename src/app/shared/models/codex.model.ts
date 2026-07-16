@@ -8,7 +8,7 @@ export interface CodexRecord {
   subtitle?: string;
   glyph?: string;
   classification?: CodexClassification;
-  level?: CodexSecurityLevel;
+  security?: CodexSecurityLevel;
   narrative?: string;
   tags?: string[];
   relatedArtifacts?: string[];
