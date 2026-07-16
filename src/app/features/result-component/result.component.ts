@@ -8,10 +8,15 @@ import { QuizFacade } from '@quiz/facades/quiz.facade';
 import { QuizAnalysisService } from '@quiz/services/quiz-analysis.service';
 import { ResultQuiz } from '@quiz/models/result.model';
 import { AnalysisItem } from '@quiz/models/analysis-item.model';
+import { RESULT_IMAGE_PATHS } from '@quiz/models/result-image-paths';
 @Component({
   selector: 'app-result-component',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, FooterComponent],
+  imports: [
+    CommonModule,
+    HeaderComponent,
+    FooterComponent
+  ],
   templateUrl: './result.component.html',
   styleUrls: ['./result.component.scss'],
 })
@@ -22,14 +27,15 @@ export class ResultComponent {
   private readonly router = inject(Router);
   private readonly analysisService = inject(QuizAnalysisService);
   readonly result: ResultQuiz = this.facade.getResult();
-  get pageClass(): string { return `result__page result__page-${this.result.type}` }
+  readonly resultImage = RESULT_IMAGE_PATHS[this.result.type];
   readonly analysis: AnalysisItem[] = this.analysisService.build(this.facade.history());
   readonly heroScore = this.facade.heroScore();
   readonly henchScore = this.facade.henchScore();
   readonly heroPercentage = this.calculateHeroPercentage();
   readonly henchPercentage = 100 - this.heroPercentage;
+  get pageClass(): string { return `result__page result__page-${this.result.type}` }
   restart(): void { this.facade.reset(); this.router.navigate(['/quiz']); }
-  share(): void { /* Implementação futura */ }
+  share(): void { }
   private calculateHeroPercentage(): number {
     const total = this.heroScore + this.henchScore;
     if (total === 0) return 0;
