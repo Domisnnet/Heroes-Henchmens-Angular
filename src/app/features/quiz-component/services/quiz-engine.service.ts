@@ -38,9 +38,7 @@ export class QuizEngineService {
     this.currentQuestion$ = this.currentQuestionSubject.asObservable();
   }
   answer(answer: Answer): void {
-    if (this.finished) {
-      return;
-    }
+    if (this.finished) { return; }
     this.selectedAnswers.push({ question: this.currentQuestion, answer });
     this.addScore(answer);
     this.nextQuestion();
@@ -59,24 +57,12 @@ export class QuizEngineService {
     const resultType = QuizScoreRule.resolve(this.heroPoints, this.henchPoints);
     return this.resultRepository.getByType(resultType)!;
   }
-  get currentQuestion(): Question {
-    return this.currentQuestionSubject.value;
-  }
-  get heroScore(): number {
-    return this.heroPoints;
-  }
-  get henchScore(): number {
-    return this.henchPoints;
-  }
-  get finished(): boolean {
-    return this.finishedSubject.value;
-  }
-  get answersHistory(): SelectedAnswer[] {
-    return [...this.selectedAnswers];
-  }
-  get score(): QuizScore {
-    return { hero: this.heroPoints, hench: this.henchPoints };
-  }
+  get currentQuestion(): Question { return this.currentQuestionSubject.value; }
+  get heroScore(): number { return this.heroPoints; }
+  get henchScore(): number { return this.henchPoints; }
+  get finished(): boolean { return this.finishedSubject.value; }
+  get answersHistory(): SelectedAnswer[] { return [...this.selectedAnswers]; }
+  get score(): QuizScore { return { hero: this.heroPoints, hench: this.henchPoints }; }
   private addScore(answer: Answer): void {
     this.heroPoints += answer.heroPoints;
     this.henchPoints += answer.henchPoints;
@@ -93,8 +79,6 @@ export class QuizEngineService {
   }
   private loadCurrentQuestion(): void {
     const question = this.questionRepository.getByIndex(this.currentIndex);
-    if (question) {
-      this.currentQuestionSubject.next(question);
-    }
+    if (question) { this.currentQuestionSubject.next(question); }
   }
 }
