@@ -29,7 +29,109 @@
   --bg-secondary: #1a2026;
   --bg-result: rgba(255, 255, 255, 0.08);
 
-  /* Base */
+  /* ==========================================================================
+    CODEX
+  ========================================================================== */
+  /* Layout */
+  --codex-width: 68rem;
+  --codex-max-width: 68rem;
+  --codex-min-height: auto;
+
+  /* Spacing */
+  --codex-space-xs: var(--space-xs);
+  --codex-space-sm: var(--space-sm);
+  --codex-space-md: var(--space-md);
+  --codex-space-lg: var(--space-lg);
+  --codex-space-xl: var(--space-xl);
+  --codex-space-2xl: var(--space-2xl);
+  --codex-space-3xl: var(--space-3xl);
+
+  /* Radius */
+  --codex-radius-sm: var(--radius-sm);
+  --codex-radius-md: var(--radius-md);
+  --codex-radius-lg: var(--radius-lg);
+  --codex-radius-full: var(--radius-full);
+
+  /* Typography */
+  --codex-font-heading: var(--font-heading);
+  --codex-font-body: var(--font-body);
+  --codex-text-xs: var(--text-xs);
+  --codex-text-sm: var(--text-sm);
+  --codex-text-md: var(--text-md);
+  --codex-text-lg: var(--text-lg);
+  --codex-text-xl: var(--text-xl);
+  --codex-text-2xl: var(--text-2xl);
+  --codex-text-3xl: var(--text-3xl);
+
+  /* Semantic Typography */
+  --codex-title-size: var(--codex-text-3xl);
+  --codex-subtitle-size: var(--codex-text-lg);
+  --codex-heading-size: var(--codex-text-xl);
+  --codex-body-size: var(--codex-text-md);
+  --codex-label-size: var(--codex-text-xs);
+
+  /* Surfaces */
+  --codex-background: var(--bg-primary);
+  --codex-surface: var(--bg-card);
+  --codex-surface-alt: var(--bg-secondary);
+  --codex-overlay: var(--bg-overlay);
+
+  /* Colors */
+  --codex-text: var(--white);
+  --codex-text-muted: var(--gray-300);
+  --codex-accent: var(--hero-primary);
+  --codex-accent-secondary: var(--hero-secondary);
+  --codex-accent-glow: var(--hero-glow);
+
+  /* Borders */
+  --codex-border-width: var(--border-width);
+  --codex-border-radius: var(--codex-radius-lg);
+  --codex-border: rgba(255,255,255,.12);
+  --codex-border-soft: rgba(255,255,255,.06);
+  --codex-divider: rgba(255,255,255,.08);
+
+  /* Glyph */
+  --codex-glyph-size: var(--icon-2xl);
+  --codex-glyph-padding: var(--space-md);
+
+  /* Timeline */
+  --codex-timeline-width: .125rem;
+  --codex-timeline-dot-size: .75rem;
+  --codex-timeline-gap: var(--space-xl);
+
+  /* Tags */
+  --codex-tag-gap: var(--space-sm);
+  --codex-tag-padding-x: var(--space-md);
+  --codex-tag-padding-y: .375rem;
+  --codex-tag-radius: var(--radius-full);
+
+  /* Footer */
+  --codex-footer-gap: var(--space-md);
+  --codex-footer-padding: var(--space-xl);
+
+  /* Shadows */
+  --codex-shadow: var(--shadow-card);
+  --codex-shadow-hover: var(--shadow-card);
+  --codex-shadow-blur: var(--shadow-blur);
+
+  /* Motion */
+  --codex-transition-fast: var(--transition-fast);
+  --codex-transition: var(--transition-normal);
+  --codex-transition-slow: var(--transition-slow);
+
+  /* Layers */
+  --codex-z-frame: var(--z-background);
+  --codex-z-document: var(--z-content);
+  --codex-z-overlay: calc(var(--z-content) + 1);
+
+  /* SVG */
+  --codex-frame-opacity: 1;
+  --codex-frame-scale: 1;
+  --codex-frame-offset-y: 0;
+
+  /* ==========================================================
+    Base
+  ========================================================== */
   --black: #000;
   --white: #fff;
 
