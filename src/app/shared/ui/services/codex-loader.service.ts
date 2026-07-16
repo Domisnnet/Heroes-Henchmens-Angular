@@ -1,17 +1,22 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { firstValueFrom } from 'rxjs';
-
+import { CodexLayer } from '@shared/models/codex-layer.model';
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CodexLoaderService {
   private readonly http = inject(HttpClient);
   private readonly basePath = 'assets/codex/frame';
-  async loadFrame(): Promise<string> { return this.load('codex-frame.svg'); }
-  async loadOrnaments(): Promise<string> { return this.load('codex-ornaments.svg'); }
-  async loadDetails(): Promise<string> { return this.load('codex-details.svg'); }
-  async loadSeals(): Promise<string> { return this.load('codex-seals.svg'); }
-  async loadFrameFinal(): Promise<string> { return this.load('codex-frame-final.svg'); }
-  async load(filename: string): Promise<string> { return firstValueFrom(this.http.get(`${this.basePath}/${filename}`, { responseType: 'text' })); }
+  private readonly registry: Record<CodexLayer, string> = {
+    frame: 'codex-frame.svg',
+    ornaments: 'codex-ornaments.svg',
+    details: 'codex-details.svg',
+    seals: 'codex-seals.svg',
+    final: 'codex-frame-final.svg',
+  };
+  async loadLayer(layer: CodexLayer): Promise<string> {
+    const file = this.registry[layer];
+    return firstValueFrom(this.http.get(`${this.basePath}/${file}`, { responseType: 'text' }) );
+  }
 }
