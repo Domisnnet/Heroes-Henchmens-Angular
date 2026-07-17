@@ -1,6 +1,7 @@
 :host {
   display: block;
   width: 100%;
+  min-height: 100%;
 }
 
 /* ==========================================================================
@@ -11,9 +12,9 @@
   justify-content: center;
   position: relative;
   width: 100%;
-  min-height: 100%;
-  padding: var(--codex-space-3xl) var(--codex-space-lg);
-  overflow: hidden;
+  min-height: 100vh;
+  padding-block: var(--space-4xl);
+  padding-inline: var(--space-lg);
 }
 
 /* ==========================================================================
@@ -27,7 +28,13 @@
   inset: 0;
   pointer-events: none;
   user-select: none;
-  z-index: var(--codex-z-frame);
+  z-index: var(--z-background);
+}
+
+.codex__frame svg {
+  width: 100%;
+  max-width: var(--codex-width);
+  height: auto;
 }
 
 /* ==========================================================================
@@ -37,10 +44,10 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  width: min(100%, var(--codex-max-width));
-  gap: var(--codex-space-2xl);
-  padding: var(--codex-space-3xl);
-  z-index: var(--codex-z-document);
+  width: min(100%, var(--codex-width));
+  gap: var(--codex-gap);
+  padding: var(--codex-padding);
+  z-index: var(--z-content);
 }
 
 /* ==========================================================================

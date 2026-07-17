@@ -2,64 +2,89 @@
   display: block;
 }
 
+/* ==========================================================
+  CODEX HEADER
+========================================================== */
 .codex-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: var(--codex-header-gap);
+  padding-bottom: var(--codex-header-padding);
   text-align: center;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid var(--codex-border);
+  border-bottom: var(--codex-border-width) solid var(--codex-border-color);
 }
 
-.codex-header__glyph {
-  width: 5rem;
-  aspect-ratio: 1;
-  display: grid;
-  place-items: center;
-}
-
-.codex-header__glyph img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
+/* ==========================================================
+  META
+========================================================== */
 .codex-header__meta {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: .5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--codex-meta-gap);
+}
+
+/* ==========================================================
+  BADGES
+========================================================== */
+.codex-header__security,
+.codex-header__classification {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: var(--codex-badge-height);
+  padding-inline: var(--codex-badge-padding-inline);
+  border-radius: var(--codex-badge-radius);
+  border: var(--codex-border-width) solid var(--codex-border-color);
+  font-size: var(--codex-label-size);
 }
 
 .codex-header__security {
-  padding: .25rem .75rem;
-  border-radius: 999px;
-  border: 1px solid var(--codex-border);
-  font-size: .72rem;
   font-weight: 700;
   letter-spacing: .18em;
   text-transform: uppercase;
 }
 
 .codex-header__classification {
-  padding: .25rem .75rem;
-  border-radius: 999px;
-  border: 1px solid var(--codex-border);
-  font-size: .72rem;
   text-transform: capitalize;
 }
 
-.codex-header__title {
-  margin: 0;
-  font-size: clamp(1.75rem, 3vw, 2.5rem);
-  font-weight: 700;
+/* ==========================================================
+  GLYPH
+========================================================== */
+.codex-header__glyph {
+  width: var(--codex-glyph-size);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
 }
 
+.codex-header__glyph img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ==========================================================
+  TITLE
+========================================================== */
+.codex-header__title {
+  margin: 0;
+  font-family: var(--codex-heading-font);
+  font-size: var(--codex-title-size);
+  line-height: 1.05;
+}
+
+/* ==========================================================
+  SUBTITLE
+========================================================== */
 .codex-header__subtitle {
   margin: 0;
-  max-width: 38rem;
-  font-size: 1rem;
+  max-width: var(--codex-subtitle-width);
+  font-family: var(--codex-body-font);
+  font-size: var(--codex-subtitle-size);
   line-height: 1.6;
   opacity: .75;
 }

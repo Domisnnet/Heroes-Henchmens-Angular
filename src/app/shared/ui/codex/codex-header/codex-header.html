@@ -1,9 +1,4 @@
 <header class="codex-header">
-  @if (codex().glyph) {
-    <figure class="codex-header__glyph">
-      <img [src]="codex().glyph!" [alt]="codex().title">
-    </figure>
-  }
   <div class="codex-header__meta">
     @if (codex().security) {
       <span class="codex-header__security">{{ codex().security }}</span>
@@ -12,6 +7,11 @@
       <span class="codex-header__classification">{{ codex().classification }}</span>
     }
   </div>
+  @if (codex().glyph) {
+    <figure class="codex-header__glyph">
+      <img [src]="codex().glyph!" [alt]="codex().title">
+    </figure>
+  }
   <h1 class="codex-header__title">{{ codex().title }}</h1>
   @if (codex().subtitle) {
     <p class="codex-header__subtitle">{{ codex().subtitle }}</p>
