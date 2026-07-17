@@ -1,6 +1,10 @@
 import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, ViewChild, inject, input } from '@angular/core';
 import { CodexRecord } from '@shared/models/codex.model';
-import { CodexBodyComponent, CodexFooterComponent, CodexHeaderComponent, CodexTagsComponent,CodexTimelineComponent } from '@shared/ui/codex';
+import { CodexHeaderComponent } from '@shared/ui/codex/codex-header/codex-header';
+import { CodexBodyComponent } from '@shared/ui/codex/codex-body/codex-body';
+import { CodexTagsComponent } from '@shared/ui/codex/codex-tags/codex-tags';
+import { CodexTimelineComponent } from '@shared/ui/codex/codex-timeline/codex-timeline';
+import { CodexFooterComponent } from '@shared/ui/codex/codex-footer/codex-footer';
 import { CodexRendererService } from '@shared/ui/services/codex-renderer.service';
 
 @Component({

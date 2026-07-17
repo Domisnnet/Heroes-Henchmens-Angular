@@ -1,5 +1,3 @@
-@use '../../styles/abstracts' as *;
-
 :host {
   display: block;
   width: 100%;
@@ -36,7 +34,8 @@
   DOCUMENT
 ========================================================================== */
 .codex__document {
-  @include flex-column;
+  display: flex;
+  flex-direction: column;
   position: relative;
   width: min(100%, var(--codex-max-width));
   gap: var(--codex-space-2xl);
