@@ -2,12 +2,50 @@
   display: block;
 }
 
+/* ==========================================================
+  CODEX SECTION
+========================================================== */
 .codex-section {
   display: flex;
   flex-direction: column;
-  gap: .75rem;
-  padding: 1.5rem;
-  border: 1px solid var(--codex-border);
-  border-radius: var(--radius-lg);
-  background: var(--codex-surface);
+  gap: var(--codex-space-md);
+}
+
+/* ==========================================================
+  HEADER
+========================================================== */
+.codex-section__header {
+  display: flex;
+  align-items: center;
+}
+
+/* ==========================================================
+  TITLE
+========================================================== */
+.codex-section__title {
+  margin: 0;
+  font-family: var(--codex-font-heading);
+  font-size: var(--codex-heading-size);
+  color: var(--codex-accent);
+}
+
+/* ==========================================================
+  CONTENT
+========================================================== */
+.codex-section__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--codex-space-md);
+}
+
+/* ==========================================================
+  TEXT
+========================================================== */
+.codex-section__text {
+  margin: 0;
+  font-family: var(--codex-font-body);
+  font-size: var(--codex-body-size);
+  color: var(--codex-text);
+  line-height: 1.8;
+  text-align: justify;
 }
