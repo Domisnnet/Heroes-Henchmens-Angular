@@ -35,8 +35,12 @@
   --codex-accent-glow: var(--hero-glow);
   --codex-accent-secondary: var(--hero-secondary);
   --codex-background: var(--bg-primary);
+  --codex-badge-height: 2rem;
+  --codex-badge-radius: var(--radius-full);
+  --codex-badge-padding-inline: var(--space-md);
   --codex-body-size: var(--codex-text-md);
   --codex-border: rgba(255,255,255,.12);
+  --codex-border-color: rgba(255,255,255,.18);
   --codex-border-radius: var(--codex-radius-lg);
   --codex-border-soft: rgba(255,255,255,.06);
   --codex-border-width: var(--border-width);
@@ -50,9 +54,12 @@
   --codex-frame-scale: 1;
   --codex-glyph-padding: var(--space-md);
   --codex-glyph-size: var(--icon-2xl);
+  --codex-header-gap: var(--space-lg);
+  --codex-header-padding: var(--space-xl);
   --codex-heading-size: var(--codex-text-xl);
   --codex-label-size: var(--codex-text-xs);
   --codex-max-width: 68rem;
+  --codex-meta-gap: var(--space-sm);
   --codex-min-height: auto;
   --codex-overlay: var(--bg-overlay);
   --codex-radius-full: var(--radius-full);
@@ -70,6 +77,7 @@
   --codex-space-xl: var(--space-xl);
   --codex-space-xs: var(--space-xs);
   --codex-subtitle-size: var(--codex-text-lg);
+  --codex-subtitle-width: 38rem;
   --codex-surface: var(--bg-card);
   --codex-surface-alt: var(--bg-secondary);
   --codex-text: var(--white);
@@ -218,4 +226,36 @@
   --space-sm: 0.5rem;
   --space-xl: 2rem;
   --space-xs: 0.25rem;
+
+  /* ==========================================================================
+    TYPOGRAPHY
+  ========================================================================== */
+  --font-heading:'Bebas Neue',sans-serif;
+  --font-body:'Montserrat',sans-serif;
+  --text-xs:.75rem;
+  --text-sm:.875rem;
+  --text-md:1rem;
+  --text-lg:1.25rem;
+  --text-xl:1.5rem;
+  --text-2xl:2rem;
+  --text-3xl:3rem;
+  --text-4xl:4rem;
+  --text-5xl:6rem;
+  --text-6xl:8rem;
+
+  /* ==========================================================================
+    TRANSITIONS
+  ========================================================================== */
+  --transition-fast:.2s ease;
+  --transition-normal:.3s ease;
+  --transition-slow:.5s ease;
+
+  /* ==========================================================================
+    Z INDEX
+  ========================================================================== */
+  --z-background:1;
+  --z-content:10;
+  --z-header:100;
+  --z-footer:200;
+  --z-modal:1000;
 }
