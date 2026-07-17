@@ -22,6 +22,12 @@ export const routes: Routes = [
       import('./features/result-component/result.component').then((c) => c.ResultComponent),
   },
   {
+    path: 'codex',
+    loadComponent: () =>
+      import('./features/codex/codex-page/codex-page').then((c) => c.CodexPage),
+  },
+
+  {
     path: '**',
     redirectTo: 'home',
   },
