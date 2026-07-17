@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { CodexRecord } from '@shared/models/codex.model';
-import { CodexSectionComponent } from '@shared/ui/codex';
+import { CodexSectionComponent } from '@shared/ui/codex/codex-section/codex-section';
 
 @Component({
   selector: 'app-codex-body',
