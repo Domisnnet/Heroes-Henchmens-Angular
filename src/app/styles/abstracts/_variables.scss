@@ -9,8 +9,8 @@
   /* ==========================================================================
     BORDERS
   ========================================================================== */
-  --border-width: 3px;
   --border-pill: 999px;
+  --border-width: 3px;
 
   /* ==========================================================================
     BORDER RADIUS
@@ -23,119 +23,84 @@
   /* ==========================================================================
     COLORS
   ========================================================================== */
-  /* Background */
   --bg-card: #242b33;
   --bg-primary: #12161a;
-  --bg-secondary: #1a2026;
   --bg-result: rgba(255, 255, 255, 0.08);
+  --bg-secondary: #1a2026;
 
   /* ==========================================================================
     CODEX
   ========================================================================== */
-  /* Layout */
-  --codex-width: 68rem;
-  --codex-max-width: 68rem;
-  --codex-min-height: auto;
-
-  /* Spacing */
-  --codex-space-xs: var(--space-xs);
-  --codex-space-sm: var(--space-sm);
-  --codex-space-md: var(--space-md);
-  --codex-space-lg: var(--space-lg);
-  --codex-space-xl: var(--space-xl);
-  --codex-space-2xl: var(--space-2xl);
-  --codex-space-3xl: var(--space-3xl);
-
-  /* Radius */
-  --codex-radius-sm: var(--radius-sm);
-  --codex-radius-md: var(--radius-md);
-  --codex-radius-lg: var(--radius-lg);
-  --codex-radius-full: var(--radius-full);
-
-  /* Typography */
-  --codex-font-heading: var(--font-heading);
-  --codex-font-body: var(--font-body);
-  --codex-text-xs: var(--text-xs);
-  --codex-text-sm: var(--text-sm);
-  --codex-text-md: var(--text-md);
-  --codex-text-lg: var(--text-lg);
-  --codex-text-xl: var(--text-xl);
-  --codex-text-2xl: var(--text-2xl);
-  --codex-text-3xl: var(--text-3xl);
-
-  /* Semantic Typography */
-  --codex-title-size: var(--codex-text-3xl);
-  --codex-subtitle-size: var(--codex-text-lg);
-  --codex-heading-size: var(--codex-text-xl);
-  --codex-body-size: var(--codex-text-md);
-  --codex-label-size: var(--codex-text-xs);
-
-  /* Surfaces */
-  --codex-background: var(--bg-primary);
-  --codex-surface: var(--bg-card);
-  --codex-surface-alt: var(--bg-secondary);
-  --codex-overlay: var(--bg-overlay);
-
-  /* Colors */
-  --codex-text: var(--white);
-  --codex-text-muted: var(--gray-300);
   --codex-accent: var(--hero-primary);
-  --codex-accent-secondary: var(--hero-secondary);
   --codex-accent-glow: var(--hero-glow);
-
-  /* Borders */
-  --codex-border-width: var(--border-width);
-  --codex-border-radius: var(--codex-radius-lg);
+  --codex-accent-secondary: var(--hero-secondary);
+  --codex-background: var(--bg-primary);
+  --codex-body-size: var(--codex-text-md);
   --codex-border: rgba(255,255,255,.12);
+  --codex-border-radius: var(--codex-radius-lg);
   --codex-border-soft: rgba(255,255,255,.06);
+  --codex-border-width: var(--border-width);
   --codex-divider: rgba(255,255,255,.08);
-
-  /* Glyph */
-  --codex-glyph-size: var(--icon-2xl);
-  --codex-glyph-padding: var(--space-md);
-
-  /* Timeline */
-  --codex-timeline-width: .125rem;
-  --codex-timeline-dot-size: .75rem;
-  --codex-timeline-gap: var(--space-xl);
-
-  /* Tags */
-  --codex-tag-gap: var(--space-sm);
-  --codex-tag-padding-x: var(--space-md);
-  --codex-tag-padding-y: .375rem;
-  --codex-tag-radius: var(--radius-full);
-
-  /* Footer */
   --codex-footer-gap: var(--space-md);
   --codex-footer-padding: var(--space-xl);
-
-  /* Shadows */
-  --codex-shadow: var(--shadow-card);
-  --codex-shadow-hover: var(--shadow-card);
-  --codex-shadow-blur: var(--shadow-blur);
-
-  /* Motion */
-  --codex-transition-fast: var(--transition-fast);
-  --codex-transition: var(--transition-normal);
-  --codex-transition-slow: var(--transition-slow);
-
-  /* Layers */
-  --codex-z-frame: var(--z-background);
-  --codex-z-document: var(--z-content);
-  --codex-z-overlay: calc(var(--z-content) + 1);
-
-  /* SVG */
+  --codex-font-body: var(--font-body);
+  --codex-font-heading: var(--font-heading);
+  --codex-frame-offset-y: 0;
   --codex-frame-opacity: 1;
   --codex-frame-scale: 1;
-  --codex-frame-offset-y: 0;
+  --codex-glyph-padding: var(--space-md);
+  --codex-glyph-size: var(--icon-2xl);
+  --codex-heading-size: var(--codex-text-xl);
+  --codex-label-size: var(--codex-text-xs);
+  --codex-max-width: 68rem;
+  --codex-min-height: auto;
+  --codex-overlay: var(--bg-overlay);
+  --codex-radius-full: var(--radius-full);
+  --codex-radius-lg: var(--radius-lg);
+  --codex-radius-md: var(--radius-md);
+  --codex-radius-sm: var(--radius-sm);
+  --codex-shadow: var(--shadow-card);
+  --codex-shadow-blur: var(--shadow-blur);
+  --codex-shadow-hover: var(--shadow-card);
+  --codex-space-2xl: var(--space-2xl);
+  --codex-space-3xl: var(--space-3xl);
+  --codex-space-lg: var(--space-lg);
+  --codex-space-md: var(--space-md);
+  --codex-space-sm: var(--space-sm);
+  --codex-space-xl: var(--space-xl);
+  --codex-space-xs: var(--space-xs);
+  --codex-subtitle-size: var(--codex-text-lg);
+  --codex-surface: var(--bg-card);
+  --codex-surface-alt: var(--bg-secondary);
+  --codex-text: var(--white);
+  --codex-text-2xl: var(--text-2xl);
+  --codex-text-3xl: var(--text-3xl);
+  --codex-text-lg: var(--text-lg);
+  --codex-text-md: var(--text-md);
+  --codex-text-muted: var(--gray-300);
+  --codex-text-sm: var(--text-sm);
+  --codex-text-xl: var(--text-xl);
+  --codex-text-xs: var(--text-xs);
+  --codex-timeline-dot-size: .75rem;
+  --codex-timeline-gap: var(--space-xl);
+  --codex-timeline-width: .125rem;
+  --codex-title-size: var(--codex-text-3xl);
+  --codex-transition: var(--transition-normal);
+  --codex-transition-fast: var(--transition-fast);
+  --codex-transition-slow: var(--transition-slow);
+  --codex-width: 68rem;
+  --codex-z-document: var(--z-content);
+  --codex-z-frame: var(--z-background);
+  --codex-z-overlay: calc(var(--z-content) + 1);
 
-  /* ==========================================================
-    Base
-  ========================================================== */
+  /* ==========================================================================
+    BASE
+  ========================================================================== */
   --black: #000;
   --white: #fff;
 
   /* Neutral */
+  --chapter: rgba(255, 255, 255, 0.1);
   --gray-100: #f5f5f5;
   --gray-200: #e5e5e5;
   --gray-300: #c7c7c7;
@@ -144,12 +109,11 @@
   --gray-700: #4b4b4b;
   --gray-800: #3b3b3b;
   --gray-900: #111;
-  --chapter: rgba(255, 255, 255, 0.1);
 
   /* Feedback */
+  --danger: #ff1744;
   --success: #00e676;
   --warning: #ffd600;
-  --danger: #ff1744;
 
   /* Legacy */
   --viral-primary: #eeff41;
@@ -158,35 +122,35 @@
   /* ==========================================================================
     PERSONALITIES
   ========================================================================== */
+  /* Henchmen */
+  --henchmen-glow: #f29dff;
+  --henchmen-primary: #fb4040;
+  --henchmen-secondary: #e040fb;
+  --shadow-henchmen: 10px 10px var(--shadow-blur) rgba(253, 0, 0, 0.5);
+
   /* Hero */
+  --hero-glow: #80f4ff;
   --hero-primary: #00e5ff;
   --hero-secondary: #009dff;
-  --hero-glow: #80f4ff;
   --shadow-hero: 10px 10px var(--shadow-blur) rgba(0, 81, 255, 0.5);
 
+  /* Mercenary */
+  --mercenary-glow: #ffe082;
+  --mercenary-primary: #ffd600;
+  --mercenary-secondary: #ffb300;
+  --shadow-mercenary: 10px 10px var(--shadow-blur) rgba(255, 214, 0, 0.5);
+
   /* Protector */
+  --protector-glow: #69f0ae;
   --protector-primary: #00e676;
   --protector-secondary: #00c853;
-  --protector-glow: #69f0ae;
   --shadow-protector: 10px 10px var(--shadow-blur) rgba(2, 255, 133, 0.5);
 
   /* Vigilante */
+  --shadow-vigilante: 10px 10px var(--shadow-blur) rgba(68, 0, 255, 0.5);
+  --vigilante-glow: #b388ff;
   --vigilante-primary: #7c4dff;
   --vigilante-secondary: #651fff;
-  --vigilante-glow: #b388ff;
-  --shadow-vigilante: 10px 10px var(--shadow-blur) rgba(68, 0, 255, 0.5);
-
-  /* Mercenary */
-  --mercenary-primary: #ffd600;
-  --mercenary-secondary: #ffb300;
-  --mercenary-glow: #ffe082;
-  --shadow-mercenary: 10px 10px var(--shadow-blur) rgba(255, 214, 0, 0.5);
-
-  /* Henchmen */
-  --henchmen-primary: #fb4040;
-  --henchmen-secondary: #e040fb;
-  --henchmen-glow: #f29dff;
-  --shadow-henchmen: 10px 10px var(--shadow-blur) rgba(253, 0, 0, 0.5);
 
   /* ==========================================================================
     COMPONENTS
@@ -196,9 +160,9 @@
   /* ==========================================================================
     EFFECTS
   ========================================================================== */
-  --effect-glow-opacity: 0.25;
   --effect-bar-highlight: rgba(255, 255, 255, var(--effect-glow-opacity));
   --effect-bar-shine: linear-gradient(90deg, transparent, var(--effect-bar-highlight), transparent);
+  --effect-glow-opacity: 0.25;
 
   /* ==========================================================================
     IMAGES
@@ -213,17 +177,17 @@
   --container-padding: 5%;
   --container-width: 75rem;
   --content-max-width: 75rem;
-  --header-height: 2.5rem;
   --footer-height: 2.5rem;
+  --header-height: 2.5rem;
   --viewport-height: 100vh;
 
   /* ==========================================================================
     OPACITY
   ========================================================================== */
-  --overlay-light: 0.15;
-  --overlay-medium: 0.35;
   --overlay-dark: 0.55;
   --overlay-heavy: 0.75;
+  --overlay-light: 0.15;
+  --overlay-medium: 0.35;
   --overlay-ultra: 0.9;
 
   /* ==========================================================================
@@ -240,11 +204,6 @@
   /* ==========================================================================
     SPACING
   ========================================================================== */
-  --space-xs: 0.25rem;
-  --space-sm: 0.5rem;
-  --space-md: 1rem;
-  --space-lg: 1.5rem;
-  --space-xl: 2rem;
   --space-2xl: 3rem;
   --space-3xl: 4rem;
   --space-4xl: 5rem;
@@ -254,49 +213,9 @@
   --space-home: -80px;
   --space-image: 180px;
   --space-image-margin: 70px;
-  --artifact-size: 320px;
-  --achivement-icon: 64px;
-  --acchivement-icon-size: 120px;
-  --acchivement-icon-wrapper-size: 120px;
-  --achievement-size: 340px;
-  --achievement-height: 500px;
-  --codex-size: 420px;
-  --codex-height: 760px;
-  --codex-glyph-size: 140px;
-
-  /* ==========================================================================
-    SURFACES
-  ========================================================================== */
-  --bg-overlay: rgba(0, 0, 0, 0.75);
-
-  /* ==========================================================================
-    TRANSITIONS
-  ========================================================================== */
-  --transition-fast: 0.2s ease;
-  --transition-normal: 0.3s ease;
-  --transition-slow: 0.5s ease;
-
-  /* ==========================================================================
-    TYPOGRAPHY
-  ========================================================================== */
-  --font-body: 'Montserrat', sans-serif;
-  --font-heading: 'Bebas Neue', sans-serif;
-  --text-xs: 0.75rem;
-  --text-sm: 0.875rem;
-  --text-md: 1rem;
-  --text-lg: 1.25rem;
-  --text-xl: 1.5rem;
-  --text-2xl: 2rem;
-  --text-3xl: 3rem;
-  --text-4xl: 4rem;
-  --text-5xl: 6rem;
-
-  /* ==========================================================================
-    Z INDEX
-  ========================================================================== */
-  --z-background: 1;
-  --z-content: 10;
-  --z-header: 100;
-  --z-footer: 200;
-  --z-modal: 1000;
+  --space-lg: 1.5rem;
+  --space-md: 1rem;
+  --space-sm: 0.5rem;
+  --space-xl: 2rem;
+  --space-xs: 0.25rem;
 }
