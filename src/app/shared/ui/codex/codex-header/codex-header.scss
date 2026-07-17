@@ -10,7 +10,7 @@
   flex-direction: column;
   align-items: center;
   gap: var(--codex-header-gap);
-  padding-bottom: var(--codex-header-padding);
+  padding: 0 0 var(--codex-header-padding);
   text-align: center;
   border-bottom: var(--codex-border-width) solid var(--codex-border-color);
 }
@@ -29,8 +29,7 @@
 /* ==========================================================
   BADGES
 ========================================================== */
-.codex-header__security,
-.codex-header__classification {
+.codex-header__security, .codex-header__classification {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -38,33 +37,51 @@
   padding-inline: var(--codex-badge-padding-inline);
   border-radius: var(--codex-badge-radius);
   border: var(--codex-border-width) solid var(--codex-border-color);
+  background: var(--codex-surface-alt);
+  color: var(--codex-text);
+  font-family: var(--codex-body-font);
   font-size: var(--codex-label-size);
+  transition: background var(--codex-transition-fast), border-color var(--codex-transition-fast), color var(--codex-transition-fast);
 }
 
 .codex-header__security {
   font-weight: 700;
-  letter-spacing: .18em;
+  letter-spacing: var(--codex-security-letter-spacing);
   text-transform: uppercase;
+  color: var(--codex-accent);
 }
 
 .codex-header__classification {
   text-transform: capitalize;
+  color: var(--codex-text-muted);
 }
 
 /* ==========================================================
   GLYPH
 ========================================================== */
 .codex-header__glyph {
-  width: var(--codex-glyph-size);
-  aspect-ratio: 1;
   display: grid;
   place-items: center;
+  inline-size: var(--codex-glyph-size);
+  block-size: var(--codex-glyph-size);
+  padding: var(--codex-glyph-padding);
+  border: var(--codex-border-width) solid var(--codex-border-color);
+  border-radius: 50%;
+  background: var(--codex-surface-alt);
+  box-shadow: var(--codex-shadow);
+  transition: transform var(--codex-transition-fast), box-shadow var(--codex-transition-fast);
+}
+
+.codex-header__glyph:hover{
+  transform:translateY(-3px);
+  box-shadow:var(--codex-shadow-hover);
 }
 
 .codex-header__glyph img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* ==========================================================
@@ -72,9 +89,11 @@
 ========================================================== */
 .codex-header__title {
   margin: 0;
+  color: var(--codex-text);
   font-family: var(--codex-heading-font);
   font-size: var(--codex-title-size);
-  line-height: 1.05;
+  line-height: var(--codex-title-line-height);
+  text-wrap: balance;
 }
 
 /* ==========================================================
@@ -83,8 +102,9 @@
 .codex-header__subtitle {
   margin: 0;
   max-width: var(--codex-subtitle-width);
+  color: var(--codex-text-muted);
   font-family: var(--codex-body-font);
   font-size: var(--codex-subtitle-size);
-  line-height: 1.6;
-  opacity: .75;
+  line-height: var(--codex-subtitle-line-height);
+  text-wrap: pretty;
 }

@@ -7,7 +7,7 @@
   @if (codex().sections?.length) {
     <div class="codex-body__sections">
       @for (section of codex().sections!; track section.id) {
-        <app-codex-section [section]="section"/>
+        <app-codex-section [section]="section" />
       }
     </div>
   }

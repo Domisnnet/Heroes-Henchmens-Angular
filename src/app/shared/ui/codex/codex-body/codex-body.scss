@@ -2,27 +2,39 @@
   display: block;
 }
 
+/* ==========================================================
+  CODEX BODY
+========================================================== */
 .codex-body {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: var(--codex-space-xl);
 }
 
+/* ==========================================================
+  NARRATIVE
+========================================================== */
 .codex-body__narrative {
-  padding: 1.5rem;
-  border: 1px solid var(--codex-border);
-  border-radius: var(--radius-lg);
+  padding: var(--codex-space-lg);
+  border: var(--codex-border-width) solid var(--codex-border-color);
+  border-radius: var(--codex-radius-lg);
   background: var(--codex-surface);
 }
 
 .codex-body__narrative p {
   margin: 0;
+  font-family: var(--codex-font-body);
+  font-size: var(--codex-body-size);
   line-height: 1.8;
+  color: var(--codex-text);
   text-align: justify;
 }
 
+/* ==========================================================
+  SECTIONS
+========================================================== */
 .codex-body__sections {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: var(--codex-space-lg);
 }
