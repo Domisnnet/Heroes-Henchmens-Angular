@@ -2,33 +2,56 @@
   display: block;
 }
 
+/* ==========================================================
+  CODEX TAGS
+========================================================== */
 .codex-tags {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--codex-space-md);
 }
 
+/* ==========================================================
+  TITLE
+========================================================== */
 .codex-tags__title {
   margin: 0;
-  font-size: 1rem;
-  font-weight: 600;
+  font-family: var(--codex-font-heading);
+  font-size: var(--codex-heading-size);
+  line-height: 1.2;
 }
 
+/* ==========================================================
+  LIST
+========================================================== */
 .codex-tags__list {
   display: flex;
   flex-wrap: wrap;
-  gap: .75rem;
+  gap: var(--codex-space-sm);
 }
 
+/* ==========================================================
+  TAG
+========================================================== */
 .codex-tag {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: .4rem .85rem;
-  border: 1px solid var(--codex-border);
-  border-radius: 999px;
-  background: var(--codex-surface);
-  font-size: .85rem;
+  min-height: var(--codex-badge-height);
+  padding-inline: var(--codex-badge-padding-inline);
+  border: var(--codex-border-width) solid var(--codex-border-color);
+  border-radius: var(--codex-badge-radius);
+  background: var(--codex-surface-alt);
+  color: var(--codex-text);
+  font-family: var(--codex-font-body);
+  font-size: var(--codex-label-size);
   line-height: 1;
   white-space: nowrap;
+  transition: background var(--codex-transition-fast), border-color var(--codex-transition-fast), color var(--codex-transition-fast);
+}
+
+.codex-tag:hover {
+  background: var(--codex-accent);
+  border-color: var(--codex-accent);
+  color: var(--black);
 }

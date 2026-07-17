@@ -2,36 +2,52 @@
   display: block;
 }
 
+/* ==========================================================
+  CODEX FOOTER
+========================================================== */
 .codex-footer {
-  padding-top: 2rem;
-  border-top: 1px solid var(--codex-border);
+  padding-top: var(--codex-footer-padding);
+  border-top: var(--codex-border-width) solid var(--codex-border-color);
 }
 
+/* ==========================================================
+  GRID
+========================================================== */
 .codex-footer__grid {
   display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(var(--codex-footer-item-min-width), 1fr));
+  gap: var(--codex-footer-gap);
 }
 
+/* ==========================================================
+  ITEM
+========================================================== */
 .codex-footer__item {
   display: flex;
   flex-direction: column;
-  gap: .35rem;
-  padding: 1rem;
-  border: 1px solid var(--codex-border);
-  border-radius: var(--radius-lg);
-  background: var(--codex-surface);
+  gap: var(--codex-footer-item-gap);
+  padding: var(--codex-footer-item-padding);
+  background: var(--codex-surface-alt);
+  border: var(--codex-border-width) solid var(--codex-border-soft);
+  border-radius: var(--codex-radius-md);
 }
 
+/* ==========================================================
+  LABEL
+========================================================== */
 .codex-footer__label {
-  font-size: .75rem;
-  font-weight: 600;
+  font-family: var(--codex-font-heading);
+  font-size: var(--codex-label-size);
   letter-spacing: .12em;
   text-transform: uppercase;
-  opacity: .65;
+  color: var(--codex-text-muted);
 }
 
+/* ==========================================================
+  VALUE
+========================================================== */
 .codex-footer__value {
-  font-size: .95rem;
-  font-weight: 500;
+  font-family: var(--codex-font-body);
+  font-size: var(--codex-body-size);
+  color: var(--codex-text);
 }

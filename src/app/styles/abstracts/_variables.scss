@@ -48,6 +48,9 @@
   --codex-frame-opacity: 1;
   --codex-frame-scale: 1;
   --codex-footer-gap: var(--space-lg);
+  --codex-footer-item-gap: var(--space-xs);
+  --codex-footer-item-min-width: 10rem;
+  --codex-footer-item-padding: var(--space-md);
   --codex-glyph-size: 8.75rem;
   --codex-header-gap: var(--space-lg);
   --codex-max-width: 68rem;
@@ -62,6 +65,7 @@
   --codex-text: var(--white);
   --codex-text-muted: var(--gray-300);
   --codex-timeline-dot-size: .75rem;
+  --codex-timeline-gap: var(--codex-space-lg);
   --codex-timeline-width: .125rem;
   --codex-z-document: var(--z-content);
   --codex-z-frame: var(--z-background);

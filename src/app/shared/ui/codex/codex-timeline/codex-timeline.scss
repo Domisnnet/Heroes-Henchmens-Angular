@@ -2,68 +2,97 @@
   display: block;
 }
 
+/* ==========================================================
+  CODEX TIMELINE
+========================================================== */
 .codex-timeline {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: var(--codex-space-lg);
 }
 
+/* ==========================================================
+  TITLE
+========================================================== */
 .codex-timeline__title {
   margin: 0;
-  font-size: 1rem;
-  font-weight: 600;
+  font-family: var(--codex-font-heading);
+  font-size: var(--codex-heading-size);
+  line-height: 1.2;
+  color: var(--codex-text);
 }
 
+/* ==========================================================
+  LIST
+========================================================== */
 .codex-timeline__list {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: var(--codex-timeline-gap);
+  position: relative;
 }
 
+/* ==========================================================
+  EVENT
+========================================================== */
 .codex-event {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: var(--codex-timeline-dot-size) 1fr;
+  column-gap: var(--codex-space-lg);
+  position: relative;
 }
 
+/* ==========================================================
+  MARKER
+========================================================== */
 .codex-event__marker {
-  flex-shrink: 0;
-  width: .85rem;
-  height: .85rem;
-  margin-top: .45rem;
-  border-radius: 50%;
-  border: 2px solid var(--codex-border);
-  background: var(--codex-surface);
+  width: var(--codex-timeline-dot-size);
+  height: var(--codex-timeline-dot-size);
+  margin-top: calc(var(--codex-body-size) * .45);
+  border-radius: var(--radius-full);
+  background: var(--codex-accent);
+  box-shadow: 0 0 var(--codex-shadow-blur) var(--codex-accent-glow);
 }
 
+/* ==========================================================
+  CONTENT
+========================================================== */
 .codex-event__content {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
-  flex: 1;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--codex-border);
+  gap: var(--codex-space-xs);
 }
 
-.codex-event:last-child .codex-event__content {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
+/* ==========================================================
+  YEAR
+========================================================== */
 .codex-event__year {
-  font-size: .8rem;
-  font-weight: 600;
-  letter-spacing: .08em;
-  opacity: .75;
+  font-family: var(--codex-font-body);
+  font-size: var(--codex-label-size);
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--codex-accent);
 }
 
+/* ==========================================================
+  TITLE
+========================================================== */
 .codex-event__title {
   margin: 0;
-  font-size: 1rem;
-  font-weight: 600;
+  font-family: var(--codex-font-heading);
+  font-size: var(--codex-subtitle-size);
+  line-height: 1.2;
+  color: var(--codex-text);
 }
 
+/* ==========================================================
+  DESCRIPTION
+========================================================== */
 .codex-event__description {
   margin: 0;
+  font-family: var(--codex-font-body);
+  font-size: var(--codex-body-size);
   line-height: 1.7;
+  color: var(--codex-text-muted);
 }
