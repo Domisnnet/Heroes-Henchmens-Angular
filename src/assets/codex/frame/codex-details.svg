@@ -68,4 +68,13 @@
   <g id="codex-details__footer">
     <line class="codex-details__line" x1="24" y1="560" x2="376" y2="560"/>
   </g>
+    <g id="codex-layout">
+    <g id="slot-header" transform="translate(24 24)"/>
+    <g id="slot-glyph" transform="translate(200 140)"/>
+    <g id="slot-title" transform="translate(200 188)"/>
+    <g id="slot-subtitle" transform="translate(200 214)"/>
+    <g id="slot-content" transform="translate(40 240)"/>
+    <g id="slot-timeline" transform="translate(50 350)"/>
+    <g id="slot-footer" transform="translate(24 560)"/>
+  </g>
 </svg>
