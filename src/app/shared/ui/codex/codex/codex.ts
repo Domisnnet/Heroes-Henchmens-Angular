@@ -15,7 +15,7 @@ import { CodexRendererService } from '@shared/ui/services/codex-renderer.service
     CodexBodyComponent,
     CodexTagsComponent,
     CodexTimelineComponent,
-    CodexFooterComponent,
+    CodexFooterComponent
   ],
   templateUrl: './codex.html',
   styleUrls: ['./codex.scss'],
