@@ -44,6 +44,7 @@
   --codex-content-padding-y: var(--space-2xl);
   --codex-divider: rgba(255,255,255,.08);
   --codex-divider-space: var(--space-xl);
+  --codex-document-min-height: 82rem;
   --codex-frame-offset-y: 0;
   --codex-frame-opacity: 1;
   --codex-frame-scale: 1;
@@ -53,6 +54,9 @@
   --codex-footer-item-padding: var(--space-md);
   --codex-glyph-size: 8.75rem;
   --codex-header-gap: var(--space-lg);
+  --codex-layout-gap-content: var(--codex-space-2xl);
+  --codex-layout-gap-footer: var(--codex-space-3xl);
+  --codex-layout-gap-header: var(--codex-space-3xl);
   --codex-max-width: 68rem;
   --codex-min-height: auto;
   --codex-overlay: var(--bg-overlay);
