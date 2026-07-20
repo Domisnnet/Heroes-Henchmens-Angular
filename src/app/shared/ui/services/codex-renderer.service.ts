@@ -90,9 +90,8 @@ export class CodexRendererService {
   private parse(source: string): SVGSVGElement {
     const xml = this.parser.parseFromString(source, 'image/svg+xml');
     const root = xml.documentElement;
-    if (root.tagName.toLowerCase() !== 'svg') {
-      throw new Error('[CodexRenderer] Invalid SVG document.');
-    }
-    return root as unknown as SVGSVGElement;
+    if (root.tagName.toLowerCase() !== 'svg') { 
+      throw new Error('[CodexRenderer] Invalid SVG document.'); 
+    } return root as unknown as SVGSVGElement;
   }
 }

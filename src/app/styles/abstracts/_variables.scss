@@ -29,48 +29,125 @@
   --bg-secondary: #1a2026;
 
   /* ==========================================================================
-    CODEX
+  CODEX
   ========================================================================== */
+  /* Accent */
   --codex-accent: var(--hero-primary);
   --codex-accent-glow: var(--hero-glow);
   --codex-accent-secondary: var(--hero-secondary);
+
+  /* Background */
   --codex-background: var(--bg-primary);
-  --codex-border: rgba(255,255,255,.12);
-  --codex-border-color: rgba(255,255,255,.18);
-  --codex-border-soft: rgba(255,255,255,.06);
+  --codex-overlay: var(--background-overlay);
+
+  /* Badge */
+  --codex-badge-height: 2rem;
+  --codex-badge-padding-inline: var(--space-md);
+  --codex-badge-radius: var(--radius-full);
+
+  /* Body */
   --codex-body-gap: var(--space-xl);
-  --codex-content-width: 52rem;
-  --codex-content-padding-x: var(--space-2xl);
-  --codex-content-padding-y: var(--space-2xl);
-  --codex-divider: rgba(255,255,255,.08);
+
+  /* Border */
+  --codex-border: rgba(255, 255, 255, .12);
+  --codex-border-color: rgba(255, 255, 255, .18);
+  --codex-border-soft: rgba(255, 255, 255, .06);
+  --codex-border-width: var(--border-width);
+
+  /* Divider */
+  --codex-divider: rgba(255, 255, 255, .08);
   --codex-divider-space: var(--space-xl);
-  --codex-document-min-height: 82rem;
-  --codex-frame-offset-y: 0;
-  --codex-frame-opacity: 1;
-  --codex-frame-scale: 1;
+
+  /* Frame */
+  --codex-frame-width: 72rem;
+
+  /* Footer */
   --codex-footer-gap: var(--space-lg);
   --codex-footer-item-gap: var(--space-xs);
   --codex-footer-item-min-width: 10rem;
   --codex-footer-item-padding: var(--space-md);
+
+  /* Fonts */
+  --codex-font-body: var(--font-body);
+  --codex-font-heading: var(--font-heading);
+
+  /* Glyph */
+  --codex-glyph-padding: var(--space-md);
   --codex-glyph-size: 8.75rem;
+  --codex-glyph-offset: 2rem;
+
+  /* Header */
   --codex-header-gap: var(--space-lg);
-  --codex-layout-gap-content: var(--codex-space-2xl);
-  --codex-layout-gap-footer: var(--codex-space-3xl);
-  --codex-layout-gap-header: var(--codex-space-3xl);
+  --codex-header-padding: var(--space-2xl);
+
+  /* Layout */
+  --codex-layout-gap-content: var(--space-2xl);
+  --codex-layout-gap-footer: var(--space-3xl);
+  --codex-layout-gap-header: var(--space-3xl);
   --codex-max-width: 68rem;
-  --codex-min-height: auto;
-  --codex-overlay: var(--bg-overlay);
+
+  /* Meta */
+  --codex-meta-gap: var(--space-sm);
+
+  /* Padding */
+  --codex-frame-padding: clamp(.75rem, 2vw, 1.5rem); 
+  --codex-content-padding-top: 5.5rem;
+  --codex-content-padding-right: 6rem;
+  --codex-content-padding-bottom: 5rem;
+  --codex-content-padding-left: 6rem;
+  --codex-page-padding-top: 3rem;
+  --codex-page-padding-right: 3rem;
+  --codex-page-padding-bottom: 3rem;
+  --codex-page-padding-left: 3rem;
+  --codex-content-width: 52rem;
+  --codex-max-width: 68rem;
+
+  /* Radius */
+  --codex-radius-full: var(--radius-full);
+  --codex-radius-lg: var(--radius-lg);
+  --codex-radius-md: var(--radius-md);
+  --codex-radius-sm: var(--radius-sm);
+
+  /* Section */
   --codex-section-gap: var(--space-3xl);
+
+  /* Security */
+  --codex-security-letter-spacing: .18em;
+
+  /* Shadow */
   --codex-shadow: var(--shadow-card);
   --codex-shadow-hover: var(--shadow-card);
+
+  /* Subtitle */
+  --codex-subtitle-line-height: 1.6;
+  --codex-subtitle-size: var(--text-lg);
   --codex-subtitle-width: 38rem;
+
+  /* Surface */
   --codex-surface: var(--bg-card);
   --codex-surface-alt: var(--bg-secondary);
+
+  /* Text */
+  --codex-label-size: var(--text-xs);
   --codex-text: var(--white);
   --codex-text-muted: var(--gray-300);
+
+  /* Timeline */
   --codex-timeline-dot-size: .75rem;
-  --codex-timeline-gap: var(--codex-space-lg);
+  --codex-timeline-gap: var(--space-lg);
   --codex-timeline-width: .125rem;
+
+  /* Title */
+  --codex-title-line-height: 1.05;
+  --codex-title-gap: .75rem;
+  --codex-title-size: var(--text-3xl);
+
+  /* Transition */
+  --codex-transition-fast: var(--transition-fast);
+  --codex-transition-normal: var(--transition-normal);
+  --codex-transition-slow: var(--transition-slow);
+
+  /* Z-Index */
   --codex-z-document: var(--z-content);
   --codex-z-frame: var(--z-background);
   --codex-z-overlay: calc(var(--z-content) + 1);

@@ -1,7 +1,7 @@
 :host {
   display: block;
-  width: 100%;
-  min-height: 100%;
+  inline-size: 100%;
+  min-block-size: 100%;
 }
 
 /* ==========================================================================
@@ -12,29 +12,33 @@
   justify-content: center;
   position: relative;
   width: 100%;
-  min-height: 100vh;
-  padding-block: var(--space-4xl);
-  padding-inline: var(--space-lg);
+  padding: 
+    var(--codex-page-padding-top) 
+    var(--codex-page-padding-right) 
+    var(--codex-page-padding-bottom)
+    var(--codex-page-padding-left);
 }
 
 /* ==========================================================================
-  SVG FRAME
+  FRAME
 ========================================================================== */
 .codex__frame {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   position: absolute;
-  inset: 0;
+  inset:
+    var(--codex-page-padding-top)
+    var(--codex-page-padding-right)
+    var(--codex-page-padding-bottom)
+    var(--codex-page-padding-left);
   pointer-events: none;
-  user-select: none;
-  z-index: var(--z-background);
+  z-index: var(--codex-z-frame);
 }
 
 .codex__frame svg {
-  width: 100%;
-  max-width: var(--codex-width);
-  height: auto;
+  inline-size: 100%;
+  max-inline-size: var(--codex-max-width);
+  block-size: auto;
 }
 
 /* ==========================================================================
@@ -44,25 +48,46 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  width: min(100%, var(--codex-width));
-  gap: var(--codex-gap);
-  padding: var(--codex-padding);
-  z-index: var(--z-content);
+  width: calc(min(100%, var(--codex-max-width)) - (var(--codex-frame-padding) * 2));
+  margin: var(--codex-frame-padding);
+  min-height: var(--codex-document-min-height);
+  max-inline-size: var(--codex-max-width);
+  padding:
+    var(--codex-content-padding-top)
+    var(--codex-content-padding-right)
+    var(--codex-content-padding-bottom)
+    var(--codex-content-padding-left);
+  z-index: var(--codex-z-document);
 }
+
+/* ==========================================================================
+  HEADER
+========================================================================== */
+.codex__header { margin-block-end: var(--codex-layout-gap-header); }
+
+/* ==========================================================================
+  MAIN
+========================================================================== */
+.codex__main { display: flex; flex-direction: column; gap: var(--codex-layout-gap-content); }
+
+/* ==========================================================================
+  FOOTER
+========================================================================== */
+.codex__footer { margin-block-start: var(--codex-layout-gap-footer); }
 
 /* ==========================================================================
   RESPONSIVE
 ========================================================================== */
 @media (width <= 1024px) {
-  .codex { padding: var(--codex-space-2xl) var(--codex-space-md); }
-  .codex__document { padding: var(--codex-space-2xl); gap: var(--codex-space-xl); }
+  .codex { padding-inline: var(--space-md); padding-block: var(--space-2xl); }
+  .codex__document { padding-inline: var(--space-xl); padding-block: var(--space-xl); }
 }
 
 @media (width <= 768px) {
-  .codex { padding: var(--codex-space-xl) var(--codex-space-md); }
-  .codex__document { padding: var(--codex-space-xl); gap: var(--codex-space-lg); }
+  .codex { padding-inline: var(--space-sm); padding-block: var(--space-xl); }
+  .codex__document { padding-inline: var(--space-lg); padding-block: var(--space-lg); }
 }
 
 @media (width <= 480px) {
-  .codex__document { padding: var(--codex-space-lg); }
+  .codex__document { padding-inline: var(--space-md); padding-block: var(--space-md); }
 }

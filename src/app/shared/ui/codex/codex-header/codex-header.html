@@ -1,19 +1,21 @@
 <header class="codex-header">
-  <div class="codex-header__meta">
-    @if (codex().security) {
-      <span class="codex-header__security">{{ codex().security }}</span>
-    }
-    @if (codex().classification) {
-      <span class="codex-header__classification">{{ codex().classification }}</span>
-    }
+  @if (codex().security || codex().classification) {
+    <div class="codex-header__meta">
+      @if (codex().security) {
+        <span class="codex-header__security">{{ codex().security }}</span>
+      }
+      @if (codex().classification) {
+        <span class="codex-header__classification">{{ codex().classification }}</span>
+      }
+    </div>
+  }
+  <div class="codex-header__titles">
+    <h1 class="codex-header__title">{{ codex().title }}</h1>
+    @if (codex().subtitle) { <p class="codex-header__subtitle">{{ codex().subtitle }}</p> }
   </div>
   @if (codex().glyph) {
     <figure class="codex-header__glyph">
       <img [src]="codex().glyph!" [alt]="codex().title">
     </figure>
-  }
-  <h1 class="codex-header__title">{{ codex().title }}</h1>
-  @if (codex().subtitle) {
-    <p class="codex-header__subtitle">{{ codex().subtitle }}</p>
   }
 </header>

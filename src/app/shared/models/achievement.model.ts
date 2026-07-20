@@ -1,5 +1,4 @@
 export type AchievementRarity = 'common' | 'rare' | 'epic' | 'legendary';
-
 export interface Achievement {
   id: string;
   title: string;
