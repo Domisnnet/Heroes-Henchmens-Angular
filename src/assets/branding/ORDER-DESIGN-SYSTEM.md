@@ -287,4 +287,4 @@ Only create a new asset when composition is insufficient.
 
 ---
 
-END OF DOCUMENT
+END OF DOCUMENT.

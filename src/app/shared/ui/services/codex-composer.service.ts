@@ -52,8 +52,13 @@ export class CodexComposerService {
     defs.appendChild(style);
   }
   private mergeGroups(root: SVGSVGElement, layers: SVGSVGElement[]): void {
-    for (const layer of layers) { Array.from(layer.children)
-      .filter(node => node.tagName.toLowerCase() === 'g')
-      .forEach(group => { root.appendChild(group.cloneNode(true)); }); }
-  }
+  const rootGroups = new Map<string, SVGGElement>();
+  root.querySelectorAll('g[id]').forEach(group => { rootGroups.set(group.id, group as SVGGElement); });
+  for (const layer of layers) {
+    Array.from(layer.children) .filter(node => node.tagName.toLowerCase() === 'g') .forEach(group => {
+      const id = group.id;
+      if (id && rootGroups.has(id)) { const target = rootGroups.get(id)!; Array.from(group.childNodes).forEach(child => { target.appendChild(child.cloneNode(true)); }); return; }
+      root.appendChild(group.cloneNode(true));
+    });
+  }}
 }
