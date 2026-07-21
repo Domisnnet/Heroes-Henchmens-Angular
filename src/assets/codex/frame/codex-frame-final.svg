@@ -2,14 +2,13 @@
 <!-- ===================================================== -->
 <!-- Frame Library                                         -->
 <!-- Asset   : codex-frame-final.svg                       -->
-<!-- Version : 1.0.0                                       -->
+<!-- Version : 2.0.0                                       -->
 <!-- Status  : Construction                                -->
 <!-- Order Design System                                   -->
 <!-- ===================================================== -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="codex-frame-final__title codex-frame-final__desc">
   <title id="codex-frame-final__title">Codex Frame Final</title>
-  <desc id="codex-frame-final__desc">Final overlay layer for Codex Vaticinarum. 
-    Adds finishing accents and framing highlights over the complete artifact composition.</desc>
+  <desc id="codex-frame-final__desc">Final overlay layer for Codex Vaticinarum.</desc>
   <defs>
     <g id="codex-frame-final__corner-highlight">
       <path class="codex-frame-final__accent" d="M0 24 L0 0 L24 0"/>
@@ -28,7 +27,7 @@
       stroke-width: .5;
       stroke-linecap: round;
       stroke-linejoin: round;
-      vector-effect: non-scaling-stroke;
+      vector-effect:non-scaling-stroke;
     }
 
     .codex-frame-final__accent {
@@ -39,7 +38,7 @@
       stroke-linejoin: round;
       vector-effect: non-scaling-stroke;
     }
-    
+
     .codex-frame-final__marker {
       fill: currentColor;
       stroke: none;
@@ -51,12 +50,8 @@
     <use href="#codex-frame-final__corner-highlight" x="368" y="568" transform="rotate(180 380 580)"/>
     <use href="#codex-frame-final__corner-highlight" x="8" y="568" transform="rotate(-90 20 580)"/>
   </g>
-  <g id="codex-frame-final__top-glyph">
-    <use href="#codex-frame-final__center-glyph" x="200" y="38"/>
-  </g>
-  <g id="codex-frame-final__bottom-glyph">
-    <use href="#codex-frame-final__center-glyph" x="200" y="562"/>
-  </g>
+  <g id="codex-frame-final__top-glyph"/>
+  <g id="codex-frame-final__bottom-glyph"/>
   <g id="codex-frame-final__edge-highlights" class="codex-frame-final__accent">
     <line x1="70" y1="18" x2="330" y2="18"/>
     <line x1="70" y1="582" x2="330" y2="582"/>
