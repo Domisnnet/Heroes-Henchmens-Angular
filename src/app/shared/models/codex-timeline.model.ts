@@ -1,6 +1,8 @@
+export type CodexTimelineType = | 'discovery' | 'research' | 'archive' | 'incident' | 'classification';
 export interface CodexTimeline {
   id: string;
-  year: string;
+  type: CodexTimelineType;
   title: string;
   description: string;
+  date?: string;
 }
