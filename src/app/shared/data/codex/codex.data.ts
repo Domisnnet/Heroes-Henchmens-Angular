@@ -1,4 +1,4 @@
-import { CodexRecord } from '@shared/models/codex.model';
+import { CodexRecord } from '@shared/models';
 
 export const CODEX_RECORDS: CodexRecord[] = [
   {
@@ -6,40 +6,67 @@ export const CODEX_RECORDS: CodexRecord[] = [
     slug: 'primordial-prism',
     title: 'Primordial Prism',
     subtitle: 'The First Known Energy Core',
-    glyph: 'assets/branding/glyphs/prism.svg',
-    narrative:
-      'The Primordial Prism is considered the first documented energy core capable of stabilizing the resonance between every known Artifact. Ancient records indicate that all modern relics are fragments or derivatives of its original architecture. Its true origin remains unknown.',
-    classification: 'artifact',
-    tags: ['Energy', 'Artifact', 'Prism', 'Origin', 'Resonance'],
+    glyph: 'prism',
+    type: 'artifact',
+    security: { level: 'public', watermark: true },
+    metadata: {
+      author: 'The Order',
+      origin: 'Codex Vaticinarum',
+      collection: 'Artifacts',
+      language: 'Ancient',
+      edition: 'I',
+    },
+    rarity: 'legendary',
+    tags: [
+      'Energy',
+      'Artifact',
+      'Prism',
+      'Origin',
+      'Resonance',
+    ],
+    relatedArtifacts: [
+      'resonance-ring',
+      'origin-node',
+    ],
     sections: [
       {
+        id: 'introduction',
+        type: 'introduction',
+        title: 'Introduction',
+        content:
+          'The Primordial Prism is considered the first documented energy core capable of stabilizing the resonance between every known Artifact.',
+      },
+      {
         id: 'history',
+        type: 'history',
         title: 'Historical Records',
-        content: 'The Primordial Prism predates every known Artifact documented by the Order.',
+        content:
+          'Ancient records indicate that every modern Artifact is derived from fragments of the Primordial Prism.',
       },
       {
         id: 'research',
+        type: 'research',
         title: 'Research Notes',
         content:
-          'Current resonance patterns indicate that modern relics still inherit part of its original frequency.',
+          'Current resonance patterns demonstrate that every documented relic still inherits part of its original frequency.',
       },
     ],
     timeline: [
       {
-        id: 't001',
+        id: 'first-detection',
+        type: 'discovery',
         title: 'First Detection',
         description:
-          'Ancient records describe the first resonance event associated with the Primordial Prism.',
-        year: 'date?: Date',
+          'The earliest references describe an anomalous resonance event associated with the Primordial Prism.',
+        date: 'Unknown Era',
       },
       {
-        id: 't002',
+        id: 'order-classification',
+        type: 'classification',
         title: 'Order Classification',
-        description: 'The Order officially classified the Primordial Prism as a Class-A Artifact.',
-        year: 'Archive 001',
+        description: 'The Order officially recognized the Primordial Prism as a Legendary Artifact.',
+        date: 'Archive I',
       },
     ],
-    rarity: 'legendary',
-    theme: 'ancient',
   },
 ];
