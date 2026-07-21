@@ -3,13 +3,15 @@
 <!-- Frame Library                                         -->
 <!-- Asset   : codex-details.svg                           -->
 <!-- Version : 1.0.0                                       -->
-<!-- Status  : Construction                                -->
+<!-- Status  : FROZEN                                      -->
 <!-- Order Design System                                   -->
 <!-- ===================================================== -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="codex-details__title codex-details__desc">
   <title id="codex-details__title">Codex Details</title>
-  <desc id="codex-details__desc">Internal detail lines and section dividers for Codex Vaticinarum cards.  
-    Composes with frame, ornaments and seals.</desc>
+  <desc id="codex-details__desc">
+    Internal detail lines and section dividers for Codex Vaticinarum cards.
+    Composes with frame, ornaments and seals.
+  </desc>
   <defs>
     <g id="codex-details__section-divider">
       <line class="codex-details__line" x1="40" y1="0" x2="360" y2="0"/>
@@ -17,6 +19,15 @@
     </g>
     <g id="codex-details__dotted-line">
       <line class="codex-details__line" x1="40" y1="0" x2="360" y2="0" stroke-dasharray="2 4"/>
+    </g>
+    <g id="codex-layout">
+      <g id="slot-header"/>
+      <g id="slot-glyph"/>
+      <g id="slot-title"/>
+      <g id="slot-subtitle"/>
+      <g id="slot-body"/>
+      <g id="slot-timeline"/>
+      <g id="slot-footer"/>
     </g>
   </defs>
   <style>
@@ -43,7 +54,7 @@
       stroke: none;
     }
   </style>
-  <g id="codex-details__header">
+    <g id="codex-details__header">
     <line class="codex-details__line" x1="24" y1="80" x2="376" y2="80"/>
   </g>
   <g id="codex-details__sigil">
@@ -68,13 +79,4 @@
   <g id="codex-details__footer">
     <line class="codex-details__line" x1="24" y1="560" x2="376" y2="560"/>
   </g>
-    <g id="codex-layout">
-    <g id="slot-header" transform="translate(24 24)"/>
-    <g id="slot-glyph" transform="translate(200 140)"/>
-    <g id="slot-title" transform="translate(200 188)"/>
-    <g id="slot-subtitle" transform="translate(200 214)"/>
-    <g id="slot-content" transform="translate(40 240)"/>
-    <g id="slot-timeline" transform="translate(50 350)"/>
-    <g id="slot-footer" transform="translate(24 560)"/>
-  </g>
-</svg>
+  </svg>
