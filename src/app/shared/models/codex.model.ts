@@ -9,7 +9,7 @@ export interface CodexRecord {
   title: string;
   subtitle?: string;
   glyph?: CodexGlyph;
-  type: CodexDocumentType;
+  classification: CodexClassification;
   security?: CodexSecurity;
   metadata?: CodexMetadata;
   tags?: string[];
@@ -19,7 +19,7 @@ export interface CodexRecord {
   rarity?: CodexRarity;
 }
 
-export type CodexDocumentType =
+export type CodexClassification =
   | 'artifact'
   | 'entity'
   | 'location'
