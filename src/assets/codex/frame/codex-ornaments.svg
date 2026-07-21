@@ -3,13 +3,15 @@
 <!-- Frame Library                                         -->
 <!-- Asset   : codex-ornaments.svg                         -->
 <!-- Version : 1.0.0                                       -->
-<!-- Status  : Construction                                -->
+<!-- Status  : FROZEN                                      -->
 <!-- Order Design System                                   -->
 <!-- ===================================================== -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="codex-ornaments__title codex-ornaments__desc">
   <title id="codex-ornaments__title">Codex Ornaments</title>
-  <desc id="codex-ornaments__desc">Decorative ornamental elements for Codex Vaticinarum. 
-    Optional visual enhancement that composes with frame and details.</desc>
+  <desc id="codex-ornaments__desc">
+    Decorative ornamental elements for Codex Vaticinarum.
+    Optional visual enhancement that composes with frame and details.
+  </desc>
   <defs>
     <g id="codex-ornaments__corner-flourish">
       <path d="M0 0 L0 12 C0 12 4 12 8 8 C12 4 12 0 12 0"/>
@@ -30,25 +32,20 @@
   <style>
     .codex-ornaments__primary {
       fill: none;
-      stroke:currentColor;
-      stroke-width:1;
-      stroke-linecap:round;
-      stroke-linejoin:round;
-      vector-effect:non-scaling-stroke;
+      stroke: currentColor;
+      stroke-width: 1;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      vector-effect: non-scaling-stroke;
     }
 
     .codex-ornaments__secondary {
       fill: none;
-      stroke:currentColor;
-      stroke-width:.5;
-      stroke-linecap:round;
-      stroke-linejoin:round;
-      vector-effect:non-scaling-stroke;
-    }
-
-    .codex-ornaments__dot {
-      fill:currentColor;
-      stroke:none;
+      stroke: currentColor;
+      stroke-width: .5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      vector-effect: non-scaling-stroke;
     }
   </style>
   <g id="codex-ornaments__corners-primary" class="codex-ornaments__primary">
@@ -58,10 +55,10 @@
     <use href="#codex-ornaments__corner-flourish" x="14" y="572" transform="rotate(-90 14 586)"/>
   </g>
   <g id="codex-ornaments__corners-secondary" class="codex-ornaments__secondary">
-    <use href="#codex-ornaments__corner-flourish" x="28" y="28" transform="scale(.7) translate(28 28)"/>
-    <use href="#codex-ornaments__corner-flourish" x="358" y="28" transform="rotate(90 372 28) scale(.7)"/>
-    <use href="#codex-ornaments__corner-flourish" x="358" y="558" transform="rotate(180 372 572) scale(.7)"/>
-    <use href="#codex-ornaments__corner-flourish" x="28" y="558" transform="rotate(-90 28 572) scale(.7)"/>
+    <use href="#codex-ornaments__corner-flourish" transform="translate(28 28) scale(.7)"/>
+    <use href="#codex-ornaments__corner-flourish" transform="translate(358 28) rotate(90 14 0) scale(.7)"/>
+    <use href="#codex-ornaments__corner-flourish" transform="translate(358 558) rotate(180 14 14) scale(.7)"/>
+    <use href="#codex-ornaments__corner-flourish" transform="translate(28 558) rotate(-90 0 14) scale(.7)"/>
   </g>
   <g id="codex-ornaments__side" class="codex-ornaments__primary">
     <use href="#codex-ornaments__side-ornament" x="10" y="280" transform="rotate(-90 10 288)"/>
