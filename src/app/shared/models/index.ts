@@ -1,5 +1,6 @@
 export * from './achievement.model';
 export * from './codex-glyph.model';
+export * from './codex-glyphs';
 export * from './codex-layer.model';
 export * from './codex-layout.model';
 export * from './codex-metadata.model';
