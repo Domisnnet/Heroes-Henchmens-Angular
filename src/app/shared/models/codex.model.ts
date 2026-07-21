@@ -31,10 +31,4 @@ export type CodexClassification =
   | 'technology'
   | 'unknown';
 
-export type CodexRarity =
-  | 'common'
-  | 'uncommon'
-  | 'rare'
-  | 'epic'
-  | 'legendary'
-  | 'mythic';
+export type CodexRarity = 'common' | 'uncommon' | 'rare' | 'epic' | 'legendary' | 'mythic';

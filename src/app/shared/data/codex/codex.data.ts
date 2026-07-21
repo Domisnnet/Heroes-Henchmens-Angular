@@ -17,17 +17,8 @@ export const CODEX_RECORDS: CodexRecord[] = [
       edition: 'I',
     },
     rarity: 'legendary',
-    tags: [
-      'Energy',
-      'Artifact',
-      'Prism',
-      'Origin',
-      'Resonance',
-    ],
-    relatedArtifacts: [
-      'resonance-ring',
-      'origin-node',
-    ],
+    tags: ['Energy', 'Artifact', 'Prism', 'Origin', 'Resonance'],
+    relatedArtifacts: ['resonance-ring', 'origin-node'],
     sections: [
       {
         id: 'introduction',
@@ -64,7 +55,8 @@ export const CODEX_RECORDS: CodexRecord[] = [
         id: 'order-classification',
         type: 'classification',
         title: 'Order Classification',
-        description: 'The Order officially recognized the Primordial Prism as a Legendary Artifact.',
+        description:
+          'The Order officially recognized the Primordial Prism as a Legendary Artifact.',
         date: 'Archive I',
       },
     ],

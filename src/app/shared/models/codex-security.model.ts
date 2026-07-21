@@ -1,4 +1,4 @@
-export type CodexSecurityLevel = | 'public' | 'restricted' | 'classified' | 'secret' | 'top-secret';
+export type CodexSecurityLevel = 'public' | 'restricted' | 'classified' | 'secret' | 'top-secret';
 export interface CodexSecurity {
   level: CodexSecurityLevel;
   clearance?: string;
