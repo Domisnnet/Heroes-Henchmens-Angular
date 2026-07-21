@@ -48,7 +48,7 @@
 .codex-event__marker {
   width: var(--codex-timeline-dot-size);
   height: var(--codex-timeline-dot-size);
-  margin-top: calc(var(--codex-body-size) * .45);
+  margin-top: calc(var(--codex-body-size) * 0.45);
   border-radius: var(--radius-full);
   background: var(--codex-accent);
   box-shadow: 0 0 var(--codex-shadow-blur) var(--codex-accent-glow);
@@ -70,7 +70,7 @@
   font-family: var(--codex-font-body);
   font-size: var(--codex-label-size);
   font-weight: 700;
-  letter-spacing: .12em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--codex-accent);
 }

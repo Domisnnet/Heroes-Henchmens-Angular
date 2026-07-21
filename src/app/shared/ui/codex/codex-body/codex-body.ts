@@ -5,7 +5,7 @@ import { CodexSectionComponent } from '@shared/ui/codex/codex-section/codex-sect
 @Component({
   selector: 'app-codex-body',
   standalone: true,
-  imports: [ CodexSectionComponent ],
+  imports: [CodexSectionComponent],
   templateUrl: './codex-body.html',
   styleUrls: ['./codex-body.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,

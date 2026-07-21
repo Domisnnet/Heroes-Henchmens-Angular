@@ -1,4 +1,7 @@
-@mixin absolute-fill { position: absolute; inset: 0; }
+@mixin absolute-fill {
+  position: absolute;
+  inset: 0;
+}
 
 @mixin background-cover {
   background-position: center;

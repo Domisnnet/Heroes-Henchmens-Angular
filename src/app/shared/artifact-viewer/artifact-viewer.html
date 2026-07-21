@@ -1,25 +1,60 @@
 <div class="artifact-viewer" [style.--artifact-size.px]="size()">
   <div class="artifact-stage">
     @if (aura()) {
-      <img class="artifact-layer artifact__aura" src="assets/branding/artifacts/artifact-aura.svg"  alt="Svg Aura" aria-hidden="true" />
+      <img
+        class="artifact-layer artifact__aura"
+        src="assets/branding/artifacts/artifact-aura.svg"
+        alt="Svg Aura"
+        aria-hidden="true"
+      />
     }
     @if (shield()) {
-      <img class="artifact-layer artifact__shield" src="assets/branding/artifacts/artifact-shield.svg" alt="Svg Shield" aria-hidden="true" />
+      <img
+        class="artifact-layer artifact__shield"
+        src="assets/branding/artifacts/artifact-shield.svg"
+        alt="Svg Shield"
+        aria-hidden="true"
+      />
     }
     @if (frame()) {
-      <img class="artifact-layer artifact__frame" src="assets/branding/artifacts/artifact-frame.svg" alt="Svg Frame" aria-hidden="true" />
+      <img
+        class="artifact-layer artifact__frame"
+        src="assets/branding/artifacts/artifact-frame.svg"
+        alt="Svg Frame"
+        aria-hidden="true"
+      />
     }
     @if (core()) {
-      <img class="artifact-layer artifact__core" src="assets/branding/artifacts/artifact-core.svg" alt="Svg Core" aria-hidden="true" />
+      <img
+        class="artifact-layer artifact__core"
+        src="assets/branding/artifacts/artifact-core.svg"
+        alt="Svg Core"
+        aria-hidden="true"
+      />
     }
     @if (slot()) {
-      <img class="artifact-layer artifact__slot" src="assets/branding/artifacts/artifact-slot.svg" alt="Svg Slot" aria-hidden="true" />
+      <img
+        class="artifact-layer artifact__slot"
+        src="assets/branding/artifacts/artifact-slot.svg"
+        alt="Svg Slot"
+        aria-hidden="true"
+      />
     }
     @if (lock()) {
-      <img class="artifact-layer artifact__lock" src="assets/branding/artifacts/artifact-lock.svg" alt="Svg Lock" aria-hidden="true" />
+      <img
+        class="artifact-layer artifact__lock"
+        src="assets/branding/artifacts/artifact-lock.svg"
+        alt="Svg Lock"
+        aria-hidden="true"
+      />
     }
     @if (sigil()) {
-      <img class="artifact-layer artifact__sigil" src="assets/branding/artifacts/artifact-sigil.svg" alt="Svg Sigil" aria-hidden="true" />
+      <img
+        class="artifact-layer artifact__sigil"
+        src="assets/branding/artifacts/artifact-sigil.svg"
+        alt="Svg Sigil"
+        aria-hidden="true"
+      />
     }
     <div class="artifact-content"><ng-content /></div>
   </div>

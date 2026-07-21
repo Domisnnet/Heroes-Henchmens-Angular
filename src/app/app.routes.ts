@@ -23,8 +23,7 @@ export const routes: Routes = [
   },
   {
     path: 'codex',
-    loadComponent: () =>
-      import('./features/codex/codex-page/codex-page').then((c) => c.CodexPage),
+    loadComponent: () => import('./features/codex/codex-page/codex-page').then((c) => c.CodexPage),
   },
 
   {

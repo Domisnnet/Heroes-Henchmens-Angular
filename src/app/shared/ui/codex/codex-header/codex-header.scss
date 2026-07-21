@@ -7,7 +7,7 @@
 ========================================================================== */
 .codex-header {
   display: grid;
-  grid-template-areas: "meta" "titles" "glyph";
+  grid-template-areas: 'meta' 'titles' 'glyph';
   justify-items: center;
   row-gap: var(--codex-header-gap);
   padding-block-end: var(--codex-header-padding);
@@ -55,13 +55,16 @@
   color: var(--codex-text);
   font-family: var(--font-body);
   font-size: var(--text-sm);
-  transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+  transition:
+    background var(--transition-fast),
+    border-color var(--transition-fast),
+    color var(--transition-fast);
 }
 
 .codex-header__security {
   color: var(--codex-accent);
   font-weight: 700;
-  letter-spacing: .18em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
 }
 
@@ -109,7 +112,9 @@
   border-radius: 50%;
   background: var(--codex-surface-alt);
   box-shadow: var(--codex-shadow);
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
 }
 
 .codex-header__glyph:hover {

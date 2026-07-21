@@ -12,11 +12,8 @@
   justify-content: center;
   position: relative;
   width: 100%;
-  padding: 
-    var(--codex-page-padding-top) 
-    var(--codex-page-padding-right) 
-    var(--codex-page-padding-bottom)
-    var(--codex-page-padding-left);
+  padding: var(--codex-page-padding-top) var(--codex-page-padding-right)
+    var(--codex-page-padding-bottom) var(--codex-page-padding-left);
 }
 
 /* ==========================================================================
@@ -26,11 +23,8 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  inset:
-    var(--codex-page-padding-top)
-    var(--codex-page-padding-right)
-    var(--codex-page-padding-bottom)
-    var(--codex-page-padding-left);
+  inset: var(--codex-page-padding-top) var(--codex-page-padding-right)
+    var(--codex-page-padding-bottom) var(--codex-page-padding-left);
   pointer-events: none;
   z-index: var(--codex-z-frame);
 }
@@ -52,42 +46,62 @@
   margin: var(--codex-frame-padding);
   min-height: var(--codex-document-min-height);
   max-inline-size: var(--codex-max-width);
-  padding:
-    var(--codex-content-padding-top)
-    var(--codex-content-padding-right)
-    var(--codex-content-padding-bottom)
-    var(--codex-content-padding-left);
+  padding: var(--codex-content-padding-top) var(--codex-content-padding-right)
+    var(--codex-content-padding-bottom) var(--codex-content-padding-left);
   z-index: var(--codex-z-document);
 }
 
 /* ==========================================================================
   HEADER
 ========================================================================== */
-.codex__header { margin-block-end: var(--codex-layout-gap-header); }
+.codex__header {
+  margin-block-end: var(--codex-layout-gap-header);
+}
 
 /* ==========================================================================
   MAIN
 ========================================================================== */
-.codex__main { display: flex; flex-direction: column; gap: var(--codex-layout-gap-content); }
+.codex__main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--codex-layout-gap-content);
+}
 
 /* ==========================================================================
   FOOTER
 ========================================================================== */
-.codex__footer { margin-block-start: var(--codex-layout-gap-footer); }
+.codex__footer {
+  margin-block-start: var(--codex-layout-gap-footer);
+}
 
 /* ==========================================================================
   RESPONSIVE
 ========================================================================== */
 @media (width <= 1024px) {
-  .codex { padding-inline: var(--space-md); padding-block: var(--space-2xl); }
-  .codex__document { padding-inline: var(--space-xl); padding-block: var(--space-xl); }
+  .codex {
+    padding-inline: var(--space-md);
+    padding-block: var(--space-2xl);
+  }
+  .codex__document {
+    padding-inline: var(--space-xl);
+    padding-block: var(--space-xl);
+  }
 }
 
 @media (width <= 768px) {
-  .codex { padding-inline: var(--space-sm); padding-block: var(--space-xl); }
-  .codex__document { padding-inline: var(--space-lg); padding-block: var(--space-lg); }
+  .codex {
+    padding-inline: var(--space-sm);
+    padding-block: var(--space-xl);
+  }
+  .codex__document {
+    padding-inline: var(--space-lg);
+    padding-block: var(--space-lg);
+  }
 }
 
 @media (width <= 480px) {
-  .codex__document { padding-inline: var(--space-md); padding-block: var(--space-md); }
+  .codex__document {
+    padding-inline: var(--space-md);
+    padding-block: var(--space-md);
+  }
 }

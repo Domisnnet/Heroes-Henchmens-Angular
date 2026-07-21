@@ -55,11 +55,11 @@ Estrutura principal do artefato.
 
 Responsável por:
 
-* Moldura externa
-* Moldura interna
-* Trilhos
-* Cantos
-* Marcadores estruturais
+- Moldura externa
+- Moldura interna
+- Trilhos
+- Cantos
+- Marcadores estruturais
 
 Não deve conter elementos decorativos.
 
@@ -71,11 +71,11 @@ Camada ornamental.
 
 Responsável por:
 
-* Flourishes
-* Arabescos
-* Diamantes
-* Círculos decorativos
-* Ornamentação lateral
+- Flourishes
+- Arabescos
+- Diamantes
+- Círculos decorativos
+- Ornamentação lateral
 
 Não deve conter divisórias ou selos.
 
@@ -87,12 +87,12 @@ Camada funcional.
 
 Responsável por:
 
-* Divisórias
-* Linhas internas
-* Separadores
-* Timeline
-* Guias visuais
-* Área de conteúdo
+- Divisórias
+- Linhas internas
+- Separadores
+- Timeline
+- Guias visuais
+- Área de conteúdo
 
 Não deve conter decoração.
 
@@ -104,16 +104,16 @@ Camada institucional.
 
 Responsável por:
 
-* Security Levels
-* Classification Badges
-* Registration Marks
-* Validation Seals
+- Security Levels
+- Classification Badges
+- Registration Marks
+- Validation Seals
 
 Níveis disponíveis:
 
-* Public
-* Restricted
-* Classified
+- Public
+- Restricted
+- Classified
 
 ---
 
@@ -123,11 +123,11 @@ Camada superior.
 
 Responsável por:
 
-* Acabamentos
-* Realces
-* Glifos finais
-* Registration Highlights
-* Overlay
+- Acabamentos
+- Realces
+- Glifos finais
+- Registration Highlights
+- Overlay
 
 Nunca deve substituir elementos do frame principal.
 
@@ -216,11 +216,11 @@ com IDs exclusivos.
 
 Todos os SVGs utilizam:
 
-* currentColor
-* fill:none
-* vector-effect:non-scaling-stroke
-* stroke-linecap:round
-* stroke-linejoin:round
+- currentColor
+- fill:none
+- vector-effect:non-scaling-stroke
+- stroke-linecap:round
+- stroke-linejoin:round
 
 ---
 

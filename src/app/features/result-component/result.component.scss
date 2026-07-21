@@ -89,7 +89,9 @@
   height: auto;
   object-fit: contain;
   user-select: none;
-  transition: transform var(--transition-normal), filter var(--transition-normal);
+  transition:
+    transform var(--transition-normal),
+    filter var(--transition-normal);
   filter: drop-shadow(0 0 1.5rem var(--result-glow));
 }
 
@@ -279,7 +281,10 @@
   font-size: var(--text-md);
   font-weight: 800;
   color: var(--result-primary);
-  transition: transform var(--transition-fast), color var(--transition-normal), box-shadow var(--transition-normal);
+  transition:
+    transform var(--transition-fast),
+    color var(--transition-normal),
+    box-shadow var(--transition-normal);
 }
 
 .result__button:hover {
@@ -312,27 +317,59 @@
   RESPONSIVE
 ========================================================================== */
 @media (max-width: 992px) {
-  .result__hero { grid-template-columns: 1fr; text-align: center; }
-  .result__content { align-items: center; }
-  .result__analysis-item { grid-template-columns: 8rem 1fr 3rem; }
+  .result__hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .result__content {
+    align-items: center;
+  }
+  .result__analysis-item {
+    grid-template-columns: 8rem 1fr 3rem;
+  }
 }
 @media (max-width: 768px) {
-  .result__page { padding: var(--space-lg); }
-  .result__title { font-size: var(--text-3xl); }
-  .result__subtitle { font-size: var(--text-lg); }
-  .result__portrait { width: 16rem; }
+  .result__page {
+    padding: var(--space-lg);
+  }
+  .result__title {
+    font-size: var(--text-3xl);
+  }
+  .result__subtitle {
+    font-size: var(--text-lg);
+  }
+  .result__portrait {
+    width: 16rem;
+  }
   .result__score-item,
-  .result__analysis-item { grid-template-columns: 1fr; gap: var(--space-sm); }
+  .result__analysis-item {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+  }
   .result__score-value,
-  .result__analysis-value { text-align: left; }
-  .result__actions { flex-direction: column; }
-  .result__button { width: 100%; }
+  .result__analysis-value {
+    text-align: left;
+  }
+  .result__actions {
+    flex-direction: column;
+  }
+  .result__button {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
-  .result { padding-block: var(--space-lg); }
-  .result__portrait { width: 13rem; }
-  .result__title { font-size: var(--text-2xl); }
+  .result {
+    padding-block: var(--space-lg);
+  }
+  .result__portrait {
+    width: 13rem;
+  }
+  .result__title {
+    font-size: var(--text-2xl);
+  }
   .result__description,
-  .result__text { text-align: justify; }
+  .result__text {
+    text-align: justify;
+  }
 }

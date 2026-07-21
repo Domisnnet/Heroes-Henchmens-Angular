@@ -29,9 +29,17 @@ export class QuizComponent {
     const chap = CHAPTERS[catInfo.chapter];
     return { title: chap.title, subtitle: chap.subtitle, categoryTitle: catInfo.title };
   });
-  constructor() { this.watchQuizCompletion(); }
-  private watchQuizCompletion(): void {
-    effect(() => { if (this.facade.finished()) { this.router.navigate(['/result']); } });
+  constructor() {
+    this.watchQuizCompletion();
   }
-  answers(answer: Answer): void { this.facade.answer(answer); }
+  private watchQuizCompletion(): void {
+    effect(() => {
+      if (this.facade.finished()) {
+        this.router.navigate(['/result']);
+      }
+    });
+  }
+  answers(answer: Answer): void {
+    this.facade.answer(answer);
+  }
 }

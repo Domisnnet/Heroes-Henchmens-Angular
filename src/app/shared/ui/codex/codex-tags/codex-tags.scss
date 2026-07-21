@@ -47,7 +47,10 @@
   font-size: var(--codex-label-size);
   line-height: 1;
   white-space: nowrap;
-  transition: background var(--codex-transition-fast), border-color var(--codex-transition-fast), color var(--codex-transition-fast);
+  transition:
+    background var(--codex-transition-fast),
+    border-color var(--codex-transition-fast),
+    color var(--codex-transition-fast);
 }
 
 .codex-tag:hover {

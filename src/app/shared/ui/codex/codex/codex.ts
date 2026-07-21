@@ -1,4 +1,12 @@
-import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, ViewChild, inject, input } from '@angular/core';
+import {
+  AfterViewInit,
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  ViewChild,
+  inject,
+  input,
+} from '@angular/core';
 import { CodexRecord } from '@shared/models/codex.model';
 import { CodexHeaderComponent } from '@shared/ui/codex/codex-header/codex-header';
 import { CodexBodyComponent } from '@shared/ui/codex/codex-body/codex-body';
@@ -15,7 +23,7 @@ import { CodexRendererService } from '@shared/ui/services/codex-renderer.service
     CodexBodyComponent,
     CodexTagsComponent,
     CodexTimelineComponent,
-    CodexFooterComponent
+    CodexFooterComponent,
   ],
   templateUrl: './codex.html',
   styleUrls: ['./codex.scss'],

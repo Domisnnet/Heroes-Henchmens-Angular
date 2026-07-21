@@ -11,11 +11,13 @@
   }
   <div class="codex-header__titles">
     <h1 class="codex-header__title">{{ codex().title }}</h1>
-    @if (codex().subtitle) { <p class="codex-header__subtitle">{{ codex().subtitle }}</p> }
+    @if (codex().subtitle) {
+      <p class="codex-header__subtitle">{{ codex().subtitle }}</p>
+    }
   </div>
   @if (codex().glyph) {
     <figure class="codex-header__glyph">
-      <img [src]="codex().glyph!" [alt]="codex().title">
+      <img [src]="codex().glyph!" [alt]="codex().title" />
     </figure>
   }
 </header>

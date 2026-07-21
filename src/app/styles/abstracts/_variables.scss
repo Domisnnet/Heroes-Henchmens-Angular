@@ -49,13 +49,13 @@
   --codex-body-gap: var(--space-xl);
 
   /* Border */
-  --codex-border: rgba(255, 255, 255, .12);
-  --codex-border-color: rgba(255, 255, 255, .18);
-  --codex-border-soft: rgba(255, 255, 255, .06);
+  --codex-border: rgba(255, 255, 255, 0.12);
+  --codex-border-color: rgba(255, 255, 255, 0.18);
+  --codex-border-soft: rgba(255, 255, 255, 0.06);
   --codex-border-width: var(--border-width);
 
   /* Divider */
-  --codex-divider: rgba(255, 255, 255, .08);
+  --codex-divider: rgba(255, 255, 255, 0.08);
   --codex-divider-space: var(--space-xl);
 
   /* Frame */
@@ -90,7 +90,7 @@
   --codex-meta-gap: var(--space-sm);
 
   /* Padding */
-  --codex-frame-padding: clamp(.75rem, 2vw, 1.5rem); 
+  --codex-frame-padding: clamp(0.75rem, 2vw, 1.5rem);
   --codex-content-padding-top: 5.5rem;
   --codex-content-padding-right: 6rem;
   --codex-content-padding-bottom: 5rem;
@@ -112,7 +112,7 @@
   --codex-section-gap: var(--space-3xl);
 
   /* Security */
-  --codex-security-letter-spacing: .18em;
+  --codex-security-letter-spacing: 0.18em;
 
   /* Shadow */
   --codex-shadow: var(--shadow-card);
@@ -133,13 +133,13 @@
   --codex-text-muted: var(--gray-300);
 
   /* Timeline */
-  --codex-timeline-dot-size: .75rem;
+  --codex-timeline-dot-size: 0.75rem;
   --codex-timeline-gap: var(--space-lg);
-  --codex-timeline-width: .125rem;
+  --codex-timeline-width: 0.125rem;
 
   /* Title */
   --codex-title-line-height: 1.05;
-  --codex-title-gap: .75rem;
+  --codex-title-gap: 0.75rem;
   --codex-title-size: var(--text-3xl);
 
   /* Transition */
@@ -252,7 +252,10 @@
   /* ==========================================================================
     OVERLAYS
   ========================================================================== */
-  --background-overlay: linear-gradient(rgba(0, 0, 0, var(--overlay-ultra)), rgba(0, 0, 0, var(--overlay-ultra)));
+  --background-overlay: linear-gradient(
+    rgba(0, 0, 0, var(--overlay-ultra)),
+    rgba(0, 0, 0, var(--overlay-ultra))
+  );
 
   /* ==========================================================================
     SHADOWS
@@ -281,32 +284,32 @@
   /* ==========================================================================
     TYPOGRAPHY
   ========================================================================== */
-  --font-heading:'Bebas Neue',sans-serif;
-  --font-body:'Montserrat',sans-serif;
-  --text-xs:.75rem;
-  --text-sm:.875rem;
-  --text-md:1rem;
-  --text-lg:1.25rem;
-  --text-xl:1.5rem;
-  --text-2xl:2rem;
-  --text-3xl:3rem;
-  --text-4xl:4rem;
-  --text-5xl:6rem;
-  --text-6xl:8rem;
+  --font-heading: 'Bebas Neue', sans-serif;
+  --font-body: 'Montserrat', sans-serif;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 3rem;
+  --text-4xl: 4rem;
+  --text-5xl: 6rem;
+  --text-6xl: 8rem;
 
   /* ==========================================================================
     TRANSITIONS
   ========================================================================== */
-  --transition-fast:.2s ease;
-  --transition-normal:.3s ease;
-  --transition-slow:.5s ease;
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
 
   /* ==========================================================================
     Z INDEX
   ========================================================================== */
-  --z-background:1;
-  --z-content:10;
-  --z-header:100;
-  --z-footer:200;
-  --z-modal:1000;
+  --z-background: 1;
+  --z-content: 10;
+  --z-header: 100;
+  --z-footer: 200;
+  --z-modal: 1000;
 }

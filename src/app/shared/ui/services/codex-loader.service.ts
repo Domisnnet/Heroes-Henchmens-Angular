@@ -17,6 +17,6 @@ export class CodexLoaderService {
   };
   async loadLayer(layer: CodexLayer): Promise<string> {
     const file = this.registry[layer];
-    return firstValueFrom(this.http.get(`${this.basePath}/${file}`, { responseType: 'text' }) );
+    return firstValueFrom(this.http.get(`${this.basePath}/${file}`, { responseType: 'text' }));
   }
 }

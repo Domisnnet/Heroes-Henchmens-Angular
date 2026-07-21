@@ -30,23 +30,8 @@ export type CodexClassification =
   | 'technology'
   | 'unknown';
 
-export type CodexSecurityLevel =
-  | 'public'
-  | 'restricted'
-  | 'classified'
-  | 'secret'
-  | 'top-secret';
+export type CodexSecurityLevel = 'public' | 'restricted' | 'classified' | 'secret' | 'top-secret';
 
-export type CodexTheme =
-  | 'cosmic'
-  | 'solar'
-  | 'ancient'
-  | 'corrupted';
+export type CodexTheme = 'cosmic' | 'solar' | 'ancient' | 'corrupted';
 
-export type CodexRarity =
-  | 'common'
-  | 'uncommon'
-  | 'rare'
-  | 'epic'
-  | 'legendary'
-  | 'mythic';
+export type CodexRarity = 'common' | 'uncommon' | 'rare' | 'epic' | 'legendary' | 'mythic';
