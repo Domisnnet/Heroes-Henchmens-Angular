@@ -1,7 +1,5 @@
 {
-  "projects": {
-    "default": "heroes-henchmen"
-  },
+  "projects": { "default": "heroes-henchmen" },
   "targets": {},
   "etags": {}
 }
