@@ -9,7 +9,7 @@ export interface CodexRecord {
   title: string;
   subtitle?: string;
   glyph?: CodexGlyph;
-  classification: CodexClassification;
+  type: CodexDocumentType;
   security?: CodexSecurity;
   metadata?: CodexMetadata;
   tags?: string[];
@@ -19,16 +19,6 @@ export interface CodexRecord {
   rarity?: CodexRarity;
 }
 
-export type CodexClassification =
-  | 'artifact'
-  | 'entity'
-  | 'location'
-  | 'archive'
-  | 'protocol'
-  | 'mission'
-  | 'order'
-  | 'phenomenon'
-  | 'technology'
-  | 'unknown';
+export type CodexDocumentType = |'artifact'|'entity'|'location'|'archive'|'protocol'|'mission'|'order'|'phenomenon'|'technology'|'unknown';
 
-export type CodexRarity = 'common' | 'uncommon' | 'rare' | 'epic' | 'legendary' | 'mythic';
+export type CodexRarity = |'common' |'uncommon' |'rare' |'epic' |'legendary' |'mythic';
