@@ -2,6 +2,6 @@
   "hosting": {
     "public": "dist/heroes-henchmen/browser",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "rewrites": [ { "source": "**", "destination": "/index.html" } ]
+    "rewrites": [{ "source": "**", "destination": "/index.html" }]
   }
 }

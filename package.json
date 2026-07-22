@@ -12,13 +12,23 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{ts,js,json,css,scss,md,html}": [ "prettier --write", "eslint --fix" ]
+    "*.{ts,js,json,css,scss,md,html}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   },
   "prettier": {
     "printWidth": 100,
     "singleQuote": true,
     "tabWidth": 2,
-    "overrides": [ { "files": "*.html", "options": { "parser": "angular" } } ]
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "parser": "angular"
+        }
+      }
+    ]
   },
   "private": true,
   "dependencies": {
