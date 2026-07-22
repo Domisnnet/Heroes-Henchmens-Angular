@@ -1,21 +1,6 @@
-body {
-  background: var(--bg-primary);
-  color: var(--white);
-  overflow-x: hidden;
-}
-main {
-  min-height: 100vh;
-}
-.container {
-  width: min(var(--container-width), 90%);
-  margin-inline: auto;
-}
-.hero-text {
-  color: var(--hero-primary);
-}
-.hench-text {
-  color: var(--hench-primary);
-}
-.viral-text {
-  color: var(--viral-primary);
-}
+body { background: var(--bg-primary); color: var(--white); overflow-x: hidden; }
+main { min-height: 100vh; }
+.container { width: min(var(--container-width), 90%); margin-inline: auto; }
+.hero-text { color: var(--hero-primary); }
+.hench-text { color: var(--hench-primary); }
+.viral-text { color: var(--viral-primary); }
