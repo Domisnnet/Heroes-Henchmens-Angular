@@ -13,153 +13,163 @@
   --border-width: 3px;
 
   /* ==========================================================================
-    BORDER RADIUS
+    CODEX
   ========================================================================== */
-  --radius-full: 999rem;
-  --radius-lg: 1rem;
-  --radius-md: 0.75rem;
-  --radius-sm: 0.5rem;
-
-  /* ==========================================================================
-    COLORS
-  ========================================================================== */
-  --bg-card: #242b33;
-  --bg-primary: #12161a;
-  --bg-result: rgba(255, 255, 255, 0.08);
-  --bg-secondary: #1a2026;
-
-  /* ==========================================================================
-  CODEX
-  ========================================================================== */
-  /* Accent */
+  /* ACCENT */
   --codex-accent: var(--hero-primary);
-  --codex-accent-glow: var(--hero-glow);
   --codex-accent-secondary: var(--hero-secondary);
+  --codex-accent-glow: var(--hero-glow);
 
-  /* Background */
-  --codex-background: var(--bg-primary);
+  /* BACKGROUND */
+  --codex-background: var(--surface-primary);
   --codex-overlay: var(--background-overlay);
 
-  /* Badge */
+  /* BADGE */
   --codex-badge-height: 2rem;
-  --codex-badge-padding-inline: var(--space-md);
   --codex-badge-radius: var(--radius-full);
+  --codex-badge-padding-inline: var(--space-md);
 
-  /* Body */
+  /* BODY */
   --codex-body-gap: var(--space-xl);
 
-  /* Border */
-  --codex-border: rgba(255, 255, 255, 0.12);
-  --codex-border-color: rgba(255, 255, 255, 0.18);
-  --codex-border-soft: rgba(255, 255, 255, 0.06);
+  /* BORDER */
+  --codex-border: rgba(255, 255, 255, .12);
+  --codex-border-color: rgba(255, 255, 255, .18);
+  --codex-border-soft: rgba(255, 255, 255, .06);
   --codex-border-width: var(--border-width);
 
-  /* Divider */
-  --codex-divider: rgba(255, 255, 255, 0.08);
-  --codex-divider-space: var(--space-xl);
+  /* CONTENT */
+  --codex-content-width: 52rem;
 
-  /* Frame */
+  /* DIVIDER */
+  --codex-divider: rgba(255,255,255,.08);
+  --codex-divider-space: var(--space-xl);
+  --codex-divider-width: 1px;
+
+  /* DOCUMENT */
+  --codex-max-width: 68rem;
   --codex-frame-width: 72rem;
 
-  /* Footer */
+  /* FOOTER */
   --codex-footer-gap: var(--space-lg);
+  --codex-footer-padding: var(--space-xl);
   --codex-footer-item-gap: var(--space-xs);
-  --codex-footer-item-min-width: 10rem;
   --codex-footer-item-padding: var(--space-md);
+  --codex-footer-item-min-width: 10rem;
 
-  /* Fonts */
-  --codex-font-body: var(--font-body);
-  --codex-font-heading: var(--font-heading);
+  /* FRAME */
+  --codex-frame-padding: clamp(.75rem,2vw,1.5rem);
 
-  /* Glyph */
-  --codex-glyph-padding: var(--space-md);
+  /* GLYPH */
   --codex-glyph-size: 8.75rem;
+  --codex-glyph-padding: var(--space-md);
   --codex-glyph-offset: 2rem;
 
-  /* Header */
+  /* HEADER */
   --codex-header-gap: var(--space-lg);
   --codex-header-padding: var(--space-2xl);
 
-  /* Layout */
+  /* LAYOUT */
   --codex-layout-gap-content: var(--space-2xl);
   --codex-layout-gap-footer: var(--space-3xl);
   --codex-layout-gap-header: var(--space-3xl);
-  --codex-max-width: 68rem;
 
-  /* Meta */
+  /* METADATA */
   --codex-meta-gap: var(--space-sm);
+  --codex-meta-item-gap: var(--space-xs);
 
-  /* Padding */
-  --codex-frame-padding: clamp(0.75rem, 2vw, 1.5rem);
-  --codex-content-padding-top: 5.5rem;
-  --codex-content-padding-right: 6rem;
-  --codex-content-padding-bottom: 5rem;
-  --codex-content-padding-left: 6rem;
+  /* PADDING */
   --codex-page-padding-top: 3rem;
   --codex-page-padding-right: 3rem;
   --codex-page-padding-bottom: 3rem;
   --codex-page-padding-left: 3rem;
-  --codex-content-width: 52rem;
-  --codex-max-width: 68rem;
+  --codex-content-padding-top: 5.5rem;
+  --codex-content-padding-right: 6rem;
+  --codex-content-padding-bottom: 5rem;
+  --codex-content-padding-left: 6rem;
 
-  /* Radius */
-  --codex-radius-full: var(--radius-full);
-  --codex-radius-lg: var(--radius-lg);
-  --codex-radius-md: var(--radius-md);
+  /* RADIUS */
   --codex-radius-sm: var(--radius-sm);
+  --codex-radius-md: var(--radius-md);
+  --codex-radius-lg: var(--radius-lg);
+  --codex-radius-full: var(--radius-full);
 
-  /* Section */
+  /* SECTIONS */
   --codex-section-gap: var(--space-3xl);
+  --codex-block-gap: var(--space-xl);
 
-  /* Security */
-  --codex-security-letter-spacing: 0.18em;
+  /* SECURITY */
+  --codex-security-letter-spacing: .18em;
 
-  /* Shadow */
+  /* SHADOW */
   --codex-shadow: var(--shadow-card);
   --codex-shadow-hover: var(--shadow-card);
 
-  /* Subtitle */
-  --codex-subtitle-line-height: 1.6;
-  --codex-subtitle-size: var(--text-lg);
-  --codex-subtitle-width: 38rem;
+  /* SURFACE */
+  --codex-surface: var(--surface-card);
+  --codex-surface-alt: var(--surface-secondary);
 
-  /* Surface */
-  --codex-surface: var(--bg-card);
-  --codex-surface-alt: var(--bg-secondary);
+  /* TAGS */
+  --codex-tag-gap: var(--space-xs);
+  --codex-tag-padding-block: .25rem;
+  --codex-tag-padding-inline: .75rem;
+  --codex-tag-radius: var(--radius-full);
+  --codex-tag-border: var(--codex-border);
+  --codex-tag-font-size: var(--text-xs);
 
-  /* Text */
+  /* TEXT */
+  --codex-label-letter-spacing: .12em;
   --codex-label-size: var(--text-xs);
-  --codex-text: var(--white);
-  --codex-text-muted: var(--gray-300);
+  --codex-text: var(--text-primary);
+  --codex-text-muted: var(--text-secondary);
 
-  /* Timeline */
-  --codex-timeline-dot-size: 0.75rem;
+  /* TIMELINE */
+  --codex-timeline-dot-size: .75rem;
   --codex-timeline-gap: var(--space-lg);
-  --codex-timeline-width: 0.125rem;
+  --codex-timeline-line-width: .125rem;
 
-  /* Title */
+  /* TITLE */
+  --codex-title-gap: .75rem;
+  --codex-title-letter-spacing: .08em;
   --codex-title-line-height: 1.05;
-  --codex-title-gap: 0.75rem;
   --codex-title-size: var(--text-3xl);
 
-  /* Transition */
+  /* TRANSITION */
   --codex-transition-fast: var(--transition-fast);
   --codex-transition-normal: var(--transition-normal);
   --codex-transition-slow: var(--transition-slow);
 
-  /* Z-Index */
+  /* TYPOGRAPHY */
+  --codex-font-body: var(--font-body);
+  --codex-font-heading: var(--font-heading);
+  --codex-subtitle-line-height: 1.6;
+  --codex-subtitle-size: var(--text-lg);
+  --codex-subtitle-width: 38rem;
+
+  /* Z-INDEX */
   --codex-z-document: var(--z-content);
   --codex-z-frame: var(--z-background);
   --codex-z-overlay: calc(var(--z-content) + 1);
 
   /* ==========================================================================
-    BASE
+    COLORS
   ========================================================================== */
+  /* Background */
+  --bg-card: #242b33;
+  --bg-primary: #12161a;
+  --bg-result: rgba(255,255,255,.08);
+  --bg-secondary: #1a2026;
+
+  /* Base */
   --black: #000;
   --white: #fff;
 
+  /* Feedback */
+  --danger: #ff1744;
+  --success: #00e676;
+  --warning: #ffd600;
+
   /* Neutral */
-  --chapter: rgba(255, 255, 255, 0.1);
   --gray-100: #f5f5f5;
   --gray-200: #e5e5e5;
   --gray-300: #c7c7c7;
@@ -169,47 +179,9 @@
   --gray-800: #3b3b3b;
   --gray-900: #111;
 
-  /* Feedback */
-  --danger: #ff1744;
-  --success: #00e676;
-  --warning: #ffd600;
-
   /* Legacy */
   --viral-primary: #eeff41;
   --viral-secondary: #d4ff00;
-
-  /* ==========================================================================
-    PERSONALITIES
-  ========================================================================== */
-  /* Henchmen */
-  --henchmen-glow: #f29dff;
-  --henchmen-primary: #fb4040;
-  --henchmen-secondary: #e040fb;
-  --shadow-henchmen: 10px 10px var(--shadow-blur) rgba(253, 0, 0, 0.5);
-
-  /* Hero */
-  --hero-glow: #80f4ff;
-  --hero-primary: #00e5ff;
-  --hero-secondary: #009dff;
-  --shadow-hero: 10px 10px var(--shadow-blur) rgba(0, 81, 255, 0.5);
-
-  /* Mercenary */
-  --mercenary-glow: #ffe082;
-  --mercenary-primary: #ffd600;
-  --mercenary-secondary: #ffb300;
-  --shadow-mercenary: 10px 10px var(--shadow-blur) rgba(255, 214, 0, 0.5);
-
-  /* Protector */
-  --protector-glow: #69f0ae;
-  --protector-primary: #00e676;
-  --protector-secondary: #00c853;
-  --shadow-protector: 10px 10px var(--shadow-blur) rgba(2, 255, 133, 0.5);
-
-  /* Vigilante */
-  --shadow-vigilante: 10px 10px var(--shadow-blur) rgba(68, 0, 255, 0.5);
-  --vigilante-glow: #b388ff;
-  --vigilante-primary: #7c4dff;
-  --vigilante-secondary: #651fff;
 
   /* ==========================================================================
     COMPONENTS
@@ -219,9 +191,9 @@
   /* ==========================================================================
     EFFECTS
   ========================================================================== */
-  --effect-bar-highlight: rgba(255, 255, 255, var(--effect-glow-opacity));
+  --effect-bar-highlight: rgba(255,255,255,var(--effect-glow-opacity));
   --effect-bar-shine: linear-gradient(90deg, transparent, var(--effect-bar-highlight), transparent);
-  --effect-glow-opacity: 0.25;
+  --effect-glow-opacity: .25;
 
   /* ==========================================================================
     IMAGES
@@ -236,31 +208,79 @@
   --container-padding: 5%;
   --container-width: 75rem;
   --content-max-width: 75rem;
-  --footer-height: 2.5rem;
   --header-height: 2.5rem;
+  --footer-height: 2.5rem;
   --viewport-height: 100vh;
 
   /* ==========================================================================
     OPACITY
   ========================================================================== */
-  --overlay-dark: 0.55;
-  --overlay-heavy: 0.75;
-  --overlay-light: 0.15;
-  --overlay-medium: 0.35;
-  --overlay-ultra: 0.9;
+  --overlay-dark: .55;
+  --overlay-heavy: .75;
+  --overlay-light: .15;
+  --overlay-medium: .35;
+  --overlay-ultra: .90;
 
   /* ==========================================================================
-    OVERLAYS
+    PERSONALITIES
   ========================================================================== */
-  --background-overlay: linear-gradient(
-    rgba(0, 0, 0, var(--overlay-ultra)),
-    rgba(0, 0, 0, var(--overlay-ultra))
-  );
+  /* HENCHMEN */
+  --henchmen-glow: #f29dff;
+  --henchmen-primary: #fb4040;
+  --henchmen-secondary: #e040fb;
+  --shadow-henchmen: 10px 10px var(--shadow-blur) rgba(253, 0, 0, .5);
+
+  /* HERO */
+  --hero-glow: #80f4ff;
+  --hero-primary: #00e5ff;
+  --hero-secondary: #009dff;
+  --shadow-hero: 10px 10px var(--shadow-blur) rgba(0, 81, 255, .5);
+
+  /* MERCENARY */
+  --mercenary-glow: #ffe082;
+  --mercenary-primary: #ffd600;
+  --mercenary-secondary: #ffb300;
+  --shadow-mercenary: 10px 10px var(--shadow-blur) rgba(255, 214, 0, .5);
+
+  /* PROTECTOR */
+  --protector-glow: #69f0ae;
+  --protector-primary: #00e676;
+  --protector-secondary: #00c853;
+  --shadow-protector: 10px 10px var(--shadow-blur) rgba(2, 255, 133, .5);
+
+  /* VIGILANTE */
+  --vigilante-glow: #b388ff;
+  --vigilante-primary: #7c4dff;
+  --vigilante-secondary: #651fff;
+  --shadow-vigilante: 10px 10px var(--shadow-blur) rgba(68, 0, 255, .5);
+
+  /* ==========================================================================
+    RADIUS
+  ========================================================================== */
+  --radius-full: 999rem;
+  --radius-lg: 1rem;
+  --radius-md: .75rem;
+  --radius-sm: .5rem;
+
+  /* ==========================================================================
+    SEMANTIC TOKENS
+  ========================================================================== */
+  /* Overlay */
+  --background-overlay: linear-gradient(rgba(0,0,0,var(--overlay-ultra)), rgba(0,0,0,var(--overlay-ultra)));
+
+  /* Surface */
+  --surface-card: var(--bg-card);
+  --surface-primary: var(--bg-primary);
+  --surface-secondary: var(--bg-secondary);
+
+  /* Text */
+  --text-primary: var(--white);
+  --text-secondary: var(--gray-300);
 
   /* ==========================================================================
     SHADOWS
   ========================================================================== */
-  --shadow-blur: 0.9375rem;
+  --shadow-blur: .9375rem;
   --shadow-card: var(--border-width) var(--border-width) var(--border-width) var(--success);
 
   /* ==========================================================================
@@ -277,39 +297,39 @@
   --space-image-margin: 70px;
   --space-lg: 1.5rem;
   --space-md: 1rem;
-  --space-sm: 0.5rem;
+  --space-sm: .5rem;
   --space-xl: 2rem;
-  --space-xs: 0.25rem;
+  --space-xs: .25rem;
+
+  /* ==========================================================================
+    TRANSITIONS
+  ========================================================================== */
+  --transition-fast: .2s ease;
+  --transition-normal: .3s ease;
+  --transition-slow: .5s ease;
 
   /* ==========================================================================
     TYPOGRAPHY
   ========================================================================== */
-  --font-heading: 'Bebas Neue', sans-serif;
   --font-body: 'Montserrat', sans-serif;
-  --text-xs: 0.75rem;
-  --text-sm: 0.875rem;
-  --text-md: 1rem;
-  --text-lg: 1.25rem;
-  --text-xl: 1.5rem;
+  --font-heading: 'Bebas Neue', sans-serif;
   --text-2xl: 2rem;
   --text-3xl: 3rem;
   --text-4xl: 4rem;
   --text-5xl: 6rem;
   --text-6xl: 8rem;
-
-  /* ==========================================================================
-    TRANSITIONS
-  ========================================================================== */
-  --transition-fast: 0.2s ease;
-  --transition-normal: 0.3s ease;
-  --transition-slow: 0.5s ease;
+  --text-lg: 1.25rem;
+  --text-md: 1rem;
+  --text-sm: .875rem;
+  --text-xl: 1.5rem;
+  --text-xs: .75rem;
 
   /* ==========================================================================
     Z INDEX
   ========================================================================== */
   --z-background: 1;
   --z-content: 10;
-  --z-header: 100;
   --z-footer: 200;
+  --z-header: 100;
   --z-modal: 1000;
 }
