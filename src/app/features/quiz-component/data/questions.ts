@@ -67,7 +67,7 @@ export const QUESTIONS: Question[] = [
       {
         id: 3,
         questionId: 2,
-        text: 'Prefiro não me envolver no problem.',
+        text: 'Prefiro não me envolver no problema.',
         heroPoints: 1,
         henchPoints: 2,
         feedback: 'Evitar conflitos parece mais seguro do que enfrentá-los.',
