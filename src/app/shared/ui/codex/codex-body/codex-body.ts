@@ -1,11 +1,8 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-import { CodexRecord } from '@shared/models/codex.model';
-import { CodexSectionComponent } from '@shared/ui/codex/codex-section/codex-section';
-
+import { CodexRecord } from '@shared/models';
 @Component({
   selector: 'app-codex-body',
   standalone: true,
-  imports: [CodexSectionComponent],
   templateUrl: './codex-body.html',
   styleUrls: ['./codex-body.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,

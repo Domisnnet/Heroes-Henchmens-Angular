@@ -1,14 +1,24 @@
 <section class="codex-body">
   @if (codex().narrative) {
-    <div class="codex-body__narrative">
-      <p>{{ codex().narrative }}</p>
-    </div>
+    <article class="codex-block">
+      <header class="codex-block__header">
+        <span class="codex-block__label">INTRODUCTION</span>
+      </header>
+      <div class="codex-block__content">
+        <p>{{ codex().narrative }}</p>
+      </div>
+    </article>
   }
-  @if (codex().sections.length) {
-    <div class="codex-body__sections">
-      @for (section of codex().sections!; track section.id) {
-        <app-codex-section [section]="section" />
-      }
-    </div>
+  @for (section of codex().sections; track section.id) {
+    <article class="codex-block">
+      <header class="codex-block__header">
+        <span class="codex-block__divider"></span>
+        <h2 class="codex-block__title">{{ section.title }}</h2>
+        <span class="codex-block__divider"></span>
+      </header>
+      <div class="codex-block__content">
+        <p>{{ section.content }}</p>
+      </div>
+    </article>
   }
 </section>
