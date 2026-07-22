@@ -1,2 +1,1 @@
-export type CodexLayer =
-  |'frame' |'ornaments' |'details' |'seals' |'final';
+export type CodexLayer = 'frame' | 'ornaments' | 'details' | 'seals' | 'final';

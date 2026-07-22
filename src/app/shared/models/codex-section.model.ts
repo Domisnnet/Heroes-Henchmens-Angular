@@ -1,2 +1,8 @@
-export type CodexSectionType = |'introduction' |'history' |'research' |'observation' |'warning' |'notes';
-export interface CodexSection { id: string; type: CodexSectionType; title: string; content: string; }
+export type CodexSectionType =
+  'introduction' | 'history' | 'research' | 'observation' | 'warning' | 'notes';
+export interface CodexSection {
+  id: string;
+  type: CodexSectionType;
+  title: string;
+  content: string;
+}

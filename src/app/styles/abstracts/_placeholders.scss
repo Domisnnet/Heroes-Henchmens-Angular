@@ -1,3 +1,12 @@
-%flex-center { display: flex; justify-content: center; align-items: center; }
-%flex-column { display: flex; flex-direction: column; }
-%page { min-height: var(--viewport-height); }
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+%page {
+  min-height: var(--viewport-height);
+}

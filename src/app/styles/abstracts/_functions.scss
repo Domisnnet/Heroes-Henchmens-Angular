@@ -2,22 +2,36 @@
 
 /* NUMBER */
 @function strip-unit($value) {
-  @if type-of($value) != 'number' { @return $value; }
-  @if unitless($value) { @return $value; }
-  @return math.div($value, ($value * 0 + 1)); 
+  @if type-of($value) != 'number' {
+    @return $value;
+  }
+  @if unitless($value) {
+    @return $value;
+  }
+  @return math.div($value, ($value * 0 + 1));
 }
 
 /* DOUBLE */
-@function double($value) { @return $value * 2; }
+@function double($value) {
+  @return $value * 2;
+}
 
 /* EM */
-@function em($px, $base: 16) { @return #{math.div(strip-unit($px), strip-unit($base))}em; }
+@function em($px, $base: 16) {
+  @return #{math.div(strip-unit($px), strip-unit($base))}em;
+}
 
 /* HALF */
-@function half($value) { @return math.div($value, 2); }
+@function half($value) {
+  @return math.div($value, 2);
+}
 
 /* PERCENTAGE */
-@function percent($value, $total) { @return percentage(math.div($value, $total)); }
+@function percent($value, $total) {
+  @return percentage(math.div($value, $total));
+}
 
 /* REM */
-@function rem($px, $base: 16) { @return #{math.div(strip-unit($px), strip-unit($base))}rem; }
+@function rem($px, $base: 16) {
+  @return #{math.div(strip-unit($px), strip-unit($base))}rem;
+}

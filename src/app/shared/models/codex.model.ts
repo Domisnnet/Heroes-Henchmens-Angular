@@ -22,16 +22,16 @@ export interface CodexRecord {
 }
 
 export type CodexDocumentType =
-  |'artifact'
-  |'entity'
-  |'location'
-  |'archive'
-  |'protocol'
-  |'mission'
-  |'order'
-  |'phenomenon'
-  |'technology'
-  |'unknown';
+  | 'artifact'
+  | 'entity'
+  | 'location'
+  | 'archive'
+  | 'protocol'
+  | 'mission'
+  | 'order'
+  | 'phenomenon'
+  | 'technology'
+  | 'unknown';
 
-export type CodexTheme = |'cosmic' |'solar' |'ancient' |'corrupted';
-export type CodexRarity = |'common' |'uncommon' |'rare' |'epic' |'legendary' |'mythic';
+export type CodexTheme = 'cosmic' | 'solar' | 'ancient' | 'corrupted';
+export type CodexRarity = 'common' | 'uncommon' | 'rare' | 'epic' | 'legendary' | 'mythic';
