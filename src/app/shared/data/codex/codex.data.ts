@@ -49,14 +49,14 @@ export const CODEX_RECORDS: CodexRecord[] = [
         title: 'First Detection',
         description:
           'The earliest references describe an anomalous resonance event associated with the Primordial Prism.',
-        date: 'Unknown Era'
+        year: 'Unknown Era'
       },
       {
         id: 'order-classification',
         type: 'classification',
         title: 'Order Classification',
         description: 'The Order officially recognized the Primordial Prism as a Legendary Artifact.',
-        date: 'Archive I'
+        year: 'Archive I'
       }
     ],
   },

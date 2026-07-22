@@ -4,5 +4,5 @@ export interface CodexTimeline {
   type: CodexTimelineType;
   title: string;
   description: string;
-  date?: string;
+  year: string;
 }
