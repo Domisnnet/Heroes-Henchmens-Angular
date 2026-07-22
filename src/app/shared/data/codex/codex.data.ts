@@ -7,18 +7,18 @@ export const CODEX_RECORDS: CodexRecord[] = [
     title: 'Primordial Prism',
     subtitle: 'The First Known Energy Core',
     glyph: 'prism',
-    classification: 'artifact',
+    type: 'artifact',
     security: { level: 'public', watermark: true },
     metadata: {
       author: 'The Order',
       origin: 'Codex Vaticinarum',
       collection: 'Artifacts',
       language: 'Ancient',
-      edition: 'I',
+      edition: 'I'
     },
     rarity: 'legendary',
-    tags: ['Energy', 'Artifact', 'Prism', 'Origin', 'Resonance'],
-    relatedArtifacts: ['resonance-ring', 'origin-node'],
+    tags: [ 'Energy', 'Artifact', 'Prism', 'Origin', 'Resonance' ],
+    relatedArtifacts: [ 'resonance-ring', 'origin-node' ],
     sections: [
       {
         id: 'introduction',
@@ -39,8 +39,8 @@ export const CODEX_RECORDS: CodexRecord[] = [
         type: 'research',
         title: 'Research Notes',
         content:
-          'Current resonance patterns demonstrate that every documented relic still inherits part of its original frequency.',
-      },
+          'Current resonance patterns demonstrate that every documented relic still inherits part of its original frequency.'
+      }
     ],
     timeline: [
       {
@@ -49,16 +49,15 @@ export const CODEX_RECORDS: CodexRecord[] = [
         title: 'First Detection',
         description:
           'The earliest references describe an anomalous resonance event associated with the Primordial Prism.',
-        date: 'Unknown Era',
+        date: 'Unknown Era'
       },
       {
         id: 'order-classification',
         type: 'classification',
         title: 'Order Classification',
-        description:
-          'The Order officially recognized the Primordial Prism as a Legendary Artifact.',
-        date: 'Archive I',
-      },
+        description: 'The Order officially recognized the Primordial Prism as a Legendary Artifact.',
+        date: 'Archive I'
+      }
     ],
   },
 ];
