@@ -1,9 +1,9 @@
 <footer class="codex-footer">
   <div class="codex-footer__grid">
-    @if (codex().classification) {
+    @if (codex().type) {
       <div class="codex-footer__item">
         <span class="codex-footer__label">Classification</span>
-        <span class="codex-footer__value">{{ codex().classification }}</span>
+        <span class="codex-footer__value">{{ codex().type }}</span>
       </div>
     }
     @if (codex().security) {

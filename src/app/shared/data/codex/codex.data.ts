@@ -6,8 +6,8 @@ export const CODEX_RECORDS: CodexRecord[] = [
     slug: 'primordial-prism',
     title: 'Primordial Prism',
     subtitle: 'The First Known Energy Core',
+    type: 'artifact',
     glyph: 'prism',
-    classification: 'artifact',
     security: { level: 'public', watermark: true },
     metadata: {
       author: 'The Order',
