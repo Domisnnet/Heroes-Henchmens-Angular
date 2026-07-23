@@ -1,0 +1,11 @@
+%flex-center {
+  @include flex-center;
+}
+
+%flex-column {
+  @include flex-column;
+}
+
+%full-page {
+  @include full-page;
+}
