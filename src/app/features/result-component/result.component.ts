@@ -36,7 +36,10 @@ export class ResultComponent {
     this.facade.reset();
     this.router.navigate(['/quiz']);
   }
-  share(): void {}
+  goToHome(): void {
+    this.facade.reset();
+    this.router.navigate(['/home']);
+  }
   private calculateHeroPercentage(): number {
     const total = this.heroScore + this.henchScore;
     if (total === 0) return 0;
