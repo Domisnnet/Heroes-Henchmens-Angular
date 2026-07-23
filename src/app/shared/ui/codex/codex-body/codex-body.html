@@ -2,10 +2,10 @@
   @if (codex().narrative) {
     <article class="codex-block">
       <header class="codex-block__header">
-        <span class="codex-block__label">INTRODUCTION</span>
+        <span class="codex-block__label">{{ labels.introduction }}</span>
       </header>
       <div class="codex-block__content">
-        <p>{{ codex().narrative }}</p>
+        <p class="codex-block__text">{{ codex().narrative }}</p>
       </div>
     </article>
   }
@@ -17,7 +17,7 @@
         <span class="codex-block__divider"></span>
       </header>
       <div class="codex-block__content">
-        <p>{{ section.content }}</p>
+        <p class="codex-block__text">{{ section.content }}</p>
       </div>
     </article>
   }

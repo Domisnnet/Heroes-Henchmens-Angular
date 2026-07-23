@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { CodexRecord } from '@shared/models';
+import { CODEX_LABELS } from '@shared/ui/codex/constants/codex.constants';
 @Component({
   selector: 'app-codex-body',
   standalone: true,
@@ -9,4 +10,5 @@ import { CodexRecord } from '@shared/models';
 })
 export class CodexBodyComponent {
   readonly codex = input.required<CodexRecord>();
+  protected readonly labels = CODEX_LABELS;
 }

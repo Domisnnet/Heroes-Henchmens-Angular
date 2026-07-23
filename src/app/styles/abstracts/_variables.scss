@@ -31,6 +31,8 @@
 
   /* BODY */
   --codex-body-gap: var(--space-xl);
+  --codex-body-block-gap: var(--space-md);
+  --codex-body-content-gap: var(--space-sm);
 
   /* BORDER */
   --codex-border: rgba(255, 255, 255, 0.12);
@@ -45,6 +47,7 @@
   --codex-divider: rgba(255, 255, 255, 0.08);
   --codex-divider-space: var(--space-xl);
   --codex-divider-width: 1px;
+  --codex-divider-height: 0.0625rem;
 
   /* DOCUMENT */
   --codex-max-width: 68rem;
@@ -68,6 +71,9 @@
   /* HEADER */
   --codex-header-gap: var(--space-lg);
   --codex-header-padding: var(--space-2xl);
+
+  /* LABELS */
+  --codex-label-letter-spacing: 0.25rem;
 
   /* LAYOUT */
   --codex-layout-gap-content: var(--space-2xl);
@@ -97,6 +103,8 @@
   /* SECTIONS */
   --codex-section-gap: var(--space-3xl);
   --codex-block-gap: var(--space-xl);
+  --codex-section-title-letter-spacing: 0.18rem;
+  --codex-section-title-size: var(--text-md);
 
   /* SECURITY */
   --codex-security-letter-spacing: 0.18em;
