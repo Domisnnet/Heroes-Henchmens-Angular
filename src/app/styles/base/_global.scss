@@ -1,21 +1,17 @@
+/* BODY */
 body {
   background: var(--bg-primary);
   color: var(--white);
   overflow-x: hidden;
 }
+
+/* MAIN */
 main {
-  min-height: 100vh;
+  min-height: var(--viewport-height);
 }
+
+/* CONTAINER */
 .container {
-  width: min(var(--container-width), 90%);
+  width: min(var(--container-width), var(--container-fluid-width));
   margin-inline: auto;
-}
-.hero-text {
-  color: var(--hero-primary);
-}
-.hench-text {
-  color: var(--henchmen-primary);
-}
-.viral-text {
-  color: var(--viral-primary);
 }
