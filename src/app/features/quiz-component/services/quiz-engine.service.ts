@@ -21,10 +21,10 @@ export class QuizEngineService {
   private readonly currentQuestionSubject: BehaviorSubject<Question>;
   readonly currentQuestion$: Observable<Question>;
   private readonly heroScoreSubject = new BehaviorSubject<number>(
-    QUIZ_CONSTANTS.INITIAL_SCORE.hero,
+    QUIZ_CONSTANTS.INITIAL_SCORE.hero
   );
   private readonly henchScoreSubject = new BehaviorSubject<number>(
-    QUIZ_CONSTANTS.INITIAL_SCORE.hench,
+    QUIZ_CONSTANTS.INITIAL_SCORE.hench
   );
   private readonly finishedSubject = new BehaviorSubject<boolean>(false);
   readonly heroScore$ = this.heroScoreSubject.asObservable();
@@ -32,7 +32,7 @@ export class QuizEngineService {
   readonly finished$ = this.finishedSubject.asObservable();
   constructor(
     private readonly questionRepository: QuestionRepository,
-    private readonly resultRepository: ResultRepository,
+    private readonly resultRepository: ResultRepository
   ) {
     this.currentQuestionSubject = new BehaviorSubject<Question>(this.questionRepository.getFirst());
     this.currentQuestion$ = this.currentQuestionSubject.asObservable();
