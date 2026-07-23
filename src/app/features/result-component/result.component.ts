@@ -29,13 +29,8 @@ export class ResultComponent {
   readonly henchScore = this.facade.henchScore();
   readonly heroPercentage = this.calculateHeroPercentage();
   readonly henchPercentage = 100 - this.heroPercentage;
-  get pageClass(): string {
-    return `result__page result__page-${this.result.type}`;
-  }
-  restart(): void {
-    this.facade.reset();
-    this.router.navigate(['/quiz']);
-  }
+  get pageClass(): string { return `result__page result__page-${this.result.type}`; }
+  restart(): void { this.facade.reset(); this.router.navigate(['/quiz']); }
   share(): void {}
   private calculateHeroPercentage(): number {
     const total = this.heroScore + this.henchScore;

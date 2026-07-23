@@ -8,7 +8,6 @@ import { Answer } from '@quiz/models/answer.model';
 import { QuizFacade } from '@quiz/facades/quiz.facade';
 import { QUESTION_CATEGORY_INFO } from '@quiz/models/question.model';
 import { CHAPTERS } from '@quiz/constants/chapter.constants';
-
 @Component({
   selector: 'app-quiz-component',
   standalone: true,
@@ -29,17 +28,9 @@ export class QuizComponent {
     const chap = CHAPTERS[catInfo.chapter];
     return { title: chap.title, subtitle: chap.subtitle, categoryTitle: catInfo.title };
   });
-  constructor() {
-    this.watchQuizCompletion();
-  }
+  constructor() { this.watchQuizCompletion(); }
   private watchQuizCompletion(): void {
-    effect(() => {
-      if (this.facade.finished()) {
-        this.router.navigate(['/result']);
-      }
-    });
+    effect(() => { if (this.facade.finished()) { this.router.navigate(['/result']); } });
   }
-  answers(answer: Answer): void {
-    this.facade.answer(answer);
-  }
+  answers(answer: Answer): void { this.facade.answer(answer); }
 }
