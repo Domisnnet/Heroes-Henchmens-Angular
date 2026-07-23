@@ -1,6 +1,9 @@
+/* BODY */
 body {
   font-family: var(--font-body);
 }
+
+/* HEADINGS */
 h1,
 h2,
 h3,
@@ -8,18 +11,36 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
-  letter-spacing: 1px;
+  letter-spacing: var(--heading-letter-spacing);
   text-transform: uppercase;
 }
+
 h1 {
   font-size: clamp(3rem, 8vw, 6rem);
 }
+
 h2 {
   font-size: clamp(2rem, 5vw, 4rem);
 }
+
 h3 {
   font-size: clamp(1.5rem, 3vw, 2.5rem);
 }
+
+/* PARAGRAPHS */
 p {
-  line-height: 1.6;
+  line-height: var(--line-height-body);
+}
+
+/* INLINE TYPOGRAPHY */
+em {
+  font-style: italic;
+}
+
+small {
+  font-size: var(--text-sm);
+}
+
+strong {
+  font-weight: 700;
 }
