@@ -6,7 +6,7 @@ export const CODEX_LABELS = {
   tags: 'TAGS',
   theme: 'THEME',
   timeline: 'TIMELINE',
-  type: 'TYPE'
+  type: 'TYPE',
 } as const;
 
 /* CODEX METADATA */
@@ -15,11 +15,11 @@ export const CODEX_METADATA_LABELS = {
   collection: 'COLLECTION',
   edition: 'EDITION',
   language: 'LANGUAGE',
-  origin: 'ORIGIN'
+  origin: 'ORIGIN',
 } as const;
 
 /* CODEX SECURITY */
 export const CODEX_SECURITY_LABELS = {
   classification: 'CLASSIFICATION',
-  security: 'SECURITY'
+  security: 'SECURITY',
 } as const;
