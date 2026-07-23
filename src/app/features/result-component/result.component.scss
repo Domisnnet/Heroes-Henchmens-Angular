@@ -282,7 +282,10 @@
   font-size: var(--text-md);
   font-weight: 800;
   color: var(--result-primary);
-  transition: transform var(--transition-fast), color var(--transition-normal), box-shadow var(--transition-normal);
+  transition:
+    transform var(--transition-fast),
+    color var(--transition-normal),
+    box-shadow var(--transition-normal);
 }
 
 .result__button:hover {
