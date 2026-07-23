@@ -1,3 +1,6 @@
+@use 'sass:math';
+
+/* BACKGROUND */
 @mixin absolute-fill {
   position: absolute;
   inset: 0;
@@ -9,6 +12,12 @@
   background-size: cover;
 }
 
+@mixin page-background($image, $overlay: var(--background-overlay)) {
+  background-image: $overlay, $image; 
+  @include background-cover; 
+}
+
+/* BUTTONS */
 @mixin brutal-button {
   border: var(--border-width) solid var(--black);
   box-shadow: var(--shadow-card);
@@ -16,33 +25,14 @@
   transition: var(--transition-fast);
 }
 
-@mixin brutal-card {
-  background: var(--bg-overlay);
-  border: var(--border-width) solid var(--white);
-  box-shadow: var(--shadow-card);
+/* CARDS */
+@mixin card-base($background, $border-color, $shadow) {
+  background: $background;
+  border: var(--border-width) solid $border-color;
+  box-shadow: $shadow;
 }
 
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-@mixin full-page {
-  min-height: var(--viewport-height);
-}
-
-@mixin page-background($image, $overlay: var(--background-overlay)) {
-  background-image: $overlay, $image;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+@mixin brutal-card { @include card-base(var(--bg-card), var(--white), var(--shadow-card)); }
 
 @mixin page-card {
   @include brutal-card;
@@ -50,12 +40,58 @@
   width: min(var(--quiz-max-width), 100%);
   gap: var(--space-lg);
   padding: var(--space-xl);
-  background: var(--bg-overlay);
   border-radius: var(--radius-md);
 }
+
+/* DISPLAY */
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* LAYOUT */
+@mixin full-page { min-height: var(--viewport-height); }
 
 @mixin page-layout {
   @include flex-center;
   overflow: hidden;
   position: relative;
+}
+
+/* UTILITIES */
+/* Esconde visualmente um elemento, mantendo acessibilidade para leitores de tela */
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Remove estilos padrões de listas */
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Remove estilos padrões de botões */
+@mixin button-reset {
+  padding: 0;
+  background: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
 }
