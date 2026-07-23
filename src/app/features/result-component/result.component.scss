@@ -1,9 +1,7 @@
 @use '../../styles/abstracts/mixins' as *;
 @use '../../styles/abstracts/variables' as *;
 
-/* ==========================================================================
-  PAGE
-========================================================================== */
+/* PAGE */
 .result {
   @include page-background(var(--result-background));
   @include page-layout;
@@ -24,9 +22,7 @@
   box-shadow: var(--result-shadow);
 }
 
-/* ==========================================================================
-  PERSONALITIES
-========================================================================== */
+/* PERSONALITIES */
 .result__page-hero {
   --result-primary: var(--hero-primary);
   --result-secondary: var(--hero-secondary);
@@ -62,9 +58,7 @@
   --result-shadow: var(--shadow-henchmen);
 }
 
-/* ==========================================================================
-  HERO
-========================================================================== */
+/* HERO */
 .result__hero {
   display: grid;
   grid-template-columns: 22rem 1fr;
@@ -90,9 +84,7 @@
   height: auto;
   object-fit: contain;
   user-select: none;
-  transition:
-    transform var(--transition-normal),
-    filter var(--transition-normal);
+  transition: transform var(--transition-normal), filter var(--transition-normal);
   filter: drop-shadow(0 0 1.5rem var(--result-glow));
 }
 
@@ -137,9 +129,7 @@
   line-height: 1.8;
 }
 
-/* ==========================================================================
-  SECTION TITLE
-========================================================================== */
+/* SECTION TITLE */
 .result__section-title {
   margin: 0 0 var(--space-lg);
   color: var(--white);
@@ -149,9 +139,7 @@
   letter-spacing: 0.08em;
 }
 
-/* ==========================================================================
-  SCORE
-========================================================================== */
+/* SCORE */
 .result__score {
   display: flex;
   flex-direction: column;
@@ -214,9 +202,7 @@
   background: linear-gradient(90deg, var(--henchmen-primary), var(--henchmen-secondary));
 }
 
-/* ==========================================================================
-  ANALYSIS
-========================================================================== */
+/* ANALYSIS */
 .result__analysis {
   display: flex;
   flex-direction: column;
@@ -265,9 +251,7 @@
   text-align: right;
 }
 
-/* ==========================================================================
-  ACTIONS
-========================================================================== */
+/* ACTIONS */
 .result__actions {
   display: flex;
   justify-content: center;
@@ -311,9 +295,7 @@
   color: var(--result-secondary);
 }
 
-/* ==========================================================================
-  RESPONSIVE
-========================================================================== */
+/* RESPONSIVE */
 @media (max-width: 992px) {
   .result__hero {
     grid-template-columns: 1fr;
