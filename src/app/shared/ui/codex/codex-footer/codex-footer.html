@@ -1,15 +1,15 @@
 <footer class="codex-footer">
   <section class="codex-footer__group">
     <div class="codex-footer__item">
-      <span class="codex-footer__label">TYPE</span>
+      <span class="codex-footer__label">{{ labels.type }}</span>
       <span class="codex-footer__value">{{ codex().type }}</span>
     </div>
     <div class="codex-footer__item">
-      <span class="codex-footer__label">RARITY</span>
+      <span class="codex-footer__label">{{ labels.rarity }}</span>
       <span class="codex-footer__value">{{ codex().rarity }}</span>
     </div>
     <div class="codex-footer__item">
-      <span class="codex-footer__label">THEME</span>
+      <span class="codex-footer__label">{{ labels.theme }}</span>
       <span class="codex-footer__value">{{ codex().theme }}</span>
     </div>
   </section>
@@ -17,19 +17,19 @@
     <section class="codex-footer__group">
       @if (codex().metadata.collection) {
         <div class="codex-footer__item">
-          <span class="codex-footer__label">COLLECTION</span>
+          <span class="codex-footer__label">{{ metadata.collection }}</span>
           <span class="codex-footer__value">{{ codex().metadata.collection }}</span>
         </div>
       }
       @if (codex().metadata.origin) {
         <div class="codex-footer__item">
-          <span class="codex-footer__label">ORIGIN</span>
+          <span class="codex-footer__label">{{ metadata.origin }}</span>
           <span class="codex-footer__value">{{ codex().metadata.origin }}</span>
         </div>
       }
       @if (codex().metadata.edition) {
         <div class="codex-footer__item">
-          <span class="codex-footer__label">EDITION</span>
+          <span class="codex-footer__label">{{ metadata.edition }}</span>
           <span class="codex-footer__value">{{ codex().metadata.edition }}</span>
         </div>
       }

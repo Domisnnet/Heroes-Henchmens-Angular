@@ -59,6 +59,10 @@
   --codex-footer-item-gap: var(--space-xs);
   --codex-footer-item-padding: var(--space-md);
   --codex-footer-item-min-width: 10rem;
+  --codex-footer-group-gap: var(--space-lg);
+  --codex-footer-tags-gap: var(--space-sm);
+  --codex-footer-tag-padding-block: .35rem;
+  --codex-footer-tag-padding-inline: .75rem;
 
   /* FRAME */
   --codex-frame-padding: clamp(0.75rem, 2vw, 1.5rem);
