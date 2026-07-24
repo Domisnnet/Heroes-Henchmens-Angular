@@ -2,20 +2,20 @@
   display: block;
 }
 
-/* CODEX TIMELINE */
+/* TIMELINE */
 .codex-timeline {
   display: flex;
   flex-direction: column;
-  gap: var(--codex-space-lg);
+  gap: var(--space-lg);
 }
 
 /* TITLE */
 .codex-timeline__title {
   margin: 0;
+  color: var(--codex-text);
   font-family: var(--codex-font-heading);
   font-size: var(--codex-heading-size);
-  line-height: 1.2;
-  color: var(--codex-text);
+  line-height: var(--line-height-heading);
 }
 
 /* LIST */
@@ -30,7 +30,7 @@
 .codex-event {
   display: grid;
   grid-template-columns: var(--codex-timeline-dot-size) 1fr;
-  column-gap: var(--codex-space-lg);
+  column-gap: var(--space-lg);
   position: relative;
 }
 
@@ -39,42 +39,42 @@
   width: var(--codex-timeline-dot-size);
   height: var(--codex-timeline-dot-size);
   margin-top: calc(var(--codex-body-size) * 0.45);
-  border-radius: var(--radius-full);
   background: var(--codex-accent);
-  box-shadow: 0 0 var(--codex-shadow-blur) var(--codex-accent-glow);
+  border-radius: var(--codex-radius-full);
+  box-shadow: 0 0 var(--shadow-blur) var(--codex-accent-glow);
 }
 
 /* CONTENT */
 .codex-event__content {
   display: flex;
   flex-direction: column;
-  gap: var(--codex-space-xs);
+  gap: var(--space-xs);
 }
 
-/* YEAR */
-.codex-event__year {
+/* DATE */
+.codex-event__date {
+  color: var(--codex-accent);
   font-family: var(--codex-font-body);
   font-size: var(--codex-label-size);
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: var(--codex-label-letter-spacing);
   text-transform: uppercase;
-  color: var(--codex-accent);
 }
 
 /* TITLE */
 .codex-event__title {
   margin: 0;
+  color: var(--codex-text);
   font-family: var(--codex-font-heading);
   font-size: var(--codex-subtitle-size);
-  line-height: 1.2;
-  color: var(--codex-text);
+  line-height: var(--line-height-heading);
 }
 
 /* DESCRIPTION */
 .codex-event__description {
   margin: 0;
+  color: var(--codex-text-muted);
   font-family: var(--codex-font-body);
   font-size: var(--codex-body-size);
-  line-height: 1.7;
-  color: var(--codex-text-muted);
+  line-height: var(--line-height-body);
 }
