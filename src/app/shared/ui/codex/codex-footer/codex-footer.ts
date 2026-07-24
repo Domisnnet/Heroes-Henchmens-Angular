@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-import { CODEX_LABELS, CODEX_METADATA_LABELS } from '../constants/codex.constants';
+import { CODEX_LABELS, CODEX_METADATA_LABELS } from '@shared/ui/codex/constants/codex.constants';
 import { CodexRecord } from '@shared/models';
 @Component({
   selector: 'app-codex-footer',

@@ -2,18 +2,14 @@
   display: block;
 }
 
-/* ==========================================================
-  CODEX TAGS
-========================================================== */
+/* CODEX TAGS */
 .codex-tags {
   display: flex;
   flex-direction: column;
   gap: var(--codex-space-md);
 }
 
-/* ==========================================================
-  TITLE
-========================================================== */
+/* TITLE */
 .codex-tags__title {
   margin: 0;
   font-family: var(--codex-font-heading);
@@ -21,18 +17,14 @@
   line-height: 1.2;
 }
 
-/* ==========================================================
-  LIST
-========================================================== */
+/* LIST */
 .codex-tags__list {
   display: flex;
   flex-wrap: wrap;
   gap: var(--codex-space-sm);
 }
 
-/* ==========================================================
-  TAG
-========================================================== */
+/* TAG */
 .codex-tag {
   display: inline-flex;
   align-items: center;
@@ -47,10 +39,7 @@
   font-size: var(--codex-label-size);
   line-height: 1;
   white-space: nowrap;
-  transition:
-    background var(--codex-transition-fast),
-    border-color var(--codex-transition-fast),
-    color var(--codex-transition-fast);
+  transition: background var(--codex-transition-fast), border-color var(--codex-transition-fast), color var(--codex-transition-fast);
 }
 
 .codex-tag:hover {
