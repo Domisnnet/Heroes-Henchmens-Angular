@@ -68,7 +68,7 @@
   --codex-frame-padding: clamp(0.75rem, 2vw, 1.5rem);
 
   /* GLYPH */
-  --codex-glyph-size: 8.75rem;
+  --codex-glyph-size: clamp(8rem, 14vw, 10rem);
   --codex-glyph-padding: var(--space-md);
   --codex-glyph-offset: 2rem;
 
@@ -89,14 +89,14 @@
   --codex-meta-item-gap: var(--space-xs);
 
   /* PADDING */
-  --codex-page-padding-top: 3rem;
-  --codex-page-padding-right: 3rem;
-  --codex-page-padding-bottom: 3rem;
-  --codex-page-padding-left: 3rem;
-  --codex-content-padding-top: 5.5rem;
-  --codex-content-padding-right: 6rem;
-  --codex-content-padding-bottom: 5rem;
-  --codex-content-padding-left: 6rem;
+  --codex-page-padding-top: var(--space-2xl);
+  --codex-page-padding-right: var(--space-2xl);
+  --codex-page-padding-bottom: var(--space-2xl);
+  --codex-page-padding-left: var(--space-2xl);
+  --codex-content-padding-top: var(--space-5xl);
+  --codex-content-padding-right: var(--space-5xl);
+  --codex-content-padding-bottom: var(--space-4xl);
+  --codex-content-padding-left: var(--space-5xl);
 
   /* RADIUS */
   --codex-radius-sm: var(--radius-sm);
@@ -130,7 +130,6 @@
   --codex-tag-font-size: var(--text-xs);
 
   /* TEXT */
-  --codex-label-letter-spacing: 0.12em;
   --codex-label-size: var(--text-xs);
   --codex-text: var(--text-primary);
   --codex-text-muted: var(--text-secondary);
@@ -157,11 +156,6 @@
   --codex-subtitle-line-height: 1.6;
   --codex-subtitle-size: var(--text-lg);
   --codex-subtitle-width: 38rem;
-
-  /* Z-INDEX */
-  --codex-z-document: var(--z-content);
-  --codex-z-frame: var(--z-background);
-  --codex-z-overlay: calc(var(--z-content) + 1);
 
   /* ==========================================================================
     COLORS
@@ -194,6 +188,10 @@
   /* Legacy */
   --viral-primary: #eeff41;
   --viral-secondary: #d4ff00;
+  --space-default: -60px;
+  --space-home: -80px;
+  --space-image: 180px;
+  --space-image-margin: 70px;
 
   /* ==========================================================================
     COMPONENTS
@@ -278,10 +276,8 @@
     SEMANTIC TOKENS
   ========================================================================== */
   /* Overlay */
-  --background-overlay: linear-gradient(
-    rgba(0, 0, 0, var(--overlay-ultra)),
-    rgba(0, 0, 0, var(--overlay-ultra))
-  );
+  --background-overlay: linear-gradient(rgba(0, 0, 0, var(--overlay-ultra)),
+    rgba(0, 0, 0, var(--overlay-ultra)));
 
   /* Surface */
   --surface-card: var(--bg-card);
@@ -297,6 +293,8 @@
   ========================================================================== */
   --shadow-blur: 0.9375rem;
   --shadow-card: var(--border-width) var(--border-width) var(--border-width) var(--success);
+  --shadow-offset-x: 10px;
+  --shadow-offset-y: 10px;
 
   /* ==========================================================================
     SPACING
@@ -306,10 +304,6 @@
   --space-4xl: 5rem;
   --space-5xl: 6rem;
   --space-6xl: 7rem;
-  --space-default: -60px;
-  --space-home: -80px;
-  --space-image: 180px;
-  --space-image-margin: 70px;
   --space-lg: 1.5rem;
   --space-md: 1rem;
   --space-sm: 0.5rem;
@@ -349,4 +343,9 @@
   --z-footer: 200;
   --z-header: 100;
   --z-modal: 1000;
+  
+  /* Z-INDEX */
+  --codex-z-document: var(--z-content);
+  --codex-z-frame: var(--z-background);
+  --codex-z-overlay: calc(var(--z-content) + 1);
 }
