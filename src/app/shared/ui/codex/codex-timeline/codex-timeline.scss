@@ -2,18 +2,14 @@
   display: block;
 }
 
-/* ==========================================================
-  CODEX TIMELINE
-========================================================== */
+/* CODEX TIMELINE */
 .codex-timeline {
   display: flex;
   flex-direction: column;
   gap: var(--codex-space-lg);
 }
 
-/* ==========================================================
-  TITLE
-========================================================== */
+/* TITLE */
 .codex-timeline__title {
   margin: 0;
   font-family: var(--codex-font-heading);
@@ -22,9 +18,7 @@
   color: var(--codex-text);
 }
 
-/* ==========================================================
-  LIST
-========================================================== */
+/* LIST */
 .codex-timeline__list {
   display: flex;
   flex-direction: column;
@@ -32,9 +26,7 @@
   position: relative;
 }
 
-/* ==========================================================
-  EVENT
-========================================================== */
+/* EVENT */
 .codex-event {
   display: grid;
   grid-template-columns: var(--codex-timeline-dot-size) 1fr;
@@ -42,9 +34,7 @@
   position: relative;
 }
 
-/* ==========================================================
-  MARKER
-========================================================== */
+/* MARKER */
 .codex-event__marker {
   width: var(--codex-timeline-dot-size);
   height: var(--codex-timeline-dot-size);
@@ -54,18 +44,14 @@
   box-shadow: 0 0 var(--codex-shadow-blur) var(--codex-accent-glow);
 }
 
-/* ==========================================================
-  CONTENT
-========================================================== */
+/* CONTENT */
 .codex-event__content {
   display: flex;
   flex-direction: column;
   gap: var(--codex-space-xs);
 }
 
-/* ==========================================================
-  YEAR
-========================================================== */
+/* YEAR */
 .codex-event__year {
   font-family: var(--codex-font-body);
   font-size: var(--codex-label-size);
@@ -75,9 +61,7 @@
   color: var(--codex-accent);
 }
 
-/* ==========================================================
-  TITLE
-========================================================== */
+/* TITLE */
 .codex-event__title {
   margin: 0;
   font-family: var(--codex-font-heading);
@@ -86,9 +70,7 @@
   color: var(--codex-text);
 }
 
-/* ==========================================================
-  DESCRIPTION
-========================================================== */
+/* DESCRIPTION */
 .codex-event__description {
   margin: 0;
   font-family: var(--codex-font-body);
