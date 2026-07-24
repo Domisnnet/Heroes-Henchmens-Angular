@@ -15,7 +15,7 @@ export interface CodexRecord {
   narrative: string;
   sections: CodexSection[];
   timeline: CodexTimeline[];
-  tags?: string[];
+  tags: string[];
   relatedArtifacts?: string[];
   rarity: CodexRarity;
   theme: CodexTheme;

@@ -6,21 +6,27 @@
 
 /* CODEX */
 .codex {
+  position: relative;
   display: flex;
   justify-content: center;
-  position: relative;
-  width: 100%;
-  padding: var(--codex-page-padding-top) var(--codex-page-padding-right)
-    var(--codex-page-padding-bottom) var(--codex-page-padding-left);
+  inline-size: 100%;
+  padding:
+    var(--codex-page-padding-top)
+    var(--codex-page-padding-right)
+    var(--codex-page-padding-bottom)
+    var(--codex-page-padding-left);
 }
 
 /* FRAME */
 .codex__frame {
+  position: absolute;
+  inset:
+    var(--codex-page-padding-top)
+    var(--codex-page-padding-right)
+    var(--codex-page-padding-bottom)
+    var(--codex-page-padding-left);
   display: flex;
   justify-content: center;
-  position: absolute;
-  inset: var(--codex-page-padding-top) var(--codex-page-padding-right)
-    var(--codex-page-padding-bottom) var(--codex-page-padding-left);
   pointer-events: none;
   z-index: var(--codex-z-frame);
 }
@@ -33,15 +39,18 @@
 
 /* DOCUMENT */
 .codex__document {
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative;
-  width: calc(min(100%, var(--codex-max-width)) - (var(--codex-frame-padding) * 2));
-  margin: var(--codex-frame-padding);
-  min-height: var(--codex-document-min-height);
+  inline-size: calc(min(100%, var(--codex-max-width)) - (var(--codex-frame-padding) * 2));
   max-inline-size: var(--codex-max-width);
-  padding: var(--codex-content-padding-top) var(--codex-content-padding-right)
-    var(--codex-content-padding-bottom) var(--codex-content-padding-left);
+  min-block-size: var(--codex-document-min-height);
+  margin: var(--codex-frame-padding);
+  padding:
+    var(--codex-content-padding-top)
+    var(--codex-content-padding-right)
+    var(--codex-content-padding-bottom)
+    var(--codex-content-padding-left);
   z-index: var(--codex-z-document);
 }
 
@@ -54,6 +63,7 @@
 .codex__main {
   display: flex;
   flex-direction: column;
+
   gap: var(--codex-layout-gap-content);
 }
 
@@ -68,6 +78,7 @@
     padding-inline: var(--space-md);
     padding-block: var(--space-2xl);
   }
+
   .codex__document {
     padding-inline: var(--space-xl);
     padding-block: var(--space-xl);
@@ -79,6 +90,7 @@
     padding-inline: var(--space-sm);
     padding-block: var(--space-xl);
   }
+
   .codex__document {
     padding-inline: var(--space-lg);
     padding-block: var(--space-lg);
