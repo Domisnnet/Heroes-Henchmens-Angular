@@ -2,9 +2,7 @@
   display: block;
 }
 
-/* ==========================================================================
-  CODEX HEADER
-========================================================================== */
+/* CODEX HEADER */
 .codex-header {
   display: grid;
   grid-template-areas: 'meta' 'titles' 'glyph';
@@ -15,9 +13,7 @@
   text-align: center;
 }
 
-/* ==========================================================================
-  META
-========================================================================== */
+/* META */
 .codex-header__meta {
   grid-area: meta;
   display: flex;
@@ -27,9 +23,7 @@
   gap: var(--codex-meta-gap);
 }
 
-/* ==========================================================================
-  TITLES
-========================================================================== */
+/* TITLES */
 .codex-header__titles {
   grid-area: titles;
   display: flex;
@@ -39,9 +33,7 @@
   max-inline-size: var(--codex-subtitle-width);
 }
 
-/* ==========================================================================
-  BADGES
-========================================================================== */
+/* BADGES */
 .codex-header__security,
 .codex-header__classification {
   display: inline-flex;
@@ -55,10 +47,7 @@
   color: var(--codex-text);
   font-family: var(--font-body);
   font-size: var(--text-sm);
-  transition:
-    background var(--transition-fast),
-    border-color var(--transition-fast),
-    color var(--transition-fast);
+  transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
 }
 
 .codex-header__security {
@@ -73,9 +62,7 @@
   text-transform: capitalize;
 }
 
-/* ==========================================================================
-  TITLE
-========================================================================== */
+/* TITLE */
 .codex-header__title {
   margin: 0;
   color: var(--codex-text);
@@ -85,9 +72,7 @@
   text-wrap: balance;
 }
 
-/* ==========================================================================
-  SUBTITLE
-========================================================================== */
+/* SUBTITLE */
 .codex-header__subtitle {
   margin: 0;
   color: var(--codex-text-muted);
@@ -97,9 +82,7 @@
   text-wrap: pretty;
 }
 
-/* ==========================================================================
-  GLYPH
-========================================================================== */
+/* GLYPH */
 .codex-header__glyph {
   grid-area: glyph;
   display: grid;
@@ -112,9 +95,7 @@
   border-radius: 50%;
   background: var(--codex-surface-alt);
   box-shadow: var(--codex-shadow);
-  transition:
-    transform var(--transition-fast),
-    box-shadow var(--transition-fast);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .codex-header__glyph:hover {
