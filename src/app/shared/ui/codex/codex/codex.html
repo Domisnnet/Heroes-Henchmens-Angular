@@ -1,12 +1,10 @@
 <div class="codex">
   <div #frameContainer class="codex__frame"></div>
   <article class="codex__document">
-    <header class="codex__header"><app-codex-header [codex]="codex()" /></header>
-    <main class="codex__main">
-      <app-codex-body [codex]="codex()" />
-      @if (codex().timeline.length) { <app-codex-timeline [timeline]="codex().timeline" /> }
-      @if (codex().tags.length) { <app-codex-tags [tags]="codex().tags" /> }
-    </main>
-    <footer class="codex__footer"><app-codex-footer [codex]="codex()" /></footer>
+    <app-codex-header [codex]="codex()" />
+    <app-codex-body [codex]="codex()" />
+    @if (codex().timeline.length) { <app-codex-timeline [timeline]="codex().timeline" /> }
+    @if (codex().tags.length) { <app-codex-tags [tags]="codex().tags" /> }
+    <app-codex-footer [codex]="codex()" />
   </article>
 </div>

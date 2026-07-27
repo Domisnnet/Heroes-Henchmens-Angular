@@ -1,14 +1,13 @@
 :host {
   display: block;
   inline-size: 100%;
-  min-block-size: 100%;
 }
 
-/* CODEX */
 .codex {
-  position: relative;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  position: relative;
   inline-size: 100%;
   padding:
     var(--codex-page-padding-top)
@@ -17,31 +16,31 @@
     var(--codex-page-padding-left);
 }
 
-/* FRAME */
 .codex__frame {
+  display: flex;
+  justify-content: center;
   position: absolute;
   inset:
     var(--codex-page-padding-top)
     var(--codex-page-padding-right)
     var(--codex-page-padding-bottom)
     var(--codex-page-padding-left);
-  display: flex;
-  justify-content: center;
   pointer-events: none;
   z-index: var(--codex-z-frame);
 }
 
 .codex__frame svg {
+  display: block;
   inline-size: 100%;
   max-inline-size: var(--codex-max-width);
   block-size: auto;
 }
 
-/* DOCUMENT */
 .codex__document {
-  position: relative;
   display: flex;
   flex-direction: column;
+  position: relative;
+  row-gap: var(--codex-layout-gap-content);
   inline-size: calc(min(100%, var(--codex-max-width)) - (var(--codex-frame-padding) * 2));
   max-inline-size: var(--codex-max-width);
   min-block-size: var(--codex-document-min-height);
@@ -54,51 +53,33 @@
   z-index: var(--codex-z-document);
 }
 
-/* HEADER */
-.codex__header {
-  margin-block-end: var(--codex-layout-gap-header);
-}
-
-/* MAIN */
-.codex__main {
-  display: flex;
-  flex-direction: column;
-  gap: var(--codex-layout-gap-content);
-}
-
-/* FOOTER */
-.codex__footer {
-  margin-block-start: var(--codex-layout-gap-footer);
-}
-
-/* RESPONSIVE */
+/* ---------- Tablet ---------- */
 @media (width <= 1024px) {
   .codex {
-    padding-inline: var(--space-md);
+    padding-inline: var(--space-lg);
     padding-block: var(--space-2xl);
   }
 
   .codex__document {
-    padding-inline: var(--space-xl);
-    padding-block: var(--space-xl);
+    padding: var(--space-xl);
   }
 }
 
+/* ---------- Mobile ---------- */
 @media (width <= 768px) {
   .codex {
-    padding-inline: var(--space-sm);
+    padding-inline: var(--space-md);
     padding-block: var(--space-xl);
   }
 
   .codex__document {
-    padding-inline: var(--space-lg);
-    padding-block: var(--space-lg);
+    padding: var(--space-lg);
   }
 }
 
+/* ---------- Small Mobile ---------- */
 @media (width <= 480px) {
   .codex__document {
-    padding-inline: var(--space-md);
-    padding-block: var(--space-md);
+    padding: var(--space-md);
   }
 }
