@@ -24,13 +24,18 @@
   color: var(--hero-secondary);
   padding-top: var(--space-xl);
   line-height: 0.9;
+  text-transform: none;
 }
 
 .hero__title span {
-  color: var(--henchmen-secondary);
-  font-weight: bolder;
-  font-size: var(--text-5xl);
-  padding-top: var(--space-lg);
+  display: inline-block;
+  background: var(--henchmen-primary);
+  color: var(--black);
+  padding: 0 var(--space-sm);
+  padding-top: var(--space-sm);
+  margin-top: var(--space-md);
+  border-radius: var(--radius-md);
+  transform: rotate(-5deg);
 }
 
 .henchmen__title {

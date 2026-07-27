@@ -3,15 +3,16 @@ import { Router } from '@angular/router';
 import { UI_MESSAGES } from '@shared/constants/ui.constants';
 import { HeaderComponent } from '@shared/components/header-component/header.component';
 import { FooterComponent } from '@shared/components/footer-component/footer.component';
-import { ArtifactViewerComponent } from '@shared/artifact-viewer/artifact-viewer';
-import { AchievementComponent } from '@shared/ui/achievement/achievement.component';
 import { ACHIEVEMENTS } from '@shared/data/achievements/achievements';
 import { CODEX_RECORDS } from '@shared/data/codex/codex.data';
 
 @Component({
   selector: 'app-home-component',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent],
+  imports: [
+    HeaderComponent, 
+    FooterComponent
+  ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
