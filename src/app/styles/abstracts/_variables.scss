@@ -68,7 +68,7 @@
   --codex-frame-padding: clamp(0.75rem, 2vw, 1.5rem);
 
   /* GLYPH */
-  --codex-glyph-size: clamp(8rem, 14vw, 10rem);
+  --codex-glyph-size: clamp(9rem, 14vw, 10rem);
   --codex-glyph-padding: var(--space-md);
   --codex-glyph-offset: 2rem;
 
@@ -97,6 +97,9 @@
   --codex-content-padding-right: var(--space-5xl);
   --codex-content-padding-bottom: var(--space-4xl);
   --codex-content-padding-left: var(--space-5xl);
+
+  /* HERO */
+  --codex-hero-gap: var(--space-2xl);
 
   /* RADIUS */
   --codex-radius-sm: var(--radius-sm);
