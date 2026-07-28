@@ -1,20 +1,22 @@
 <header class="codex-header">
-  @if (codex().security) {
-    <div class="codex-header__meta">
-      <span class="codex-header__security">{{ codex().security.level }}</span>
-    </div>
-  }
-  <div class="codex-header__hero">
+  <section class="codex-header__meta">
+    @if (codex().security) {
+      <span class="codex-header__badge codex-header__badge--security">{{ codex().security.level }}</span>
+    }
+    <span class="codex-header__badge">{{ typeLabels[codex().type] }}</span>
+    <span class="codex-header__badge">{{ rarityLabels[codex().rarity] }}</span>
+  </section>
+  <section class="codex-header__hero">
+    @if (glyphPath()) {
+      <figure class="codex-header__glyph">
+        <img [src]="glyphPath()!" [alt]="codex().title" />
+      </figure>
+    }
     <div class="codex-header__titles">
       <h1 class="codex-header__title">{{ codex().title }}</h1>
       @if (codex().subtitle) {
         <p class="codex-header__subtitle">{{ codex().subtitle }}</p>
       }
     </div>
-    @if (glyphPath()) {
-      <figure class="codex-header__glyph">
-        <img [src]="glyphPath()!" [alt]="codex().title" />
-      </figure>
-    }
-  </div>
+  </section>
 </header>

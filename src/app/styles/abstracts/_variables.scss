@@ -24,6 +24,11 @@
   --codex-background: var(--surface-primary);
   --codex-overlay: var(--background-overlay);
 
+  /* BADGE */
+  --codex-badge-font-size: var(--text-xs);
+  --codex-badge-font-weight: 700;
+  --codex-badge-letter-spacing: var(--codex-security-letter-spacing);
+
   /* BODY */
   --codex-body-block-gap: var(--space-md);
   --codex-body-content-gap: var(--space-sm);
@@ -44,6 +49,15 @@
   --codex-divider-space: var(--space-xl);
   --codex-divider-width: 1px;
 
+  /* GLYPH */
+  --codex-glyph-glow: var(--shadow-card);
+  --codex-hover-scale: 1.04;
+  --codex-glyph-ring-border: var(--codex-border-color);
+  --codex-glyph-ring-inner-offset: -0.5rem;
+  --codex-glyph-ring-inner-opacity: 0.3;
+  --codex-glyph-ring-outer-offset: -1.25rem;
+  --codex-glyph-ring-outer-opacity: 0.55;
+
   /* FOOTER */
   --codex-footer-gap: var(--space-lg);
   --codex-footer-group-gap: var(--space-lg);
@@ -56,14 +70,18 @@
   --codex-footer-tags-gap: var(--space-sm);
 
   /* HEADER */
+  --codex-header-align: center;
   --codex-glyph-offset: 2rem;
   --codex-glyph-padding: var(--space-md);
-  --codex-glyph-size: clamp(9rem, 14vw, 10rem);
+  --codex-glyph-size: clamp(7.5rem, 12vw, 8.5rem);
   --codex-header-gap: var(--space-lg);
   --codex-header-padding: var(--space-2xl);
   --codex-meta-gap: var(--space-sm);
   --codex-meta-item-gap: var(--space-xs);
   --codex-title-gap: 0.75rem;
+
+  /* HERO */
+  --codex-hero-justify: center;
 
   /* LAYOUT */
   --codex-content-width: 52rem;
@@ -93,6 +111,12 @@
   --codex-shadow: var(--shadow-card);
   --codex-shadow-hover: var(--shadow-card);
 
+  /* SCALE */
+  --codex-scale-lg: 1;
+  --codex-scale-md: .82;
+  --codex-scale-sm: .72;
+  --codex-scale-ring: .8;
+
   /* SURFACE */
   --codex-surface: var(--surface-card);
   --codex-surface-alt: var(--surface-secondary);
@@ -104,10 +128,12 @@
 
   /* TAGS */
   --codex-badge-height: 2rem;
+  --codex-badge-height-sm-offset: .25rem;
   --codex-badge-padding-inline: var(--space-md);
   --codex-badge-radius: var(--radius-full);
   --codex-tag-border: var(--codex-border);
   --codex-tag-font-size: var(--text-xs);
+  --codex-badge-font-size-sm-offset: .05rem;
   --codex-tag-gap: var(--space-xs);
   --codex-tag-padding-block: 0.25rem;
   --codex-tag-padding-inline: 0.75rem;
@@ -121,6 +147,12 @@
   --codex-timeline-dot-size: 0.75rem;
   --codex-timeline-gap: var(--space-lg);
   --codex-timeline-line-width: 0.125rem;
+
+  /* TITLE */
+  --codex-title-max: 4.5rem;
+  --codex-title-min: 3rem;
+  --codex-title-shadow: 0 0.15rem 0.4rem rgb(0 0 0 / 45%);
+  --codex-title-fluid: 5vw;
 
   /* TYPOGRAPHY */
   --codex-font-body: var(--font-body);
