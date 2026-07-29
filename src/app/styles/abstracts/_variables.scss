@@ -28,6 +28,7 @@
   --codex-badge-font-size: var(--text-xs);
   --codex-badge-font-weight: 700;
   --codex-badge-letter-spacing: var(--codex-security-letter-spacing);
+  --codex-badge-padding-inline-md: var(--space-sm);
 
   /* BODY */
   --codex-body-block-gap: var(--space-md);
@@ -82,6 +83,7 @@
 
   /* HERO */
   --codex-hero-justify: center;
+  --codex-hero-gap-md: var(--space-xl);
 
   /* LAYOUT */
   --codex-content-width: 52rem;
@@ -100,6 +102,9 @@
   --codex-content-padding-right: var(--space-5xl);
   --codex-content-padding-bottom: var(--space-4xl);
   --codex-content-padding-left: var(--space-5xl);
+
+  /* META */
+  --codex-meta-gap-md: var(--space-xs);
 
   /* RADIUS */
   --codex-radius-full: var(--radius-full);
