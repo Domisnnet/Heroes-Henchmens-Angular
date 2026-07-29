@@ -132,12 +132,12 @@
   position: relative;
   z-index: 1;
   display: block;
-  inline-size: calc(var(--codex-glyph-size) * var(--codex-glyph-scale));
-  block-size: calc(var(--codex-glyph-size) * var(--codex-glyph-scale));
+  inline-size: 100%;
+  block-size: 100%;
   object-fit: contain;
-  filter: drop-shadow(var(--codex-shadow-title));
   pointer-events: none;
   user-select: none;
+  overflow: hidden;
 }
 
 /* TITLES */
