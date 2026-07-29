@@ -7,10 +7,10 @@
   display: flex;
   flex-direction: column;
   align-items: var(--codex-header-align);
-  gap: var(--codex-header-gap);
   inline-size: 100%;
-  margin-inline: auto;
   max-inline-size: var(--codex-content-width);
+  margin-inline: auto;
+  gap: var(--codex-header-gap);
   padding-block-end: var(--codex-header-padding);
   text-align: center;
 }
@@ -41,12 +41,18 @@
   letter-spacing: var(--codex-badge-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
-  transition: background var(--codex-transition-fast), border-color var(--codex-transition-fast), box-shadow var(--codex-transition-fast), color var(--codex-transition-fast), transform var(--codex-transition-fast);
+  transition:
+    background var(--codex-transition-fast),
+    border-color var(--codex-transition-fast),
+    box-shadow var(--codex-transition-fast),
+    color var(--codex-transition-fast),
+    transform var(--codex-transition-fast);
 
   &:hover {
-    transform: scale(var(--codex-hover-scale));
+    color: var(--codex-accent);
     border-color: var(--codex-accent);
-    box-shadow: var(--codex-glow);
+    transform: scale(var(--codex-scale-hover));
+    box-shadow: var(--codex-shadow-glyph);
   }
 }
 
@@ -59,39 +65,41 @@
   font-family: var(--codex-font-body);
   font-size: var(--codex-badge-font-size);
   opacity: var(--codex-glyph-ring-outer-opacity);
-  user-select: none;
   pointer-events: none;
+  user-select: none;
 }
 
 /* HERO */
 .codex-header__hero {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: var(--codex-hero-gap);
+  align-items: center;
   inline-size: min(100%, var(--codex-content-width));
   margin-inline: auto;
+  gap: var(--codex-hero-gap);
 }
 
 /* GLYPH */
 .codex-header__glyph {
-  display: grid;
   position: relative;
+  display: grid;
   place-items: center;
-  inline-size: var(--codex-glyph-size);
-  block-size: var(--codex-glyph-size);
-  margin: 0;
+  inline-size: calc(var(--codex-glyph-size) * var(--codex-scale-glyph));
+  block-size: calc(var(--codex-glyph-size) * var(--codex-scale-glyph));
+  margin-block: var(--codex-glyph-margin-top) var(--codex-glyph-margin-bottom);
+  margin-inline: auto;
   padding: var(--codex-glyph-padding);
   border: var(--codex-border-width) solid var(--codex-border-color);
   border-radius: var(--codex-radius-full);
   background: var(--codex-surface-alt);
+  box-shadow: var(--codex-shadow-glyph);
   isolation: isolate;
-  transition: transform var(--codex-transition-normal), box-shadow var(--codex-transition-normal);
+  transition: box-shadow var(--codex-transition-normal), transform var(--codex-transition-normal);
 
   &:hover {
-    transform: scale(var(--codex-hover-scale));
-    box-shadow: var(--codex-shadow-glyph);
+    transform: scale(var(--codex-scale-hover));
+    box-shadow: var(--codex-glow);
   }
 }
 
@@ -121,15 +129,49 @@
 
 /* GLYPH IMAGE */
 .codex-header__glyph img {
-  display: block;
   position: relative;
-  inline-size: 100%;
-  block-size: 100%;
-  object-fit: contain;
-  box-shadow: var(--codex-shadow-glyph);
-  user-select: none;
-  pointer-events: none;
   z-index: 1;
+  display: block;
+  inline-size: calc(var(--codex-glyph-size) * var(--codex-glyph-scale));
+  block-size: calc(var(--codex-glyph-size) * var(--codex-glyph-scale));
+  object-fit: contain;
+  filter: drop-shadow(var(--codex-shadow-title));
+  pointer-events: none;
+  user-select: none;
+}
+
+/* TITLES */
+.codex-header__titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-inline-size: var(--codex-subtitle-width);
+  gap: var(--codex-title-gap);
+}
+
+/* TITLE */
+.codex-header__title {
+  margin: 0;
+  color: var(--codex-text);
+  font-family: var(--codex-font-heading);
+  font-size: var(--codex-title-size);
+  font-weight: 700;
+  letter-spacing: var(--codex-title-letter-spacing);
+  line-height: var(--codex-title-line-height);
+  text-wrap: balance;
+  text-shadow: var(--codex-shadow-title);
+}
+
+/* SUBTITLE */
+.codex-header__subtitle {
+  margin: 0;
+  max-inline-size: var(--codex-subtitle-width);
+  color: var(--codex-text-muted);
+  font-family: var(--codex-font-body);
+  font-size: var(--codex-subtitle-size);
+  font-weight: 400;
+  line-height: var(--codex-subtitle-line-height);
+  text-wrap: pretty;
 }
 
 /* RESPONSIVE */
@@ -138,26 +180,23 @@
     gap: var(--codex-layout-gap-header);
   }
 
-  .codex-header__meta {
-    justify-content: center;
-  }
-
   .codex-header__hero {
     gap: var(--codex-hero-gap);
+  }
+
+  .codex-header__meta {
+    justify-content: center;
   }
 
   .codex-header__titles {
     max-inline-size: var(--codex-subtitle-width);
   }
+
 }
 
 @media (width <= 48rem) {
   .codex-header {
     gap: var(--space-xl);
-  }
-
-  .codex-header__meta {
-    gap: var(--space-xs);
   }
 
   .codex-header__badge {
@@ -168,6 +207,10 @@
 
   .codex-header__hero {
     gap: var(--space-xl);
+  }
+
+  .codex-header__meta {
+    gap: var(--space-xs);
   }
 
   .codex-header__glyph {

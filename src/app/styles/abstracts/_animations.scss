@@ -112,6 +112,6 @@
   }
   50% {
     opacity: var(--codex-glyph-ring-outer-opacity);
-    transform: scale(var(--codex-hover-scale));
+    transform: scale(var(--codex-scale-ring));
   }
 }
